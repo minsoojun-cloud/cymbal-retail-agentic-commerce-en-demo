@@ -244,14 +244,16 @@ side.
 
 **Tablet layouts** (landscape 1180×820 and portrait 820×1180):
 
-<img src="docs/images/app-tablet-map-and-concierge.jpg" alt="Tablet: product detail, floor map and AI Concierge side by side" width="100%">
+<img src="docs/images/app-tablet-live-stock.jpg" alt="Tablet landscape: two-column results with live stock, shelf and the AI Commerce Search Local Inventory badge" width="100%">
 
 | Tablet store home | Tablet recipe concierge | Tablet portrait floor map |
 |:---:|:---:|:---:|
 | <img src="docs/images/app-tablet-store-home.jpg" alt="Tablet store home" width="320"> | <img src="docs/images/app-tablet-recipe-concierge.jpg" alt="Tablet recipe concierge" width="320"> | <img src="docs/images/app-tablet-portrait-floor-map.jpg" alt="Tablet portrait floor map" width="220"> |
 
-On a tablet the product detail, the **floor map with the shelf front view** and the **AI Concierge** are visible at the
-same time. Kiosks and staff-assisted selling can use the same app with no separate build.
+On a tablet the layout adapts dynamically: results flow into two columns with live stock and the exact shelf for each
+item, and the product detail, the **floor map with the shelf front view** and the **AI Concierge** open as large sheets
+over the list (in the recipe concierge, the chat docks beside the store home). Kiosks and staff-assisted selling can use
+the same app with no separate build.
 
 ---
 
@@ -261,9 +263,9 @@ same time. Kiosks and staff-assisted selling can use the same app with no separa
 |---|---|
 | <img src="docs/images/staff-register-photo.jpg" alt="Register a shelf location from a photo" width="100%"> | <img src="docs/images/staff-confirm-shelf.jpg" alt="Confirm shelf location read by Gemini" width="100%"> |
 
-| 3. Synced to AI Commerce Search Local Inventory | On a phone |
-|---|:---:|
-| <img src="docs/images/staff-synced-local-inventory.jpg" alt="Shelf location registered and synced" width="100%"> | <img src="docs/images/staff-phone-synced.jpg" alt="Staff App on a phone after sync" width="200"> |
+**3. Synced to AI Commerce Search Local Inventory**
+
+<img src="docs/images/staff-synced-local-inventory.jpg" alt="Shelf location registered and synced to AI Commerce Search Local Inventory" width="100%">
 
 Staff don't type anything:
 
