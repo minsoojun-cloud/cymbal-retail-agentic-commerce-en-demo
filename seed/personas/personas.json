@@ -1,0 +1,297 @@
+[
+  {
+    "customer_id": "CR-0001",
+    "name": "Sakura Tanaka",
+    "age": 38,
+    "gender": "female",
+    "occupation": "works for a manufacturer in Tokyo (reduced hours)",
+    "residence": "Kawasaki City, Kanagawa",
+    "household": [
+      {
+        "relation": "self",
+        "name": "Sakura",
+        "age": 38
+      },
+      {
+        "relation": "husband",
+        "name": "Ken",
+        "age": 40
+      },
+      {
+        "relation": "son",
+        "name": "Haru",
+        "age": 6
+      },
+      {
+        "relation": "daughter",
+        "name": "Yui",
+        "age": 9
+      }
+    ],
+    "household_size": 4,
+    "family_preferences": [
+      {
+        "relation": "self",
+        "name": "Sakura",
+        "call_name": "Sakura",
+        "age": 38,
+        "likes": [
+          "fish",
+          "Japanese cuisine",
+          "extra vegetables"
+        ],
+        "ng": [],
+        "like_keywords": [
+          {
+            "label": "fish",
+            "keywords": [
+              "salmon",
+              "coho salmon",
+              "mackerel",
+              "yellowtail",
+              "pacific saury",
+              "horse mackerel",
+              "cod",
+              "spanish mackerel",
+              "flounder"
+            ]
+          },
+          {
+            "label": "Japanese cuisine",
+            "keywords": [
+              "japanese style",
+              "nimono",
+              "miso soup",
+              "ohitashi",
+              "kinpira",
+              "hijiki seaweed",
+              "shira-ae"
+            ]
+          },
+          {
+            "label": "Vegetable",
+            "keywords": [
+              "spinach",
+              "komatsuna",
+              "broccoli",
+              "shimeji mushroom",
+              "maitake mushrooms",
+              "enoki mushroom",
+              "mushroom",
+              "napa cabbage",
+              "daikon radish",
+              "cabbage",
+              "vegetable salad",
+              "pre-cut vegetables"
+            ]
+          }
+        ]
+      },
+      {
+        "relation": "husband",
+        "name": "Ken",
+        "call_name": "Ken",
+        "age": 40,
+        "likes": [
+          "meat dishes",
+          "grilled fish",
+          "appetizers that go with beer"
+        ],
+        "ng": [],
+        "like_keywords": [
+          {
+            "label": "meat dishes",
+            "keywords": [
+              "pork",
+              "pork loin",
+              "pork belly",
+              "pork strips",
+              "beef",
+              "chicken thighs",
+              "ginger pork",
+              "yakiniku",
+              "steak",
+              "tonkatsu"
+            ]
+          },
+          {
+            "label": "grilled fish",
+            "keywords": [
+              "salted mackerel",
+              "atka mackerel",
+              "butterflied",
+              "dried fish",
+              "grilled fish",
+              "salted salmon",
+              "mildly salted"
+            ]
+          },
+          {
+            "label": "appetizers that go with beer",
+            "keywords": [
+              "yakitori",
+              "gyoza",
+              "edamame",
+              "chicken wings",
+              "chashu pork"
+            ]
+          }
+        ]
+      },
+      {
+        "relation": "son",
+        "name": "Haru",
+        "call_name": "Haru",
+        "age": 6,
+        "likes": [
+          "hamburger steak",
+          "karaage (Japanese fried chicken)",
+          "medium-hot curry",
+          "large serving of rice"
+        ],
+        "ng": [],
+        "like_keywords": [
+          {
+            "label": "hamburger steak",
+            "keywords": [
+              "hamburger steak"
+            ]
+          },
+          {
+            "label": "karaage (Japanese fried chicken)",
+            "keywords": [
+              "karaage"
+            ]
+          },
+          {
+            "label": "medium-hot curry",
+            "keywords": [
+              "medium hot"
+            ]
+          },
+          {
+            "label": "rice (large serving)",
+            "keywords": [
+              "rice",
+              "white rice"
+            ]
+          }
+        ]
+      },
+      {
+        "relation": "daughter",
+        "name": "Yui",
+        "call_name": "Yui",
+        "age": 9,
+        "likes": [
+          "sweet rolled omelet",
+          "corn",
+          "Fruit"
+        ],
+        "ng": [
+          "shrimp (allergy)"
+        ],
+        "allergies": [
+          "shrimp"
+        ],
+        "like_keywords": [
+          {
+            "label": "sweet rolled omelet",
+            "keywords": [
+              "sweet rolled omelet",
+              "tamagoyaki",
+              "dashimaki"
+            ]
+          },
+          {
+            "label": "corn",
+            "keywords": [
+              "corn"
+            ]
+          },
+          {
+            "label": "Fruit",
+            "keywords": [
+              "mandarin orange",
+              "apple",
+              "persimmon",
+              "grape",
+              "pear",
+              "strawberry",
+              "banana",
+              "kiwi",
+              "shine muscat",
+              "la france pear",
+              "fruit"
+            ]
+          }
+        ]
+      }
+    ],
+    "allergies": [
+      {
+        "member": "daughter (Yui)",
+        "allergen": "shrimp",
+        "severity": "must exclude",
+        "note": "do not purchase products containing shrimp or shrimp extract"
+      }
+    ],
+    "exclude_keywords": [
+      "prawn",
+      "shrimp"
+    ],
+    "taste_preferences": {
+      "curry_spiciness": "medium-hot",
+      "cuisine": "Japanese-focused diet",
+      "protein": "likes fish (salmon, mackerel, yellowtail); meat preferences are pork strips and chicken thighs",
+      "kids_friendly": true
+    },
+    "cooking_style": "Quick 20-minute meals on weekdays (using pre-cut veggies, pre-marinated meats, and meal kits); meal prep on weekends.",
+    "shopping_style": "bulk shopping on weekends (orders Saturday mornings); always checks for bargains and sale items",
+    "quality_preference": "prioritizes Freshness Plus (freshness guarantee) products and domestic vegetables",
+    "delivery_preference": {
+      "weekday_slot": "19:00-20:00",
+      "weekend_slot": "10:00-12:00",
+      "frequency": "once a week (Saturdays)"
+    },
+    "budget_per_week_jpy": 15000,
+    "avg_order_items": 12,
+    "loyalty": {
+      "tier": "gold",
+      "member_since": "2022-04-01",
+      "points_balance": 2840
+    },
+    "favorite_categories": [
+      "Produce",
+      "meat and fish",
+      "eggs and dairy",
+      "Tofu & Natto",
+      "bread and cereal",
+      "Seasonings & Sauces"
+    ],
+    "favorite_products_keywords": [
+      "Freshness Plus",
+      "domestic",
+      "organic",
+      "Quick"
+    ],
+    "dislikes": [
+      "extra spicy and mala flavors",
+      "products containing shrimp (daughter's allergy)",
+      "bulk sizes that are too large"
+    ],
+    "seasonal_interest": "Wants to cook seasonal Japanese dishes (salmon, saury, mushrooms, and sweet potatoes in fall; hot pot in winter).",
+    "marketing_consent": {
+      "email": true,
+      "push": true
+    },
+    "cookie": {
+      "name": "cr_customer",
+      "value": "CR-0001",
+      "example_header": "Cookie: cr_customer=CR-0001; cr_visitor=v-7f3a9c21"
+    },
+    "visitor_id": "v-7f3a9c21",
+    "note": "Fictional persona for demo purposes (not a real person or member).",
+    "first_name": "Sakura"
+  }
+]

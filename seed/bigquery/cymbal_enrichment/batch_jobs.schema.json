@@ -1,0 +1,70 @@
+[
+  {
+    "name": "job_id",
+    "type": "STRING"
+  },
+  {
+    "name": "display_name",
+    "type": "STRING"
+  },
+  {
+    "name": "model",
+    "type": "STRING"
+  },
+  {
+    "name": "state",
+    "type": "STRING"
+  },
+  {
+    "name": "sku_count",
+    "type": "INTEGER"
+  },
+  {
+    "name": "request_count",
+    "type": "INTEGER"
+  },
+  {
+    "name": "input_tokens",
+    "type": "INTEGER"
+  },
+  {
+    "name": "output_tokens",
+    "type": "INTEGER"
+  },
+  {
+    "name": "cost_jpy",
+    "type": "FLOAT"
+  },
+  {
+    "name": "cost_usd",
+    "type": "FLOAT"
+  },
+  {
+    "name": "src",
+    "type": "STRING"
+  },
+  {
+    "name": "dest",
+    "type": "STRING"
+  },
+  {
+    "name": "created_at",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "updated_at",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "ingested",
+    "type": "BOOLEAN"
+  },
+  {
+    "name": "ingested_skus",
+    "type": "INTEGER"
+  },
+  {
+    "name": "error",
+    "type": "STRING"
+  }
+]

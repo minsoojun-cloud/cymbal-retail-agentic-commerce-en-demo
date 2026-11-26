@@ -1,0 +1,44 @@
+[
+  {
+    "name": "sku",
+    "type": "STRING"
+  },
+  {
+    "name": "title",
+    "type": "STRING"
+  },
+  {
+    "name": "category_group",
+    "type": "STRING"
+  },
+  {
+    "name": "attributes_json",
+    "type": "STRING"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "feature_tags",
+    "type": "STRING"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "search_keywords",
+    "type": "STRING"
+  },
+  {
+    "name": "ai_summary",
+    "type": "STRING"
+  },
+  {
+    "name": "fill_rate_before",
+    "type": "FLOAT"
+  },
+  {
+    "name": "fill_rate_after",
+    "type": "FLOAT"
+  },
+  {
+    "name": "updated_at",
+    "type": "TIMESTAMP"
+  }
+]

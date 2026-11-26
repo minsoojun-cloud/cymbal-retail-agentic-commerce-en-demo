@@ -1,0 +1,17 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "store_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "version",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "layout",
+    "type": "STRING"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "order_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "customer_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "order_date",
+    "type": "DATE"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "product_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "product_title",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "category",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "quantity",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "unit_price_tax_included",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "amount",
+    "type": "INTEGER"
+  }
+]

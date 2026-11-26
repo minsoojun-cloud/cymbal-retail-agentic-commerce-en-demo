@@ -1,0 +1,74 @@
+[
+  {
+    "name": "sku",
+    "type": "STRING"
+  },
+  {
+    "name": "item_group_id",
+    "type": "STRING"
+  },
+  {
+    "name": "item_group_title",
+    "type": "STRING"
+  },
+  {
+    "name": "variant_option",
+    "type": "STRING"
+  },
+  {
+    "name": "variant_options_json",
+    "type": "STRING"
+  },
+  {
+    "name": "question_and_answer",
+    "type": "STRING"
+  },
+  {
+    "name": "qa_json",
+    "type": "STRING"
+  },
+  {
+    "name": "product_highlight",
+    "type": "STRING"
+  },
+  {
+    "name": "highlights_json",
+    "type": "STRING"
+  },
+  {
+    "name": "product_detail",
+    "type": "STRING"
+  },
+  {
+    "name": "details_json",
+    "type": "STRING"
+  },
+  {
+    "name": "related_product",
+    "type": "STRING"
+  },
+  {
+    "name": "related_json",
+    "type": "STRING"
+  },
+  {
+    "name": "popularity_rank",
+    "type": "FLOAT"
+  },
+  {
+    "name": "document_link",
+    "type": "STRING"
+  },
+  {
+    "name": "model",
+    "type": "STRING"
+  },
+  {
+    "name": "job_id",
+    "type": "STRING"
+  },
+  {
+    "name": "updated_at",
+    "type": "TIMESTAMP"
+  }
+]

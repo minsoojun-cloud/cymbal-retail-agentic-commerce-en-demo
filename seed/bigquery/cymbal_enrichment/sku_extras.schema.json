@@ -1,0 +1,23 @@
+[
+  {
+    "name": "sku",
+    "type": "STRING"
+  },
+  {
+    "name": "job_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "search_keywords",
+    "type": "STRING"
+  },
+  {
+    "name": "ai_summary",
+    "type": "STRING"
+  },
+  {
+    "name": "created_at",
+    "type": "TIMESTAMP"
+  }
+]

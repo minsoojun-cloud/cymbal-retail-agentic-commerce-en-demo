@@ -1,0 +1,325 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "profile_json",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "first_name",
+    "type": "STRING"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "dislikes",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "gender",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "avg_order_items",
+    "type": "INTEGER"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "note",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "severity",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "allergen",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "member",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "allergies",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "favorite_products_keywords",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "push",
+        "type": "BOOLEAN"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "email",
+        "type": "BOOLEAN"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "marketing_consent",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "frequency",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "weekend_slot",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "weekday_slot",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "delivery_preference",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "example_header",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "value",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "name",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "cookie",
+    "type": "RECORD"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "shopping_style",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "points_balance",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "member_since",
+        "type": "DATE"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "tier",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "loyalty",
+    "type": "RECORD"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "cooking_style",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "quality_preference",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "kids_friendly",
+        "type": "BOOLEAN"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "protein",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "cuisine",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "curry_spiciness",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "taste_preferences",
+    "type": "RECORD"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "note",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "age",
+    "type": "INTEGER"
+  },
+  {
+    "fields": [
+      {
+        "mode": "REPEATED",
+        "name": "allergies",
+        "type": "STRING"
+      },
+      {
+        "mode": "REPEATED",
+        "name": "likes",
+        "type": "STRING"
+      },
+      {
+        "mode": "REPEATED",
+        "name": "ng",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "call_name",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "name",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "age",
+        "type": "INTEGER"
+      },
+      {
+        "fields": [
+          {
+            "mode": "REPEATED",
+            "name": "keywords",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "label",
+            "type": "STRING"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "like_keywords",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "relation",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "family_preferences",
+    "type": "RECORD"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "occupation",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "household_size",
+    "type": "INTEGER"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "name",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "age",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "relation",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "household",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "exclude_keywords",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "residence",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "budget_per_week_jpy",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "favorite_categories",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "customer_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "visitor_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "seasonal_interest",
+    "type": "STRING"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "name": "sku",
+    "type": "STRING"
+  },
+  {
+    "name": "kind",
+    "type": "STRING"
+  },
+  {
+    "name": "attr_key",
+    "type": "STRING"
+  },
+  {
+    "name": "label",
+    "type": "STRING"
+  },
+  {
+    "name": "raw_value",
+    "type": "STRING"
+  },
+  {
+    "name": "value_json",
+    "type": "STRING"
+  },
+  {
+    "name": "unit",
+    "type": "STRING"
+  },
+  {
+    "name": "norm_note",
+    "type": "STRING"
+  },
+  {
+    "name": "evidence",
+    "type": "STRING"
+  },
+  {
+    "name": "source_field",
+    "type": "STRING"
+  },
+  {
+    "name": "self_conf",
+    "type": "FLOAT"
+  },
+  {
+    "name": "evidence_match",
+    "type": "FLOAT"
+  },
+  {
+    "name": "token_conf",
+    "type": "FLOAT"
+  },
+  {
+    "name": "score",
+    "type": "FLOAT"
+  },
+  {
+    "name": "gate_status",
+    "type": "STRING"
+  },
+  {
+    "name": "gate",
+    "type": "STRING"
+  },
+  {
+    "name": "reason",
+    "type": "STRING"
+  },
+  {
+    "name": "job_id",
+    "type": "STRING"
+  },
+  {
+    "name": "model",
+    "type": "STRING"
+  },
+  {
+    "name": "created_at",
+    "type": "TIMESTAMP"
+  }
+]

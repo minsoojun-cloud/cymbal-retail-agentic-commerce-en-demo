@@ -1,0 +1,58 @@
+[
+  {
+    "name": "sku",
+    "type": "STRING"
+  },
+  {
+    "name": "title",
+    "type": "STRING"
+  },
+  {
+    "name": "brand",
+    "type": "STRING"
+  },
+  {
+    "name": "category",
+    "type": "STRING"
+  },
+  {
+    "name": "description",
+    "type": "STRING"
+  },
+  {
+    "name": "product_url",
+    "type": "STRING"
+  },
+  {
+    "name": "image_url",
+    "type": "STRING"
+  },
+  {
+    "name": "price",
+    "type": "FLOAT"
+  },
+  {
+    "name": "raw_attributes_json",
+    "type": "STRING"
+  },
+  {
+    "name": "category_group",
+    "type": "STRING"
+  },
+  {
+    "name": "attr_count",
+    "type": "INTEGER"
+  },
+  {
+    "name": "updated_at",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "source",
+    "type": "STRING"
+  },
+  {
+    "name": "doc_sources_json",
+    "type": "STRING"
+  }
+]

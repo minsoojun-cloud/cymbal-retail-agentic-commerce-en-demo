@@ -1,0 +1,69 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "coupon_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "customer_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "store_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "title",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "description",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "discount_type",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "discount_value",
+    "type": "FLOAT"
+  },
+  {
+    "fields": [
+      {
+        "mode": "REPEATED",
+        "name": "categories",
+        "type": "STRING"
+      },
+      {
+        "mode": "REPEATED",
+        "name": "product_ids",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "target",
+    "type": "RECORD"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "valid_until",
+    "type": "DATE"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "reason",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "color",
+    "type": "STRING"
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "name": "job_id",
+    "type": "STRING"
+  },
+  {
+    "name": "file_uri",
+    "type": "STRING"
+  },
+  {
+    "name": "file_name",
+    "type": "STRING"
+  },
+  {
+    "name": "document_type",
+    "type": "STRING"
+  },
+  {
+    "name": "product_index",
+    "type": "INTEGER"
+  },
+  {
+    "name": "applied_sku",
+    "type": "STRING"
+  },
+  {
+    "name": "is_new",
+    "type": "BOOLEAN"
+  },
+  {
+    "name": "merge_mode",
+    "type": "STRING"
+  },
+  {
+    "name": "changes",
+    "type": "INTEGER"
+  },
+  {
+    "name": "extracted_json",
+    "type": "STRING"
+  },
+  {
+    "name": "diff_json",
+    "type": "STRING"
+  },
+  {
+    "name": "model",
+    "type": "STRING"
+  },
+  {
+    "name": "created_at",
+    "type": "TIMESTAMP"
+  }
+]

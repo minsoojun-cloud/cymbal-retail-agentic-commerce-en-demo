@@ -1,0 +1,47 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "store_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "slot_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "fixture_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "tier",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "index",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "width_cm",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "fixture_type",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "x",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "y",
+    "type": "FLOAT"
+  }
+]

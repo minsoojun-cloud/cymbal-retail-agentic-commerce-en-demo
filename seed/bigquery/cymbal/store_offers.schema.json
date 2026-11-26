@@ -1,0 +1,47 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "store_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "product_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "sale_price",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "original_price",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "start_date",
+    "type": "DATE"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "end_date",
+    "type": "DATE"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "badge",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "theme",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "title",
+    "type": "STRING"
+  }
+]

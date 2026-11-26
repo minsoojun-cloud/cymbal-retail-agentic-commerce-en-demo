@@ -1,0 +1,50 @@
+[
+  {
+    "name": "sku",
+    "type": "STRING"
+  },
+  {
+    "name": "title",
+    "type": "STRING"
+  },
+  {
+    "name": "model",
+    "type": "STRING"
+  },
+  {
+    "name": "job_id",
+    "type": "STRING"
+  },
+  {
+    "name": "source",
+    "type": "STRING"
+  },
+  {
+    "name": "input_tokens",
+    "type": "INTEGER"
+  },
+  {
+    "name": "output_tokens",
+    "type": "INTEGER"
+  },
+  {
+    "name": "thinking_tokens",
+    "type": "INTEGER"
+  },
+  {
+    "name": "calls",
+    "type": "INTEGER"
+  },
+  {
+    "name": "stage_tokens_json",
+    "type": "STRING"
+  },
+  {
+    "name": "source_chars",
+    "type": "INTEGER"
+  },
+  {
+    "name": "created_at",
+    "type": "TIMESTAMP"
+  }
+]

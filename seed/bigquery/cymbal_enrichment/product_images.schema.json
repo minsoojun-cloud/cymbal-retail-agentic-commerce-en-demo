@@ -1,0 +1,94 @@
+[
+  {
+    "name": "image_id",
+    "type": "STRING"
+  },
+  {
+    "name": "sku",
+    "type": "STRING"
+  },
+  {
+    "name": "gcs_uri",
+    "type": "STRING"
+  },
+  {
+    "name": "url",
+    "type": "STRING"
+  },
+  {
+    "name": "kind",
+    "type": "STRING"
+  },
+  {
+    "name": "status",
+    "type": "STRING"
+  },
+  {
+    "name": "is_primary",
+    "type": "BOOLEAN"
+  },
+  {
+    "name": "preset",
+    "type": "STRING"
+  },
+  {
+    "name": "preset_label",
+    "type": "STRING"
+  },
+  {
+    "name": "season",
+    "type": "STRING"
+  },
+  {
+    "name": "prompt",
+    "type": "STRING"
+  },
+  {
+    "name": "extra_prompt",
+    "type": "STRING"
+  },
+  {
+    "name": "base_image_uri",
+    "type": "STRING"
+  },
+  {
+    "name": "base_kind",
+    "type": "STRING"
+  },
+  {
+    "name": "source_url",
+    "type": "STRING"
+  },
+  {
+    "name": "model",
+    "type": "STRING"
+  },
+  {
+    "name": "width",
+    "type": "INTEGER"
+  },
+  {
+    "name": "height",
+    "type": "INTEGER"
+  },
+  {
+    "name": "aspect",
+    "type": "STRING"
+  },
+  {
+    "name": "fidelity_score",
+    "type": "FLOAT"
+  },
+  {
+    "name": "fidelity_note",
+    "type": "STRING"
+  },
+  {
+    "name": "created_at",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "updated_at",
+    "type": "TIMESTAMP"
+  }
+]

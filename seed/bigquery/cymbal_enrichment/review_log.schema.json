@@ -1,0 +1,34 @@
+[
+  {
+    "name": "sku",
+    "type": "STRING"
+  },
+  {
+    "name": "attr_key",
+    "type": "STRING"
+  },
+  {
+    "name": "action",
+    "type": "STRING"
+  },
+  {
+    "name": "before_value",
+    "type": "STRING"
+  },
+  {
+    "name": "after_value",
+    "type": "STRING"
+  },
+  {
+    "name": "comment",
+    "type": "STRING"
+  },
+  {
+    "name": "reviewer",
+    "type": "STRING"
+  },
+  {
+    "name": "reviewed_at",
+    "type": "TIMESTAMP"
+  }
+]

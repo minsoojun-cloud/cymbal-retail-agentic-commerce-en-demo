@@ -1,0 +1,101 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "store_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "short_name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "lat",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "lng",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "address",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "phone",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "open",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "close",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "hours",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "open",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "close",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "closed",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "pharmacy",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "services",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "radius_m",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "layout_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "tagline",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "format",
+    "type": "STRING"
+  }
+]

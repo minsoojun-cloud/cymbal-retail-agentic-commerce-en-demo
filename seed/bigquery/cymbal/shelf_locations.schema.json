@@ -1,0 +1,72 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "store_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "product_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "fixture_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "slot_ids",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "tier",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "facings",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "gondola_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "side",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "position",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "photo_uri",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "source",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "registered_by",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "registered_at",
+    "type": "TIMESTAMP"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "note",
+    "type": "STRING"
+  }
+]
