@@ -39,7 +39,7 @@ flowchart TB
   end
 
   subgraph Shared["Shared backends and catalog tools (shared/)"]
-    CAT["shared/catalog/<br/>Retail import, attributes, autocomplete"]
+    CAT["shared/catalog/<br/>AI Commerce Search import, attributes, autocomplete"]
     MCP["shared/mcp_server/<br/>Commerce MCP server (private)"]
     ADK["shared/adk_agent/<br/>ADK AI Concierge (private)"]
   end
@@ -71,8 +71,8 @@ flowchart TB
 | `shared/catalog/` | `retail_import.py` (FULL import), `set_attributes_config.py`, `setup_search_features.py` (autocomplete), `validate_jsonl.py`, `category_map_en.json`, BigQuery schema. |
 | `shared/mcp_server/` | FastMCP **Commerce MCP server** (`<prefix>-commerce-mcp`, private): `search_products`, `get_product_details`, `compare_products`, `get_customer_profile`, `get_purchase_history`, `recommend_dinner_set`, `check_store_inventory`. |
 | `shared/adk_agent/` | **ADK AI Concierge** (`<prefix>-adk-agent`, private). The prompt and tools are in `cymbal_agent/`. |
-| `online-store/` | Online store `<prefix>-site`: Vertex AI Search for Commerce search, AI Overview, "Pick up in store" facet, "Available in stores" modal, concierge chat with voice, cart, checkout and order tracking. Product images are in `static/img/products/`. |
-| `store-navi/` | One code base, deployed twice: `APP_MODE=customer` gives `<prefix>-store-app` (Store App) and `APP_MODE=staff` gives `<prefix>-store-staff` (Staff App plus the `/admin` Shelf Manager). The in-store agent is in `app/agent/`. `data/` holds store layouts, shelves and inventory. `scripts/push_local_inventory.py` pushes Retail Local Inventory. |
+| `online-store/` | Online store `<prefix>-site`: AI Commerce Search, AI Overview, "Pick up in store" facet, "Available in stores" modal, concierge chat with voice, cart, checkout and order tracking. Product images are in `static/img/products/`. |
+| `store-navi/` | One code base, deployed twice: `APP_MODE=customer` gives `<prefix>-store-app` (Store App) and `APP_MODE=staff` gives `<prefix>-store-staff` (Staff App plus the `/admin` Shelf Manager). The in-store agent is in `app/agent/`. `data/` holds store layouts, shelves and inventory. `scripts/push_local_inventory.py` pushes AI Commerce Search Local Inventory. |
 | `data-enrichment/` | **Data Enrichment Studio** `<prefix>-data-enrichment`: Gemini extraction, normalization, quality gates, HITL review, GMC attributes, document ingestion, image generation, batch and cost. |
 | `seed/` | Project-independent seed. `catalog/` has `products_retail.jsonl` with `__SITE_BASE_URL__` placeholders, plus recipes, stores and autocomplete. `personas/` has the persona and purchase history. `bigquery/<dataset>/<table>.jsonl.gz` comes with a matching `<table>.schema.json`. |
 | `tests/smoke_install.py` | End-to-end smoke test after the install. |
@@ -116,7 +116,7 @@ flowchart TB
    - Everything user-visible stays English. The brand stays **Cymbal Retail**, or the customer's brand when you
      customize it. Never use real retailer or manufacturer names in demo data.
 7. **Be careful with destructive commands.**
-   - `install/uninstall.sh --data` purges all Retail products in branch `0` and deletes the BigQuery datasets. Run it
+   - `install/uninstall.sh --data` purges all AI Commerce Search products in branch `0` and deletes the BigQuery datasets. Run it
      only when the user explicitly asks, and never with `-y` unless the user asked for that.
 
 ---
@@ -127,7 +127,7 @@ flowchart TB
   `source config.env && bash <app>/deploy.sh`. For the store app or staff app, set
   `SERVICE_NAME=$STORE_APP_SERVICE` or `SERVICE_NAME=$STAFF_SERVICE` before `bash store-navi/deploy.sh`.
 - **Re-runs are safe**: the installer is idempotent. BigQuery seed tables use `WRITE_TRUNCATE`, runtime tables and
-  staff shelf registrations are kept, and the Retail FULL import is followed by `push_local_inventory.py --force`.
+  staff shelf registrations are kept, and the AI Commerce Search FULL import is followed by `push_local_inventory.py --force`.
 - **After a catalog change**: run `--from 50_catalog_import`. That step re-imports Retail and re-pushes Local Inventory.
   It also redeploys the apps, which bundle the rendered catalog.
 - **Verification is part of done**: finish with `90_verify` (`tests/smoke_install.py`). Report the 4 app URLs plus

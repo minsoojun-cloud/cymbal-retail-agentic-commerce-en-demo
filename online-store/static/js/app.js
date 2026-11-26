@@ -74,7 +74,7 @@
   let featureStatus = {};
   function featureLabel(name, key) {
     const st = featureStatus[key] || '';
-    const tip = { live: 'Vertex AI Search for Commerce (live)', fallback: 'Fallback results', mock: 'Local mode (mock)' }[st] || '';
+    const tip = { live: 'AI Commerce Search (live)', fallback: 'Fallback results', mock: 'Local mode (mock)' }[st] || '';
     return '<span class="cr-feature" data-feature="' + esc(key) + '" data-status="' + esc(st) + '" title="' + esc(tip) + '">' + esc(name) + '</span>';
   }
   function setFeatureStatus(map) {

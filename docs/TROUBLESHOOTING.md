@@ -59,8 +59,8 @@ blocked services and exits with code 1. **It never changes org policies, and you
 
 ### Q3. `30_retail` warns "acceptTerms failed" or "enrollSolution failed"
 
-On a brand-new project the Retail API can take a few minutes to become usable after `10_apis`. The step retries 6 times.
-If it still fails, open the Cloud Console → **Search for commerce** → **Get started** once to accept the data-use terms,
+On a brand-new project AI Commerce Search (Retail API) can take a few minutes to become usable after `10_apis`. The step retries 6 times.
+If it still fails, open the Cloud Console → **AI Commerce Search** → **Get started** once to accept the data-use terms,
 then run `./install/install.sh --from 30_retail`. "Already enrolled" responses are treated as success.
 
 ---
@@ -98,11 +98,11 @@ cat install/.state/models.env
 
 ---
 
-## 3. Vertex AI Search for Commerce (Retail API) and Local Inventory
+## 3. AI Commerce Search (Retail API) and Local Inventory
 
 ### Q6. Search returns 0 results (or only BigQuery results) right after the install
 
-- A Retail FULL import (`50_catalog_import`, step 3/6) takes 2 to 5 minutes. Indexing for search then needs **another
+- A AI Commerce Search FULL import (`50_catalog_import`, step 3/6) takes 2 to 5 minutes. Indexing for search then needs **another
   few minutes, and sometimes up to an hour on a brand-new project**. In the meantime, the MCP server falls back to a
   BigQuery keyword search and the site falls back to its local search engine, so the demo keeps working.
 - Check the state with `source config.env && python3 shared/catalog/verify_retail.py`.
@@ -121,7 +121,7 @@ cat install/.state/models.env
   python3 store-navi/scripts/push_local_inventory.py --verify      # spot-check a few products
   ```
 - When the Retail call fails or times out, the store APIs fall back to BigQuery `store_inventory`. The response says
-  `source: "bigquery"`, and the Store App badge names BigQuery instead of Commerce Search Local Inventory. The demo still
+  `source: "bigquery"`, and the Store App badge names BigQuery instead of AI Commerce Search Local Inventory. The demo still
   works. Fix the push, then reload the page.
 - A staff registration is saved but Retail is not updated: `addLocalInventories` is best effort and non-fatal (the API
   response reports the result in `local_inventory`). The BigQuery row is still saved, and the shopper app shows the new
@@ -209,7 +209,7 @@ Uninstall asks you to type the project id unless you pass `-y`.
 ### Q14. The smoke test fails on one check only
 
 `tests/smoke_install.py` checks: HTTP 200 on `/` and `/api/health` for the 4 apps; a search for "curry" that returns
-products; `/api/products/<id>/stores` served from Retail Local Inventory; 3,000 products on the store-app Retail engine;
+products; `/api/products/<id>/stores` served from AI Commerce Search Local Inventory; 3,000 products on the store-app Retail engine;
 availability at `S01` from `retail_local_inventory`; the staff router and `/admin`; and 63 seeded SKUs in the
 Enrichment Studio. Failures on the Retail and Local Inventory checks right after install are usually indexing delays
 (see Q6 and Q7). Wait a few minutes, then re-run `./install/install.sh --steps 90_verify`.

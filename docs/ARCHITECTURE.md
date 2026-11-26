@@ -48,7 +48,7 @@ flowchart LR
   end
 
   subgraph Data["Data spine"]
-    VAIS["Vertex AI Search for Commerce<br/>default_catalog / branch 0 / default_search<br/>+ Local Inventory (S01-S03)"]
+    VAIS["AI Commerce Search<br/>default_catalog / branch 0 / default_search<br/>+ Local Inventory (S01-S03)"]
     BQ[("BigQuery<br/>cymbal / cymbal_enrichment")]
     GCS[("Cloud Storage<br/>catalog / shelf photos / images")]
     GEM["Gemini on Vertex AI (global)"]
@@ -119,7 +119,7 @@ sequenceDiagram
   participant Site as cymbal-site (BFF)
   participant ADK as cymbal-adk-agent (ADK + Gemini)
   participant MCP as cymbal-commerce-mcp
-  participant VAIS as Vertex AI Search for Commerce
+  participant VAIS as AI Commerce Search
   participant BQ as BigQuery cymbal
 
   Sakura->>Site: "Plan tonight's dinner for 4, no shrimp" (text or voice)
@@ -155,7 +155,7 @@ sequenceDiagram
   participant GEM as Gemini vision (STAFF_VISION_MODEL)
   participant GCS as GCS shelf-photo bucket
   participant BQ as BigQuery cymbal
-  participant VAIS as Retail API (Local Inventory)
+  participant VAIS as AI Commerce Search (Local Inventory)
   participant APP as cymbal-store-app
   actor Shopper
 
@@ -167,7 +167,7 @@ sequenceDiagram
   SA->>GCS: upload photo (best effort)
   SA->>BQ: insert shelf_locations row (source = 'staff')
   SA->>VAIS: products.addLocalInventories(placeId = S01, shelf_id, slot_ids, tier, …)
-  SA-->>Staff: toast "Synced to Commerce Search Local Inventory"
+  SA-->>Staff: toast "Synced to AI Commerce Search Local Inventory"
   APP->>BQ: delta poll (shelf_locations / store_inventory_events)
   Shopper->>APP: search / open product
   APP->>VAIS: Product.localInventories (RETAIL_LOCAL_INVENTORY=1)

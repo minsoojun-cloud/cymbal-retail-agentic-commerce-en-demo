@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # 50_catalog_import.sh — 3,000-product English catalog
-#   rendered catalog -> GCS -> BigQuery cymbal.products (+ top-level `channel`) -> Retail FULL import (from GCS)
+#   rendered catalog -> GCS -> BigQuery cymbal.products (+ top-level `channel`) -> AI Commerce Search FULL import (from GCS)
 #   -> attributes config (facets / filterable / retrievable) -> autocomplete -> Local Inventory for stores S01–S03
 set -euo pipefail
 STEP_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -15,7 +15,7 @@ N=$(wc -l < "${CATALOG_JSONL}")
 python3 "${CAT}/validate_jsonl.py" "${CATALOG_JSONL}" >/dev/null 2>&1 || log_warn "validate_jsonl.py reported warnings"
 
 if [[ "${DRY_RUN:-0}" == "1" ]]; then
-  echo "  [dry-run] upload ${N} products to gs://${GCS_BUCKET}/catalog/, bq load ${BQ_DATASET}.${BQ_TABLE}, Retail FULL import,"
+  echo "  [dry-run] upload ${N} products to gs://${GCS_BUCKET}/catalog/, bq load ${BQ_DATASET}.${BQ_TABLE}, AI Commerce Search FULL import,"
   echo "            set_attributes_config.py, setup_search_features.py --autocomplete-only, push_local_inventory.py --force"
   exit 0
 fi
@@ -43,15 +43,15 @@ bq --project_id "${PROJECT_ID}" --location "${BQ_LOCATION}" --quiet load --repla
   "${PROJECT_ID}:${BQ_DATASET}.${BQ_TABLE}" "${TMP}/products_bq.jsonl" "${TMP}/schema.json"
 log_ok "${BQ_DATASET}.${BQ_TABLE}: ${N} rows"
 
-log_info "[3/6] Retail products:import (FULL, from GCS) — 2-5 minutes"
+log_info "[3/6] AI Commerce Search products:import (FULL, from GCS) — 2-5 minutes"
 python3 "${CAT}/retail_import.py" --project "${PROJECT_ID}" --gcs-uri "${GCS_LATEST}"
 
-log_info "[4/6] Retail attributes config (facets, filterable, retrievable)"
+log_info "[4/6] AI Commerce Search attributes config (facets, filterable, retrievable)"
 python3 "${CAT}/set_attributes_config.py" --project "${PROJECT_ID}"
 
 log_info "[5/6] serving config facets + autocomplete (BigQuery ${BQ_DATASET}.autocomplete_suggestions)"
 python3 "${CAT}/setup_search_features.py" --autocomplete-only || log_warn "autocomplete import failed — re-run: python3 shared/catalog/setup_search_features.py --autocomplete-only"
 
-log_info "[6/6] Retail Local Inventory for stores S01–S03 (pickup-in-store, quantity, shelf) — ~5-8 minutes"
+log_info "[6/6] AI Commerce Search Local Inventory for stores S01–S03 (pickup-in-store, quantity, shelf) — ~5-8 minutes"
 python3 "${REPO_ROOT}/store-navi/scripts/push_local_inventory.py" --force
 log_ok "catalog ready: ${N} products, Local Inventory pushed"

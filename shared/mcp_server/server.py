@@ -1,4 +1,4 @@
-"""Cymbal Retail Commerce MCP Server (Vertex AI Search for Commerce / Retail API + BigQuery).
+"""Cymbal Retail Commerce MCP Server (AI Commerce Search (Retail API) + BigQuery).
 
 Ported from greenbeens/shared/mcp_server/server.py — all GECX (CX Agent Studio) compatibility
 patches are kept:
@@ -1209,7 +1209,7 @@ StoreIdsArg = Annotated[list[str], BeforeValidator(lambda v: parse_ids(v) if isi
 async def search_products(query: str, page_size: int = 10, filter: str = None, visitor_id: str = None) -> str:
     """
     Search the Cymbal Retail catalog (groceries, household, kitchen, beauty, pet, home & living, health & medicine)
-    in natural language via Vertex AI Search for Commerce (servingConfigs/default_search). Max 100 items, in stock only.
+    in natural language via AI Commerce Search (servingConfigs/default_search). Max 100 items, in stock only.
 
     Args:
       query: search words, e.g. "frying pan", "medium hot curry roux", "shampoo", "cat food".

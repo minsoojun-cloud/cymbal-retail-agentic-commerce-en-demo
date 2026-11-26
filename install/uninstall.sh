@@ -3,7 +3,7 @@
 # install/uninstall.sh — remove what install.sh created (Cloud Run services, data, buckets, service account)
 # ==============================================================================
 # By default only the 6 Cloud Run services are deleted. Add flags to delete data too:
-#   --data        delete BigQuery datasets (${BQ_DATASET}, ${ENRICH_BQ_DATASET}) and Retail products (branch 0)
+#   --data        delete BigQuery datasets (${BQ_DATASET}, ${ENRICH_BQ_DATASET}) and AI Commerce Search products (branch 0)
 #   --buckets     delete the 3 Cloud Storage buckets (catalog, shelf photos, enrichment images)
 #   --sa          delete the runtime service account
 #   --all         all of the above
@@ -36,7 +36,7 @@ load_config
 SERVICES=("${SITE_SERVICE}" "${STORE_APP_SERVICE}" "${STAFF_SERVICE}" "${ENRICH_SERVICE}" "${ADK_SERVICE}" "${MCP_SERVICE}")
 echo "Project ${PROJECT_ID} / ${REGION}. Will delete:"
 printf '  Cloud Run service: %s\n' "${SERVICES[@]}"
-[[ ${DEL_DATA} == 1 ]] && echo "  BigQuery datasets: ${BQ_DATASET}, ${ENRICH_BQ_DATASET}; Retail products in default_catalog branch 0"
+[[ ${DEL_DATA} == 1 ]] && echo "  BigQuery datasets: ${BQ_DATASET}, ${ENRICH_BQ_DATASET}; AI Commerce Search products in default_catalog branch 0"
 [[ ${DEL_BUCKETS} == 1 ]] && echo "  Buckets: gs://${GCS_BUCKET} gs://${PHOTO_BUCKET} gs://${IMAGE_BUCKET}"
 [[ ${DEL_SA} == 1 ]] && echo "  Service account: ${RUNTIME_SA}"
 if [[ ${ASSUME_YES} != 1 ]]; then
@@ -56,7 +56,7 @@ if [[ ${DEL_DATA} == 1 ]]; then
   for ds in "${BQ_DATASET}" "${ENRICH_BQ_DATASET}"; do
     bq --project_id "${PROJECT_ID}" rm -r -f -d "${PROJECT_ID}:${ds}" && log_ok "deleted dataset ${ds}" || log_warn "dataset ${ds}: not deleted"
   done
-  log_info "purging Retail products (branch 0)"
+  log_info "purging AI Commerce Search products (branch 0)"
   curl -sS -X POST -H "Authorization: Bearer $(gcloud auth print-access-token)" -H "X-Goog-User-Project: ${PROJECT_ID}" \
     -H "Content-Type: application/json" -d '{"filter":"*","force":true}' \
     "https://retail.googleapis.com/v2/projects/${PROJECT_ID}/locations/global/catalogs/default_catalog/branches/0/products:purge" \

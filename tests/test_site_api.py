@@ -483,6 +483,7 @@ def test_backend_selection(client, monkeypatch, env, backend, platform):
 def test_index_is_english_and_links_are_injected(client):
     html = client.get("/").text
     assert '<html lang="en"' in html and "Cymbal" in html and not JP.search(html)
+    assert "AI Commerce Search" in html and "Search for Commerce" not in html  # product naming
     assert "cr-enrich-link" not in html
     js = client.get("/js/app.js").text
     assert "cr-enrich-link" in js and "cr-storeapp-link" in js and "Store App" in js

@@ -10,11 +10,11 @@ flowchart LR
   C["cymbal-store-app\nAPP_MODE=customer"] -->|same image| BFF["FastAPI BFF app/main.py"]
   S["cymbal-store-staff\nAPP_MODE=staff"] --> BFF
   BFF --> SL["site_lib = online-store/app/{catalog,search,ai}.py\nRetailSearch / LocalSearch / Autocomplete"]
-  BFF --> INV["inventory.py (Retail LocalInventory → BigQuery cache) / layout.py (A*) / offers.py / stores.py"]
+  BFF --> INV["inventory.py (AI Commerce Search Local Inventory → BigQuery cache) / layout.py (A*) / offers.py / stores.py"]
   BFF --> FT["features.py: recipes, forgot-check, product detail + purchase history, voice transcription"]
   BFF --> AG["app/agent: embedded ADK store_concierge\n+ safety.py guardrails + agent trace"]
   AG -->|ID token| MCP["cymbal-commerce-mcp"]
-  INV --> RET[("Vertex AI Search for Commerce\nProduct.local_inventories")]
+  INV --> RET[("AI Commerce Search (Retail API)\nProduct.local_inventories")]
   INV --> BQ[("BigQuery cymbal.* store tables")]
 ```
 
@@ -24,7 +24,7 @@ flowchart LR
 |---|---|
 | `app/main.py` | routes, `APP_MODE=customer\|staff`, `/config.js` (`window.SN_CONFIG`), static mounts, features router |
 | `app/config.py` | env only — no hard-coded project ids (`PROJECT_ID`, `PROJECT_NUMBER`, `ONLINE_STORE_URL`/`SITE_BASE_URL`, `RETAIL_LOCAL_INVENTORY`) |
-| `app/inventory.py` | Availability `{product_id, channel, source, current, nearby, online}`; Retail LocalInventory (parallel prefetch, 20 s cache) → BigQuery cache fallback; channel rules (`online_only` = no store stock, `store_only` = not online) |
+| `app/inventory.py` | Availability `{product_id, channel, source, current, nearby, online}`; AI Commerce Search Local Inventory (parallel prefetch, 20 s cache) → BigQuery cache fallback; channel rules (`online_only` = no store stock, `store_only` = not online) |
 | `app/features.py` | dish-first recipes (`data/recipes_en.json`), "Did you forget?", product detail with purchase history, Gemini voice transcription |
 | `app/agent/` | `agent.py` (English instruction), `tools.py` (search / details / stock / show_store_items / suggest_recipes / suggest_replies + trace), `runner.py` (SSE v3 + `done.trace`), `safety.py` (English OTC guardrails), `mock.py` (scripted demo) |
 | `static/customer/` | SPA (vanilla JS). Phone < 768 px single column; tablet portrait ≥ 768 px = list/detail/chat + floor map; landscape ≥ 1024 px = list · floor map · chat |
@@ -38,7 +38,7 @@ cd store-navi
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt pytest playwright && .venv/bin/playwright install chromium
 # customer app — offline (local search, store data files, scripted concierge)
 DATA_MODE=local AGENT_MODE=mock ONLINE_STORE_URL=http://127.0.0.1:8080 .venv/bin/uvicorn app.main:app --port 8090
-# live Retail + BigQuery + Gemini agent from a workstation (ADC)
+# live AI Commerce Search + BigQuery + Gemini agent from a workstation (ADC)
 source ../config.env && DATA_MODE=bq AGENT_MODE=live .venv/bin/uvicorn app.main:app --port 8090
 ```
 

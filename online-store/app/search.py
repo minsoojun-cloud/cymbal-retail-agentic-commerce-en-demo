@@ -1,4 +1,4 @@
-"""AI Commerce Search (Vertex AI Search for Commerce, Retail API v2alpha) + local fallback engine.
+"""AI Commerce Search (Retail API v2alpha) + local fallback engine.
 
 Both engines return the same response shape (CONTRACT.md):
   {results:[Product], total, facets:[{key,label,values:[{value,label,count,selected}],dynamic}],

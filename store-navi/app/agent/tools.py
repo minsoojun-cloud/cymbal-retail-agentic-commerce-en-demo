@@ -374,11 +374,11 @@ TRACE_LABELS = {
     "persona": "Shopper profile",
 }
 SOURCE_LABELS = {
-    "mcp": "Commerce MCP server → Vertex AI Search for Commerce",
-    "aics": "Vertex AI Search for Commerce",
+    "mcp": "Commerce MCP server → AI Commerce Search",
+    "aics": "AI Commerce Search",
     "local": "Local catalog (offline demo)",
     "catalog": "Product catalog",
-    "retail_local_inventory": "Commerce Search Local Inventory",
+    "retail_local_inventory": "AI Commerce Search Local Inventory",
     "bigquery": "BigQuery store inventory",
     "store_layout": "Store layout & shelf map (A* route)",
     "guardrails": "Server-side guardrails",

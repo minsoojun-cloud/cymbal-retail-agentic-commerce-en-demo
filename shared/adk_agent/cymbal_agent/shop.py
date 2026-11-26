@@ -96,7 +96,7 @@ def new_order_id(now: Optional[dt.datetime] = None, existing: Optional[set[str]]
 
 
 class Catalog:
-  """id -> {title, price, availability, channel} from data/products_retail.jsonl (Retail API schema).
+  """id -> {title, price, availability, channel} from data/products_retail.jsonl (AI Commerce Search / Retail API product schema).
 
   `channel` comes from a top-level `channel` key (compact catalog) or the `channel` text attribute.
   """

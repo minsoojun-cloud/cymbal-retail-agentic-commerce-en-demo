@@ -34,7 +34,7 @@ flowchart LR
     BQS[("BigQuery cymbal.*<br/>stores, layouts, inventory, shelves,<br/>customers, purchases, coupons, offers")]
     BQE[("BigQuery cymbal_enrichment.*")]
     RET["Retail default_catalog / branch 0<br/>3,000 products + attributes config"]
-    LI["Retail Local Inventory<br/>placeId S01 / S02 / S03"]
+    LI["AI Commerce Search Local Inventory<br/>placeId S01 / S02 / S03"]
   end
 
   R -->|40_data load_seed.py| BQS
@@ -94,7 +94,7 @@ Step `40_data` (`install/lib/load_seed.py`) loads the seed tables. Step `50_cata
 
 | Table | Rows | Source | Key columns / purpose |
 |---|---:|---|---|
-| `products` | 3,000 | rendered catalog + `shared/catalog/bq_schema.json` + top-level `channel` | Retail schema. Source for the Retail import, the BigQuery search fallback and the Enrichment Studio |
+| `products` | 3,000 | rendered catalog + `shared/catalog/bq_schema.json` + top-level `channel` | Retail schema. Source for the AI Commerce Search import, the BigQuery search fallback and the Enrichment Studio |
 | `autocomplete_suggestions` | 5,033 | `seed/catalog/autocomplete_suggestions.jsonl` | `suggestion`, `score`. Imported as Retail completion data |
 | `stores` | 3 | `seed/bigquery/cymbal/stores.jsonl.gz` | `store_id`, `name`, `short_name`, `lat`, `lng`, `address`, `phone`, `hours`, `pharmacy`, `services`, `radius_m`, `layout_id`, `tagline`, `format`. **Master** for addresses, hours and *Open now* |
 | `store_layouts` | 3 | idem | `store_id`, `version`, `layout` (JSON floor plan: fixtures, zones, entrance/exit, checkout). Edited by the Shelf Manager |
@@ -138,7 +138,7 @@ Sample documents for the *Extract from documents* screen are in `data-enrichment
 
 ---
 
-## 5. Store files (`store-navi/data/`) and Retail Local Inventory
+## 5. Store files (`store-navi/data/`) and AI Commerce Search Local Inventory
 
 `store-navi/data/` holds the store master as files. The Store App uses these files in `DATA_MODE=local`, and
 `push_local_inventory.py` uses them to build Local Inventory.
@@ -155,7 +155,7 @@ Sample documents for the *Extract from documents* screen are in `data-enrichment
 `store-navi/scripts/` holds `build_store_data.py` and `store_layout_defs.py` (regenerate the store master),
 `setup_bq.py` (load it into BigQuery), `gen_personas.py`, and `push_local_inventory.py`.
 
-**Retail Local Inventory** (`push_local_inventory.py --force`, run by `50_catalog_import` after every FULL import, and
+**AI Commerce Search Local Inventory** (`push_local_inventory.py --force`, run by `50_catalog_import` after every FULL import, and
 called for one product by each staff registration):
 
 | Field | Value |
@@ -171,7 +171,7 @@ called for one product by each staff registration):
 
 The online store filters in-store results with `pickupInStore: ANY("S01")` (the **Pick up in store** facet). The
 **Available in stores** modal, the MCP tool `check_store_inventory` and the Store App badge
-**"Live stock · Commerce Search Local Inventory"** read `Product.localInventories`. If that call fails, they fall back to
+**"Live stock · AI Commerce Search Local Inventory"** read `Product.localInventories`. If that call fails, they fall back to
 BigQuery `store_inventory`.
 
 > [!IMPORTANT]
@@ -191,7 +191,7 @@ Step `40_data` creates the buckets in `${REGION}` with uniform bucket-level acce
 
 | Bucket (default name) | Variable | Created by | Contents |
 |---|---|---|---|
-| `<PROJECT_ID>-catalog` | `GCS_BUCKET` / `CATALOG_BUCKET` | `40_data` | `catalog/products_retail_latest.jsonl` (Retail import source). The Retail service agent gets `storage.objectViewer` |
+| `<PROJECT_ID>-catalog` | `GCS_BUCKET` / `CATALOG_BUCKET` | `40_data` | `catalog/products_retail_latest.jsonl` (AI Commerce Search import source). The Retail service agent gets `storage.objectViewer` |
 | `<PROJECT_ID>-store-navi` | `PHOTO_BUCKET` / `STORE_NAVI_BUCKET` | `40_data` | Shelf photos uploaded by the Staff App (`shelf_locations.photo_uri`) |
 | `products_images_<PROJECT_ID>` | `IMAGE_BUCKET` / `ENRICH_IMAGE_BUCKET` | `40_data` | Enrichment Studio: generated images `{SKU}/…jpg`, uploaded documents `_docs_uploads/{date}/`, samples `_samples/` |
 

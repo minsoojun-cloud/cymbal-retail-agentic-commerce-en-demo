@@ -15,9 +15,9 @@ step_title() {
     10_apis)           echo "Enable Google Cloud APIs" ;;
     15_models)         echo "Verify Gemini models on Vertex AI (with fallbacks)" ;;
     20_iam)            echo "Runtime service account, IAM roles, build permissions" ;;
-    30_retail)         echo "Vertex AI Search for Commerce: terms, enrollment, service agent" ;;
+    30_retail)         echo "AI Commerce Search: terms, enrollment, service agent" ;;
     40_data)           echo "Buckets, BigQuery datasets and seed data (stores, shelves, customers, enrichment)" ;;
-    50_catalog_import) echo "Catalog: BigQuery products, Retail FULL import, attributes, autocomplete, Local Inventory" ;;
+    50_catalog_import) echo "Catalog: BigQuery products, AI Commerce Search FULL import, attributes, autocomplete, Local Inventory" ;;
     60_backend)        echo "Deploy private backends (Commerce MCP server, ADK agent)" ;;
     70_apps)           echo "Deploy the 4 apps (online store, store app, staff app, Enrichment Studio)" ;;
     80_public)         echo "Public access for the 4 apps (handles Domain-Restricted-Sharing orgs)" ;;
@@ -31,7 +31,7 @@ usage() {
 Usage: ./install/install.sh [options]
 
 Installs the complete Cymbal Retail Agentic Commerce demo (2 private backends + 4 public apps + 3,000-product
-catalog, BigQuery store/shelf/customer data, Retail Local Inventory) into a Google Cloud project.
+catalog, BigQuery store/shelf/customer data, AI Commerce Search Local Inventory) into a Google Cloud project.
 
 Options:
   --project <PROJECT_ID>   target project (overrides install/config.env)

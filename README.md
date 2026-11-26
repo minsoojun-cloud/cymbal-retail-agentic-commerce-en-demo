@@ -4,7 +4,7 @@
 
 An installable, end-to-end **agentic commerce** demo for a fictional grocery & drugstore chain, **Cymbal Retail**.
 One shopper journey — from the online store on a PC, to the store app on a phone or tablet in the aisle, to the staff
-member who registers a shelf with a photo — all running on **one shared data spine**: **Vertex AI Search for Commerce**
+member who registers a shelf with a photo — all running on **one shared data spine**: **AI Commerce Search**
 (catalog + per-store **Local Inventory**), **BigQuery**, **Gemini on Vertex AI**, an **ADK** agent and a **Commerce MCP server**.
 
 One command installs everything (6 Cloud Run services, a 3,000-product English catalog, 3 stores with floor plans and
@@ -70,7 +70,7 @@ flowchart LR
   end
 
   subgraph Data["Shared data spine"]
-    VAIS["Vertex AI Search for Commerce<br/>3,000 products · facets · autocomplete<br/>Local Inventory per store (S01–S03)"]
+    VAIS["AI Commerce Search<br/>3,000 products · facets · autocomplete<br/>Local Inventory per store (S01–S03)"]
     BQ[("BigQuery<br/>cymbal.* · cymbal_enrichment.*")]
     GEM["Gemini on Vertex AI<br/>(global endpoint)"]
     GCS[("Cloud Storage<br/>catalog import · shelf photos · images")]
@@ -123,7 +123,7 @@ More detail: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 The demo follows one shopper, **Sakura Tanaka** (customer `CR-0001`, a family of four whose kids are allergic to shrimp),
 from her laptop to the store shelf. Then it shows how store staff, store managers and merchandisers keep the shared data
-accurate. All five apps run on Cloud Run and share one data spine: **Vertex AI Search for Commerce** (catalog plus
+accurate. All five apps run on Cloud Run and share one data spine: **AI Commerce Search** (catalog plus
 **Local Inventory** for each store), **BigQuery**, **Gemini**, an **ADK** agent and a **Commerce MCP server**.
 
 
@@ -142,7 +142,7 @@ flowchart LR
   AGENT --> MCP["Commerce MCP server"]
   SITE --> VAIS
   APP --> VAIS
-  MCP --> VAIS["Vertex AI Search for Commerce<br/>catalog + Local Inventory"]
+  MCP --> VAIS["AI Commerce Search<br/>catalog + Local Inventory"]
   MCP --> BQ[("BigQuery<br/>customers, stores, layouts")]
   STAFF["3 · Staff App<br/>shelf photo"] -->|Gemini vision| LI["addLocalInventories"] --> VAIS
   ADMIN["4 · Shelf Manager"] --> BQ
@@ -165,7 +165,7 @@ and the other demo apps.
 |---|---|
 | <img src="docs/images/site-search-pickup-facet.jpg" alt="Search results for curry with Pick up in store facet" width="100%"> | <img src="docs/images/site-store-only-product.jpg" alt="In-store only product detail" width="100%"> |
 
-**Search.** Results come from **Vertex AI Search for Commerce**: dynamic facets (category, brand, deals, features), an
+**Search.** Results come from **AI Commerce Search**: dynamic facets (category, brand, deals, features), an
 **AI Overview** that Gemini writes from the search results, and conversational refinement chips such as *"What type of
 curry are you looking for?"*. The **Pick up in store** facet (Kawasaki Station, Musashi-Kosugi, Shibuya) filters on
 **Local Inventory** with `pickupInStore: ANY("S01")`. The shopper sees only what her nearby store has on the shelf.
@@ -187,9 +187,9 @@ joined from the BigQuery store master. If the LocalInventory call fails, the API
 
 **AI Concierge: dinner set with the shrimp-allergy guard.** Sakura asks for *"tonight's dinner for 4, no shrimp"*. The
 concierge is an **ADK (Agent Development Kit) agent on Gemini**, and it reaches commerce data only through **MCP tools**
-(Commerce Search, customer profile and purchase history, cart, orders, store stock). The agent builds a complete
+(AI Commerce Search, customer profile and purchase history, cart, orders, store stock). The agent builds a complete
 **Autumn Salmon Japanese Set Meal**: main, side, soup and dessert, with a set total. Every item comes from Vertex AI
-Search for Commerce. Tags such as *Family favorite*, *Frequently bought*, *On sale* and *In season* explain why each item
+AI Commerce Search. Tags such as *Family favorite*, *Frequently bought*, *On sale* and *In season* explain why each item
 was picked. The agent **leaves out every item that contains shrimp** because the household profile in BigQuery lists the
 kids' allergy, and its reply says so. One click on **Add the whole set to cart** fills the cart. Voice input and
 read-aloud are also available.
@@ -219,7 +219,7 @@ side.
   symptom**, quick chips, *Ask AI about symptoms or concerns*, *Recipe ideas for tonight*, and coupons *Just for you,
   Sakura*.
 - **Search + live stock**: every result shows **This store · In stock** and the exact **shelf and slot** (e.g. `A01-405`,
-  shelf 4, 5th from left). The **"Live stock · Commerce Search Local Inventory"** badge shows where the data comes from.
+  shelf 4, 5th from left). The **"Live stock · AI Commerce Search Local Inventory"** badge shows where the data comes from.
   OTC medicines show their drug class (e.g. *Designated Class 2*) with the safety notes the law requires. *See stock at
   other stores & online* lists the other stores, and **Buy online** opens the product in the Online Store.
 - **Find on map**: the store floor map (store layouts in BigQuery) draws the walking route from the entrance (*About 72 m
@@ -239,7 +239,7 @@ side.
   disclaimer, and refers the shopper to the pharmacist for pharmacist-only (Class 1) medicines.
 - **"How I answered"**: each answer can be expanded to show the steps and data sources the agent used:
   *Red-flag check* (server-side guardrails) → *Shopper profile* (BigQuery customer profile and purchase history) →
-  *Product search* (Commerce MCP server → Vertex AI Search for Commerce) → *Shelf locations and route* (store layout and
+  *Product search* (Commerce MCP server → AI Commerce Search) → *Shelf locations and route* (store layout and
   shelf map, A* route). Every answer can be traced.
 
 **Tablet layouts** (landscape 1180×820 and portrait 820×1180):
@@ -261,7 +261,7 @@ same time. Kiosks and staff-assisted selling can use the same app with no separa
 |---|---|
 | <img src="docs/images/staff-register-photo.jpg" alt="Register a shelf location from a photo" width="100%"> | <img src="docs/images/staff-confirm-shelf.jpg" alt="Confirm shelf location read by Gemini" width="100%"> |
 
-| 3. Synced to Commerce Search Local Inventory | On a phone |
+| 3. Synced to AI Commerce Search Local Inventory | On a phone |
 |---|:---:|
 | <img src="docs/images/staff-synced-local-inventory.jpg" alt="Shelf location registered and synced" width="100%"> | <img src="docs/images/staff-phone-synced.jpg" alt="Staff App on a phone after sync" width="200"> |
 
@@ -273,7 +273,7 @@ Staff don't type anything:
    map, and staff can tap adjacent slots to adjust.
 3. **Register location**: the app writes the shelf slot to BigQuery and calls Retail **`addLocalInventories`** in real
    time (`shelf_id`, `slot_ids`, `tier`, quantity, availability, `pickup-in-store`). A toast confirms **"Synced to
-   Commerce Search Local Inventory"**. Within seconds, the shopper's Store App and the Online Store show the new shelf.
+   AI Commerce Search Local Inventory"**. Within seconds, the shopper's Store App and the Online Store show the new shelf.
 
 The Stock and History tabs show stock levels and the registration log, which is stored as inventory events in BigQuery.
 
@@ -326,7 +326,7 @@ waiting for human review, the cost per SKU, a decision funnel, and the fill rate
   **CSV live test**, **Google Merchant Center conversational attributes**, a **seasonal image studio** (Gemini image
   models), and **Vertex AI Batch Prediction** with a cost estimate for the full catalog.
 - Approved golden records are written to BigQuery (`cymbal_enrichment`). Optionally, they are **MERGEd** into
-  `cymbal.products` after an automatic backup and re-imported into Vertex AI Search for Commerce. Facets, relevance and
+  `cymbal.products` after an automatic backup and re-imported into AI Commerce Search. Facets, relevance and
   the agent's answers then improve automatically.
 
 ---
@@ -335,7 +335,7 @@ waiting for human review, the cost per SKU, a decision funnel, and the fill rate
 
 | Store | Contents | Loaded by |
 |---|---|---|
-| Vertex AI Search for Commerce `default_catalog` / branch `0` / serving config `default_search` | 3,000 English products (`channel` = `omni` / `store_only` / `online_only`, allergens, dishes, OTC drug class …), facet & attribute config, autocomplete | `50_catalog_import` (FULL import from GCS) |
+| AI Commerce Search `default_catalog` / branch `0` / serving config `default_search` | 3,000 English products (`channel` = `omni` / `store_only` / `online_only`, allergens, dishes, OTC drug class …), facet & attribute config, autocomplete | `50_catalog_import` (FULL import from GCS) |
 | Retail **Local Inventory** | per product × store S01–S03: `quantity`, `availability`, `shelf_id`, `slot_ids`, `tier`, `pickup-in-store` | `50_catalog_import` (`store-navi/scripts/push_local_inventory.py`) and live from the staff app |
 | BigQuery `cymbal` | `products` (+ `channel`), `autocomplete_suggestions`, `stores`, `store_layouts`, `shelf_slots`, `shelf_locations`, `store_inventory`, `store_inventory_events`, `store_coupons`, `store_offers`, `customers`, `purchase_history` | `40_data` (seed) + `50_catalog_import` (products) |
 | BigQuery `cymbal_enrichment` | 63-SKU Enrichment Studio seed: `source_products`, `enriched_attributes`, `golden_records`, `gmc_conversational`, `sku_extras`, `batch_jobs`, plus runtime tables (`review_log`, `token_usage`, `product_images`, `doc_extractions`) | `40_data` |
@@ -352,7 +352,7 @@ Seed files live in [`seed/`](seed/) and contain placeholders such as `__SITE_BAS
 
 **Prerequisites**: a Google Cloud project with billing enabled, `Owner` (or equivalent) on it, and a shell with
 `gcloud` (incl. `bq`), `python3` ≥ 3.9 and `curl` — Cloud Shell works. A full install takes about **35–50 minutes**
-(Cloud Build of 6 services + Retail import + Local Inventory push).
+(Cloud Build of 6 services + AI Commerce Search import + Local Inventory push).
 
 ### Option A — with Jetski (or any coding agent)
 
@@ -388,9 +388,9 @@ The installer runs these steps (each can be re-run alone with `--steps`, or resu
 | `10_apis` | enables Cloud Run, Cloud Build, Artifact Registry, Retail, Vertex AI, BigQuery, Storage, Speech, TTS … |
 | `15_models` | checks the Gemini models answer in your project; records fallbacks in `install/.state/models.env` |
 | `20_iam` | runtime service account `<prefix>-runtime` + roles; Cloud Build / source-deploy permissions |
-| `30_retail` | accepts the Retail data-use terms, enrolls *Search for commerce*, Retail service-agent roles |
+| `30_retail` | accepts the AI Commerce Search data-use terms, enrolls *AI Commerce Search*, Retail service-agent roles |
 | `40_data` | buckets, BigQuery datasets, renders and loads the BigQuery seed (stores, layouts, shelves, inventory, customers, purchase history, enrichment) |
-| `50_catalog_import` | catalog → GCS → BigQuery `products` → Retail FULL import → attributes config → autocomplete → Local Inventory for S01–S03 |
+| `50_catalog_import` | catalog → GCS → BigQuery `products` → AI Commerce Search FULL import → attributes config → autocomplete → Local Inventory for S01–S03 |
 | `60_backend` | deploys the private MCP server, then the ADK agent |
 | `70_apps` | deploys the online store, store app, staff app and Enrichment Studio (in parallel) |
 | `80_public` | makes the 4 apps public: `allUsers` invoker, or — in orgs with *Domain Restricted Sharing* — `--no-invoker-iam-check` |
@@ -435,8 +435,8 @@ Details: [docs/CUSTOMIZE.md](docs/CUSTOMIZE.md).
 | Symptom | Fix |
 |---|---|
 | `80_public` reports HTTP 401/403 | Your org blocks `allUsers` (*Domain Restricted Sharing*). The installer falls back to `--no-invoker-iam-check`; if that is blocked too (`run.managed.requireInvokerIam`), allow public access in the Cloud Console, or use `gcloud run services proxy <prefix>-site --region <region> --port 8080`. |
-| `30_retail` acceptTerms / enroll fails | Open *Search for commerce* in the Cloud Console once and accept the data-use terms, then `--from 30_retail`. |
-| Search returns nothing right after install | The Retail import / index takes a few minutes. Re-check with `python3 tests/smoke_install.py` after `source config.env`. |
+| `30_retail` acceptTerms / enroll fails | Open *AI Commerce Search* in the Cloud Console once and accept the data-use terms, then `--from 30_retail`. |
+| Search returns nothing right after install | The AI Commerce Search import / index takes a few minutes. Re-check with `python3 tests/smoke_install.py` after `source config.env`. |
 | "Available in stores" shows `source: bigquery` | Local Inventory not pushed yet: `source config.env && python3 store-navi/scripts/push_local_inventory.py --force`. |
 | Gemini 404 / permission errors | `--from 15_models` records working fallbacks; or pin models in `install/config.env`. |
 | A Cloud Build fails | See `install/.state/logs/<app>.log`, fix, and re-run `--steps 70_apps` (or `--from 60_backend`). |
@@ -455,7 +455,7 @@ store-navi/              cymbal-store-app & cymbal-store-staff (one image, APP_M
 data-enrichment/         cymbal-data-enrichment: Product Data Enrichment Studio
 shared/mcp_server/       cymbal-commerce-mcp: Commerce MCP server (private)
 shared/adk_agent/        cymbal-adk-agent: ADK AI Concierge (private)
-shared/catalog/          Retail import, attribute config, autocomplete, verification scripts
+shared/catalog/          AI Commerce Search import, attribute config, autocomplete, verification scripts
 seed/                    catalog (3,000 products), personas, BigQuery seed (cymbal, cymbal_enrichment)
 tests/                   smoke_install.py (post-install), unit tests, brand/language guard
 docs/                    architecture, data, customization, troubleshooting, README images

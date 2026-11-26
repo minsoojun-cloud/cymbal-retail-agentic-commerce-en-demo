@@ -145,7 +145,7 @@
     if (c === 'online_only') return '<span class="sn-chan sn-chan--online" title="Not on store shelves">Online only</span>';
     return '';
   }
-  const SOURCE_LABEL = { retail_local_inventory: 'Live stock · Commerce Search Local Inventory', bigquery: 'Store stock · BigQuery', local: 'Store stock · demo data' };
+  const SOURCE_LABEL = { retail_local_inventory: 'Live stock · AI Commerce Search Local Inventory', bigquery: 'Store stock · BigQuery', local: 'Store stock · demo data' };
   function sourceBadge(source) {
     if (!source) return '';
     const live = source === 'retail_local_inventory';

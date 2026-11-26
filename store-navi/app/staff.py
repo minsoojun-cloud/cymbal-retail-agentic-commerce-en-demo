@@ -630,7 +630,7 @@ def push_retail_local_inventory(store_id: str, product_id: str, gondola_id: str,
 
     Returns a small status dict that the staff UI shows as a toast
     (`status`: synced | submitted | skipped | failed)."""
-    out = {"status": "skipped", "place_id": store_id, "product_id": product_id, "target": "Commerce Search Local Inventory"}
+    out = {"status": "skipped", "place_id": store_id, "product_id": product_id, "target": "AI Commerce Search Local Inventory"}
     flag = os.environ.get("RETAIL_LOCAL_INVENTORY", "1")
     if flag == "0" or (data_mode() == "local" and flag != "force"):  # "force": push even from a local-data dev server
         out["reason"] = "RETAIL_LOCAL_INVENTORY=0" if flag == "0" else "local mode"
@@ -673,7 +673,7 @@ def _push_with_timeout(*args, timeout: float = 4.0) -> dict:
     t.start()
     t.join(timeout)
     return box.get("r") or {"status": "submitted", "place_id": args[0], "product_id": args[1],
-                            "target": "Commerce Search Local Inventory"}
+                            "target": "AI Commerce Search Local Inventory"}
 
 
 # ---------------------------------------------------------------------------

@@ -20,7 +20,7 @@ project"*. It follows [`AGENTS.md`](AGENTS.md) and the skill
 |---|---|
 | Cloud Run, private | `<prefix>-commerce-mcp` (Commerce MCP server), `<prefix>-adk-agent` (ADK AI Concierge) |
 | Cloud Run, public | `<prefix>-site` (online store), `<prefix>-store-app` (Store App), `<prefix>-store-staff` (Staff App + `/admin` Shelf Manager), `<prefix>-data-enrichment` (Enrichment Studio) |
-| Vertex AI Search for Commerce | `default_catalog`, branch `0`: 3,000 products, attribute config, autocomplete, Local Inventory for stores S01 to S03 |
+| AI Commerce Search | `default_catalog`, branch `0`: 3,000 products, attribute config, autocomplete, Local Inventory for stores S01 to S03 |
 | BigQuery | dataset `cymbal` (products, stores, layouts, shelves, inventory, customers, purchase history, coupons, offers) and `cymbal_enrichment` (Enrichment Studio) |
 | Cloud Storage | `<project>-catalog`, `<project>-store-navi`, `products_images_<project>` |
 | IAM | runtime service account `<prefix>-runtime@<project>.iam.gserviceaccount.com` |
@@ -34,7 +34,7 @@ project"*. It follows [`AGENTS.md`](AGENTS.md) and the skill
 | Tool | Used for | Check |
 |---|---|---|
 | Google Cloud SDK (`gcloud`, `bq`) | create resources, load BigQuery, deploy Cloud Run from source | `gcloud --version && bq version` |
-| Python 3.9 or later (`python3`) | seed rendering and loading, model probe, Retail import, smoke test (standard library only) | `python3 --version` |
+| Python 3.9 or later (`python3`) | seed rendering and loading, model probe, AI Commerce Search import, smoke test (standard library only) | `python3 --version` |
 | `curl` | Retail REST calls, health checks | `curl --version` |
 
 Docker is **not** needed: every service is built by Cloud Build (`gcloud run deploy --source`). Git LFS is not needed
@@ -233,15 +233,15 @@ a model yourself.
   `logging.logWriter`. Grants the Cloud Build SA `cloudbuild.builds.builder`, `run.admin` and `iam.serviceAccountUser`.
   Lets both act as the runtime SA, and creates the Artifact Registry repository `cloud-run-source-deploy`.
 
-### Step 5: `30_retail`: Vertex AI Search for Commerce
+### Step 5: `30_retail`: AI Commerce Search
 
 ```bash
 ./install/install.sh --steps 30_retail
 ```
 
-Accepts the Retail data-use terms (`retailProject:acceptTerms`), enrolls `SOLUTION_TYPE_SEARCH`, creates the Retail
+Accepts the AI Commerce Search data-use terms (`retailProject:acceptTerms`), enrolls `SOLUTION_TYPE_SEARCH`, creates the Retail
 service agent, and grants it BigQuery `dataViewer` and `jobUser` (it needs them for the autocomplete import). If
-`acceptTerms` fails, accept the terms once in the Cloud Console (**Search for commerce > Get started**), then re-run the
+`acceptTerms` fails, accept the terms once in the Cloud Console (**AI Commerce Search > Get started**), then re-run the
 step.
 
 ### Step 6: `40_data`: buckets and BigQuery seed
@@ -261,7 +261,7 @@ bq ls "${PROJECT_ID}:cymbal"; bq ls "${PROJECT_ID}:cymbal_enrichment"
    `cymbal_enrichment` tables (63-SKU Enrichment Studio seed). Each table uses its exported `*.schema.json`. See
    [docs/DATA.md](docs/DATA.md).
 
-### Step 7: `50_catalog_import`: catalog, Retail import, Local Inventory
+### Step 7: `50_catalog_import`: catalog, AI Commerce Search import, Local Inventory
 
 ```bash
 ./install/install.sh --steps 50_catalog_import
@@ -354,7 +354,7 @@ source config.env && python3 tests/smoke_install.py --id-token
 - All 4 apps return HTTP 200 on `/` and `/api/health`.
 - Online store: searching `curry` returns products, and `/api/products/<id>/stores` answers from
   `retail_local_inventory`.
-- Store app: 3,000 products are on the Retail engine, and availability at S01 comes from Retail Local Inventory.
+- Store app: 3,000 products are on the Retail engine, and availability at S01 comes from AI Commerce Search Local Inventory.
 - Staff app: the staff router is enabled and the manager console `/admin` is reachable.
 - Enrichment Studio: the 63 seeded SKUs are present.
 
@@ -392,13 +392,13 @@ Enrichment Studio          : https://<prefix>-data-enrichment-...
 # Delete only the 6 Cloud Run services (BigQuery, buckets and the service account are kept)
 ./install/uninstall.sh
 
-# Also delete the BigQuery datasets and the Retail products (branch 0), the 3 buckets and the runtime SA
+# Also delete the BigQuery datasets and the AI Commerce Search products (branch 0), the 3 buckets and the runtime SA
 ./install/uninstall.sh --all
 ```
 
 | Flag | Also deletes |
 |---|---|
-| `--data` | BigQuery datasets `cymbal` and `cymbal_enrichment`, and all Retail products in `default_catalog` branch `0` (purge) |
+| `--data` | BigQuery datasets `cymbal` and `cymbal_enrichment`, and all AI Commerce Search products in `default_catalog` branch `0` (purge) |
 | `--buckets` | The 3 Cloud Storage buckets |
 | `--sa` | The runtime service account |
 | `--all` | All of the above |

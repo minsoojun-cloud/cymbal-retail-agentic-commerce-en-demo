@@ -234,7 +234,7 @@ def test_register_slots_updates_customer(client, demo, mods, scenario):
         assert pid in json.dumps(cell), txt[:300]
     regs = client.get("/api/staff/registrations?store_id=S01").json()["registrations"]
     assert regs and regs[0]["product_id"] == pid and regs[0]["slot_ids"] == slots and regs[0]["registered_by"] == "Tester"
-    li = r.json()["local_inventory"]  # Commerce Search Local Inventory push status (local mode → skipped)
+    li = r.json()["local_inventory"]  # AI Commerce Search Local Inventory push status (local mode → skipped)
     assert li["place_id"] == "S01" and li["product_id"] == pid and li["status"] in ("skipped", "synced", "submitted", "failed")
 
 

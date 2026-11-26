@@ -1,6 +1,6 @@
 /* Cymbal Staff service worker: caches the app shell; network-first for everything (API never served stale
    unless offline, and API responses are not cached). */
-const CACHE = "cymbal-staff-en-v14-1";
+const CACHE = "cymbal-staff-en-v14-2";
 const SHELL = [
   "/", "/config.js", "/manifest.webmanifest",
   "/static/staff/css/staff.css", "/static/staff/js/staff.js",

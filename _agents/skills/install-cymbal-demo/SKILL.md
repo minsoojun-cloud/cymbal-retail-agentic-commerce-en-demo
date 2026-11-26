@@ -1,6 +1,6 @@
 ---
 name: install-cymbal-demo
-description: Safely install the complete Cymbal Retail Agentic Commerce demo (English edition) into a Google Cloud project the user names. It installs 2 private backends, 4 public apps, a 3,000-product Vertex AI Search for Commerce catalog with Local Inventory, BigQuery data and Cloud Storage buckets. Use when the user asks to install, deploy or set up this demo, or to re-run or resume a failed install. Verifies the result with tests/smoke_install.py and reports the URLs.
+description: Safely install the complete Cymbal Retail Agentic Commerce demo (English edition) into a Google Cloud project the user names. It installs 2 private backends, 4 public apps, a 3,000-product AI Commerce Search catalog with Local Inventory, BigQuery data and Cloud Storage buckets. Use when the user asks to install, deploy or set up this demo, or to re-run or resume a failed install. Verifies the result with tests/smoke_install.py and reports the URLs.
 ---
 
 # Install skill for the Cymbal Retail demo (`install-cymbal-demo`)
@@ -66,7 +66,7 @@ step. If a step fails, the installer prints the command to resume it. Read the e
 | 4 | `20_iam` | Creates the `${SERVICE_PREFIX}-runtime` SA and its roles, and gives the build SAs the source-deploy permissions |
 | 5 | `30_retail` | Retail `acceptTerms`, `enrollSolution` (Search), and the Retail service agent with BigQuery read access |
 | 6 | `40_data` | Creates 3 buckets, renders the seed for the project, and loads the BigQuery `cymbal` and `cymbal_enrichment` seed |
-| 7 | `50_catalog_import` | Loads 3,000 products to BigQuery, runs the Retail FULL import, applies attributes and autocomplete, and pushes Local Inventory for S01 to S03 |
+| 7 | `50_catalog_import` | Loads 3,000 products to BigQuery, runs the AI Commerce Search FULL import, applies attributes and autocomplete, and pushes Local Inventory for S01 to S03 |
 | 8 | `60_backend` | Deploys `<prefix>-commerce-mcp`, then `<prefix>-adk-agent` (both private) |
 | 9 | `70_apps` | Deploys `<prefix>-site`, `-store-app`, `-store-staff` and `-data-enrichment` in parallel (logs in `install/.state/logs/`) |
 | 10 | `80_public` | Makes the 4 apps publicly reachable (see Step 4) |
@@ -132,7 +132,7 @@ Never commit `install/config.env` or `install/.state/`, and never paste project 
 
 ```bash
 ./install/uninstall.sh            # delete the 6 Cloud Run services only
-./install/uninstall.sh --all      # also BigQuery datasets + Retail products (purge), 3 buckets, runtime SA
+./install/uninstall.sh --all      # also BigQuery datasets + AI Commerce Search products (purge), 3 buckets, runtime SA
 ```
 
 The script asks the user to type the project id. Do not pass `-y` unless the user explicitly asked for it.

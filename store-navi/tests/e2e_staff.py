@@ -156,7 +156,7 @@ def run_device(pw, browser, base: str, dev: str, ph: dict, report: list):
     expect(page.locator("#stage-4")).to_have_class("stage active", timeout=30000)
     expect(page.locator("#done-loc")).to_contain_text(slots[0])
     expect(page.locator("#done-elev .slot.sel")).to_have_count(len(slots))
-    expect(page.locator("#done-sync")).to_contain_text("Commerce Search Local Inventory", timeout=10000)
+    expect(page.locator("#done-sync")).to_contain_text("AI Commerce Search Local Inventory", timeout=10000)
     check(page, dev, "4_done", report)
     av = get_json(f"{base}/api/products/{pid}/availability?store_id={sid}")["current"]["shelf"]
     assert av["slot_ids"] == slots, av

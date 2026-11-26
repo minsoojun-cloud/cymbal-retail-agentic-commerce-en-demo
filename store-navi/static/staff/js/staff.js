@@ -40,16 +40,16 @@
     clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove("show"), 2800);
     if (navigator.vibrate) try { navigator.vibrate(err ? [30, 40, 30] : 15); } catch { /* ignore */ }
   }
-  /** Toast after a shelf registration: Retail API addLocalInventories (Commerce Search Local Inventory) result. */
+  /** Toast after a shelf registration: Retail API addLocalInventories (AI Commerce Search Local Inventory) result. */
   function syncToast(li, loc) {
     if (!li) return;
     const p = (loc && loc.product) || S.selProduct || {};
     const where = `${esc(storeName(li.place_id || (loc && loc.store_id)))} (${esc(li.place_id || "")})`;
     const what = esc(p.title || li.product_id || "");
     let head, cls = "";
-    if (li.status === "synced" || li.status === "submitted") head = "Synced to Commerce Search Local Inventory";
-    else if (li.status === "skipped") { head = "Saved — Commerce Search Local Inventory sync skipped"; cls = "warn"; }
-    else { head = "Saved — Commerce Search Local Inventory sync failed"; cls = "err"; }
+    if (li.status === "synced" || li.status === "submitted") head = "Synced to AI Commerce Search Local Inventory";
+    else if (li.status === "skipped") { head = "Saved — AI Commerce Search Local Inventory sync skipped"; cls = "warn"; }
+    else { head = "Saved — AI Commerce Search Local Inventory sync failed"; cls = "err"; }
     const t = $("#toast");
     t.innerHTML = `<span class="toast__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM10 17l-3.5-3.5 1.41-1.41L10 14.17 15.18 9l1.41 1.41L10 17z"/></svg></span>`
       + `<span class="toast__txt"><b>${head}</b><small>${what} • ${where}${li.reason ? ` • ${esc(li.reason)}` : ""}</small></span>`;

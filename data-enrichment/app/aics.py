@@ -1,4 +1,4 @@
-"""Safe updates to the source catalog table `cymbal.products` (Retail API product schema, used by Vertex AI Search for commerce).
+"""Safe updates to the source catalog table `cymbal.products` (Retail API product schema, used by AI Commerce Search).
 
 Safety:
 1. A daily zero-copy CLONE backup `<table_name>_backup_YYYYMMDD` is created before the first write of the day.

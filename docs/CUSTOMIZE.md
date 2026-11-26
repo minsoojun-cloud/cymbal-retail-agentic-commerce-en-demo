@@ -84,7 +84,7 @@ bash data-enrichment/deploy.sh
 
 The catalog is one file: **`seed/catalog/products_retail.jsonl`**. It has one Retail `Product` JSON per line
 (`type: PRIMARY`, `languageCode: "en"`, `priceInfo.currencyCode: "JPY"`, tax-included prices). The installer renders it,
-loads BigQuery `cymbal.products`, runs a Retail FULL import, and the apps bundle it at deploy time.
+loads BigQuery `cymbal.products`, runs a AI Commerce Search FULL import, and the apps bundle it at deploy time.
 
 ### 3.1 Product record
 
@@ -144,7 +144,7 @@ python3 shared/catalog/validate_jsonl.py seed/catalog/products_retail.jsonl
 
 1. Re-renders the catalog.
 2. Reloads `cymbal.products`.
-3. Runs the Retail FULL import, which removes products that are no longer in the file.
+3. Runs the AI Commerce Search FULL import, which removes products that are no longer in the file.
 4. Re-applies the attribute config and autocomplete.
 5. Re-pushes Local Inventory.
 6. Redeploys the backends and apps, then verifies.
@@ -197,7 +197,7 @@ There are three stores: **S01** Cymbal Retail Kawasaki Station, **S02** Musashi-
 - **Shelf Manager** (`<staff URL>/admin`, PC): draw and move shelves, set shelf numbers, section names, zones, tiers and
   slot intervals, then **Review & publish**. The layout is versioned in BigQuery (`store_layouts`, `shelf_slots`).
 - **Staff App** (`<staff URL>`): register a product on a shelf from a photo. Each registration is written to BigQuery
-  `shelf_locations` (`source='staff'`) and pushed to Retail Local Inventory immediately.
+  `shelf_locations` (`source='staff'`) and pushed to AI Commerce Search Local Inventory immediately.
 
 Re-running the installer keeps staff registrations. A re-run of `40_data` resets published layouts to the seed.
 
