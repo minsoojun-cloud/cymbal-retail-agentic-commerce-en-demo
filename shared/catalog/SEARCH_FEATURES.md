@@ -1,7 +1,7 @@
-# AI Commerce Search features: what works on `nov-11-11-retail-event-demo` (probed 2026-11-04)
+# AI Commerce Search features: what works on `<PROJECT_ID>` (probed 2026-11-04)
 
-Base: `https://retail.googleapis.com/v2alpha/projects/904006867101/locations/global/catalogs/default_catalog`
-Headers: `Authorization: Bearer $(gcloud auth print-access-token)`, `X-Goog-User-Project: nov-11-11-retail-event-demo`.
+Base: `https://retail.googleapis.com/v2alpha/projects/<PROJECT_NUMBER>/locations/global/catalogs/default_catalog`
+Headers: `Authorization: Bearer $(gcloud auth print-access-token)`, `X-Goog-User-Project: <PROJECT_ID>`.
 The runtime SA `cymbal-runtime@…` has `roles/retail.editor`.
 Re-run probes: `source config.env && python3 shared/catalog/setup_search_features.py --steps probe`. Raw responses go to the
 catalog scratch dir (`probe_*.json`).
@@ -49,7 +49,7 @@ catalog scratch dir (`probe_*.json`).
 ```
 Response (real excerpt):
 ```json
-{"results": [{"id": "4981294385812", "product": {"name": "projects/904006867101/locations/global/catalogs/default_catalog/branches/0/products/4981294385812"}}],
+{"results": [{"id": "4981294385812", "product": {"name": "projects/<PROJECT_NUMBER>/locations/global/catalogs/default_catalog/branches/0/products/4981294385812"}}],
  "facets": [
    {"key": "attributes.top_category", "values": [{"value": "お惣菜・ミールキット", "count": "27"}, {"value": "キッチン・調理器具", "count": "13"}]},
    {"key": "price", "values": [{"interval": {"maximum": 300}, "count": "18"}, {"interval": {"minimum": 300, "maximum": 1000}, "count": "34"}]}],
