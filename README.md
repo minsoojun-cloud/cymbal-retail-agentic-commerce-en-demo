@@ -10,11 +10,11 @@ member who registers a shelf with a photo — all running on **one shared data s
 One command installs everything (6 Cloud Run services, a 3,000-product English catalog, 3 stores with floor plans and
 shelf maps, personas, purchase history and the Enrichment Studio seed) into **your** Google Cloud project.
 
-[![Demo video (4:26)](docs/images/video-thumbnail.jpg)](https://github.com/minsoojun-cloud/cymbal-retail-agentic-commerce-en-demo/releases/download/v1.0.0/cymbal_agentic_commerce_demo_en.mp4)
+[![Demo video (4:26)](docs/images/video-thumbnail.jpg)](https://github.com/minsoojun-cloud/cymbal-retail-agentic-commerce-en-demo/releases/download/v1.0.1/cymbal_agentic_commerce_demo_en.mp4)
 
-**▶ [Demo video (4:26)](https://github.com/minsoojun-cloud/cymbal-retail-agentic-commerce-en-demo/releases/download/v1.0.0/cymbal_agentic_commerce_demo_en.mp4)**
-· [English subtitles (.vtt)](https://github.com/minsoojun-cloud/cymbal-retail-agentic-commerce-en-demo/releases/download/v1.0.0/cymbal_agentic_commerce_demo_en.vtt)
-· [Release v1.0.0](https://github.com/minsoojun-cloud/cymbal-retail-agentic-commerce-en-demo/releases/tag/v1.0.0)
+**▶ [Demo video (4:26)](https://github.com/minsoojun-cloud/cymbal-retail-agentic-commerce-en-demo/releases/download/v1.0.1/cymbal_agentic_commerce_demo_en.mp4)**
+· [English subtitles (.vtt)](https://github.com/minsoojun-cloud/cymbal-retail-agentic-commerce-en-demo/releases/download/v1.0.1/cymbal_agentic_commerce_demo_en.vtt)
+· [Release v1.0.1](https://github.com/minsoojun-cloud/cymbal-retail-agentic-commerce-en-demo/releases/tag/v1.0.1)
 
 ---
 
