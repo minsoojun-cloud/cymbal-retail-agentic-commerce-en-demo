@@ -1,0 +1,72 @@
+{
+ "items": [
+  {
+   "sku": "CSV-FOOD-001",
+   "title": "Cymbal Domestic Chicken Tender Tatsuta-age (Frozen)",
+   "brand": "Cymbal",
+   "category": "Frozen > Frozen Sides > Karaage & Tatsuta-age",
+   "description": "Tender domestic chicken breast strips marinated in a soy-sauce seasoning, coated in potato starch and fried until crisp. Just microwave straight from frozen (about 2 min 30 sec at 600W). Great for bento boxes or as an extra dinner side. Net weight: 300g (about 12 pcs) / Ingredient origin: Domestic / Storage: keep at -18°C or below / Allergens: wheat, soybean, chicken / Best before: 12 months from manufacture",
+   "price": 498.0,
+   "product_url": "https://example.com/cymbal/p/CSV-FOOD-001",
+   "image_url": "",
+   "group": "prepared",
+   "raw_attributes": {},
+   "group_label": "Deli, Frozen & Staples",
+   "fill_before": 0.0,
+   "raw_attr_count": 0
+  },
+  {
+   "sku": "CSV-FOOD-002",
+   "title": "Hokkaido Autumn Salmon Fillets, Lightly Salted, 4 fillets",
+   "brand": "",
+   "category": "Seafood > Salmon > Salted Salmon",
+   "description": "Rich, fatty Hokkaido autumn salmon fillets, lightly salted. Just grill for breakfast or bento. In season: September–November. 4 fillets (about 320g). Keep refrigerated (10°C or below).",
+   "price": 698.0,
+   "product_url": "https://example.com/cymbal/p/CSV-FOOD-002",
+   "image_url": "",
+   "group": "fresh",
+   "raw_attributes": {
+    "origin": "Hokkaido"
+   },
+   "group_label": "Fresh (Produce, Meat, Seafood)",
+   "fill_before": 0.111,
+   "raw_attr_count": 1
+  },
+  {
+   "sku": "CSV-GM-003",
+   "title": "Cymbal Lightweight Induction-Ready Deep Frying Pan 26cm",
+   "brand": "Cymbal",
+   "category": "Kitchen > Frying Pans & Pots > Frying Pans",
+   "description": "A lightweight deep frying pan with a cast-aluminum body and titanium-reinforced fluororesin coating that resists sticking. Stir-fry or simmer, all in one pan. Works on induction and gas (200V induction OK). Dishwasher safe. Size: 26cm diameter × 7.5cm deep, weight approx. 780g.",
+   "price": 2980.0,
+   "product_url": "https://example.com/cymbal/p/CSV-GM-003",
+   "image_url": "",
+   "group": "kitchen",
+   "raw_attributes": {
+    "material": "Aluminum alloy (cast), fluororesin coating",
+    "color": "Brown"
+   },
+   "group_label": "Kitchen & Cookware",
+   "fill_before": 0.167,
+   "raw_attr_count": 2
+  }
+ ],
+ "count": 3,
+ "columns": [
+  "sku",
+  "title",
+  "brand",
+  "category",
+  "description",
+  "price",
+  "product_url",
+  "image_url",
+  "size",
+  "origin",
+  "storage_type",
+  "allergens",
+  "material",
+  "color"
+ ],
+ "csv_text": "﻿sku,title,brand,category,description,price,product_url,image_url,size,origin,storage_type,allergens,material,color\r\nCSV-FOOD-001,Cymbal Domestic Chicken Tender Tatsuta-age (Frozen),Cymbal,Frozen > Frozen Sides > Karaage & Tatsuta-age,\"Tender domestic chicken breast strips marinated in a soy-sauce seasoning, coated in potato starch and fried until crisp. Just microwave straight from frozen (about 2 min 30 sec at 600W). Great for bento boxes or as an extra dinner side. Net weight: 300g (about 12 pcs) / Ingredient origin: Domestic / Storage: keep at -18°C or below / Allergens: wheat, soybean, chicken / Best before: 12 months from manufacture\",498,https://example.com/cymbal/p/CSV-FOOD-001,,,,,,,\r\nCSV-FOOD-002,\"Hokkaido Autumn Salmon Fillets, Lightly Salted, 4 fillets\",,Seafood > Salmon > Salted Salmon,\"Rich, fatty Hokkaido autumn salmon fillets, lightly salted. Just grill for breakfast or bento. In season: September–November. 4 fillets (about 320g). Keep refrigerated (10°C or below).\",698,https://example.com/cymbal/p/CSV-FOOD-002,,,Hokkaido,,,,\r\nCSV-GM-003,Cymbal Lightweight Induction-Ready Deep Frying Pan 26cm,Cymbal,Kitchen > Frying Pans & Pots > Frying Pans,\"A lightweight deep frying pan with a cast-aluminum body and titanium-reinforced fluororesin coating that resists sticking. Stir-fry or simmer, all in one pan. Works on induction and gas (200V induction OK). Dishwasher safe. Size: 26cm diameter × 7.5cm deep, weight approx. 780g.\",2980,https://example.com/cymbal/p/CSV-GM-003,,,,,,\"Aluminum alloy (cast), fluororesin coating\",Brown\r\n"
+}

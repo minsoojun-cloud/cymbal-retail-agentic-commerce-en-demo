@@ -1,0 +1,91 @@
+[
+ {
+  "coupon_id": "CP-0001",
+  "customer_id": "CR-0001",
+  "store_id": null,
+  "title": "お子さまのかぜ対策 200円引き",
+  "description": "子ども用かぜ薬・冷却シート 1,000円以上で",
+  "discount_type": "yen",
+  "discount_value": 200,
+  "target": {
+   "categories": [
+    "医薬品・ヘルスケア > かぜ薬",
+    "ビューティー・パーソナルケア > 衛生・救急用品"
+   ],
+   "product_ids": []
+  },
+  "valid_until": "2026-12-31",
+  "reason": "よく購入される冷却シートに",
+  "color": "#1a73e8"
+ },
+ {
+  "coupon_id": "CP-0002",
+  "customer_id": "CR-0002",
+  "store_id": null,
+  "title": "湿布・外用薬 15%OFF",
+  "description": "外用薬・湿布が全品対象",
+  "discount_type": "percent",
+  "discount_value": 15,
+  "target": {
+   "categories": [
+    "医薬品・ヘルスケア > 外用薬・湿布"
+   ],
+   "product_ids": []
+  },
+  "valid_until": "2026-12-31",
+  "reason": "よく購入される湿布に",
+  "color": "#188038"
+ },
+ {
+  "coupon_id": "CP-0003",
+  "customer_id": "CR-0003",
+  "store_id": null,
+  "title": "敏感肌スキンケア ポイント5倍",
+  "description": "低刺激スキンケアが対象",
+  "discount_type": "points",
+  "discount_value": 5,
+  "target": {
+   "categories": [
+    "ビューティー・パーソナルケア > スキンケア"
+   ],
+   "product_ids": []
+  },
+  "valid_until": "2026-12-31",
+  "reason": "いつもの敏感肌ケアに",
+  "color": "#c5221f"
+ },
+ {
+  "coupon_id": "CP-0101",
+  "customer_id": null,
+  "store_id": "S01",
+  "title": "川崎駅前店 冬のかぜ対策 10%OFF",
+  "description": "マスク・のど飴・冷却シート",
+  "discount_type": "percent",
+  "discount_value": 10,
+  "target": {
+   "categories": [
+    "日用品・キッチン消耗品 > 衛生用品"
+   ],
+   "product_ids": []
+  },
+  "valid_until": "2026-12-15",
+  "reason": "",
+  "color": "#f29900"
+ },
+ {
+  "coupon_id": "CP-0201",
+  "customer_id": null,
+  "store_id": null,
+  "title": "Cymbal Pay 決済でポイント2倍",
+  "description": "全店・全商品",
+  "discount_type": "points",
+  "discount_value": 2,
+  "target": {
+   "categories": [],
+   "product_ids": []
+  },
+  "valid_until": "2026-12-31",
+  "reason": "",
+  "color": "#5f6368"
+ }
+]

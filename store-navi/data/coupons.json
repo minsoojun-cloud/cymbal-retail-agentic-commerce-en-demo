@@ -1,0 +1,267 @@
+[
+ {
+  "coupon_id": "CP-WINTER-01",
+  "customer_id": null,
+  "store_id": null,
+  "title": "Cold and dryness prevention support coupon",
+  "description": "10% OFF cooling sheets, masks, and throat care products",
+  "discount_type": "percent",
+  "discount_value": 10,
+  "target": {
+   "categories": [
+    "Beauty & Personal Care > Hygiene & First Aid > Cooling Patches",
+    "Beauty & Personal Care > Hygiene & First Aid > Kids Cooling Patches",
+    "Household > Hygiene Products > Face Masks",
+    "Household > Hygiene Products > Kids' Face Masks",
+    "Health & Medicine > Throat & Cough > Medicated Throat Drops"
+   ],
+   "product_ids": []
+  },
+  "valid_until": "2026-12-15",
+  "reason": "Winter cold and dryness prevention season",
+  "color": "#1a73e8"
+ },
+ {
+  "coupon_id": "CP-WINTER-02",
+  "customer_id": null,
+  "store_id": null,
+  "title": "15% OFF 2 or more moisturizing care items",
+  "description": "15% OFF when buying 2 or more hand creams, lip balms, or body creams",
+  "discount_type": "percent",
+  "discount_value": 15,
+  "target": {
+   "categories": [
+    "Beauty & Personal Care > Body Care > Hand Cream",
+    "Beauty & Personal Care > Skin Care > Lip Care",
+    "Beauty & Personal Care > Body Care > Body Cream",
+    "Beauty & Personal Care > Body Care > Heel Cream"
+   ],
+   "product_ids": []
+  },
+  "valid_until": "2026-12-15",
+  "reason": "For the dry air season",
+  "color": "#e91e63"
+ },
+ {
+  "coupon_id": "CP-DRINK-01",
+  "customer_id": null,
+  "store_id": null,
+  "title": "¥50 off oral rehydration solutions and sports drinks",
+  "description": "¥50 off per bottle of eligible oral rehydration solutions and sports drinks",
+  "discount_type": "yen",
+  "discount_value": 50,
+  "target": {
+   "categories": [
+    "Beverages > Sports Drinks"
+   ],
+   "product_ids": []
+  },
+  "valid_until": "2026-11-30",
+  "reason": "Prepare for hydration during fevers",
+  "color": "#00acc1"
+ },
+ {
+  "coupon_id": "CP-S01-01",
+  "customer_id": null,
+  "store_id": "S01",
+  "title": "Cymbal Retail Kawasaki Station Night Bonus Points",
+  "description": "Double points for shopping after 19:00",
+  "discount_type": "points",
+  "discount_value": 2,
+  "target": {
+   "categories": [],
+   "product_ids": []
+  },
+  "valid_until": "2026-12-15",
+  "reason": "For your commute home shopping",
+  "color": "#f9ab00"
+ },
+ {
+  "coupon_id": "CP-S02-01",
+  "customer_id": null,
+  "store_id": "S02",
+  "title": "Cymbal Retail Musashi-Kosugi 20% OFF frozen foods",
+  "description": "20% OFF all frozen foods and ice cream (Musashi-Kosugi store only)",
+  "discount_type": "percent",
+  "discount_value": 20,
+  "target": {
+   "categories": [
+    "Frozen"
+   ],
+   "product_ids": []
+  },
+  "valid_until": "2026-11-30",
+  "reason": "Cymbal Retail Musashi-Kosugi exclusive: Groceries also available",
+  "color": "#34a853"
+ },
+ {
+  "coupon_id": "CP-S03-01",
+  "customer_id": null,
+  "store_id": "S03",
+  "title": "Cymbal Retail Shibuya 10% OFF skincare",
+  "description": "10% OFF all skincare (Shibuya store only)",
+  "discount_type": "percent",
+  "discount_value": 10,
+  "target": {
+   "categories": [
+    "Beauty & Personal Care > Skin Care"
+   ],
+   "product_ids": []
+  },
+  "valid_until": "2026-12-15",
+  "reason": "Beauty flagship store exclusive",
+  "color": "#ea4335"
+ },
+ {
+  "coupon_id": "CP-CR0001-01",
+  "customer_id": "CR-0001",
+  "store_id": null,
+  "title": "¥100 off children's cold prevention",
+  "description": "¥100 off children's cooling sheets, masks, and kids' beverages (over ¥1,000)",
+  "discount_type": "yen",
+  "discount_value": 100,
+  "target": {
+   "categories": [
+    "Beauty & Personal Care > Hygiene & First Aid > Kids Cooling Patches",
+    "Household > Hygiene Products > Kids' Face Masks",
+    "Baby > Kids Beverages"
+   ],
+   "product_ids": []
+  },
+  "valid_until": "2026-12-15",
+  "reason": "Prepare for Haru and Yui's cold and fever season",
+  "color": "#ff7043"
+ },
+ {
+  "coupon_id": "CP-CR0001-02",
+  "customer_id": "CR-0001",
+  "store_id": null,
+  "title": "Triple points on thermometers and first aid supplies",
+  "description": "Triple points on hygiene and first aid supplies like thermometers and bandages",
+  "discount_type": "points",
+  "discount_value": 3,
+  "target": {
+   "categories": [
+    "Beauty & Personal Care > Hygiene & First Aid"
+   ],
+   "product_ids": []
+  },
+  "valid_until": "2026-12-15",
+  "reason": "For your family's health management",
+  "color": "#7e57c2"
+ },
+ {
+  "coupon_id": "CP-CR0002-01",
+  "customer_id": "CR-0002",
+  "store_id": null,
+  "title": "15% OFF medicated patches and topical medicines",
+  "description": "15% OFF warm/cold medicated patches and anti-inflammatory analgesic tapes",
+  "discount_type": "percent",
+  "discount_value": 15,
+  "target": {
+   "categories": [
+    "Health & Medicine > Topical Meds & Patches"
+   ],
+   "product_ids": []
+  },
+  "valid_until": "2026-12-15",
+  "reason": "Frequently purchased medicated patches and topical medicines",
+  "color": "#1e88e5"
+ },
+ {
+  "coupon_id": "CP-CR0002-02",
+  "customer_id": "CR-0002",
+  "store_id": null,
+  "title": "¥200 off supports and health goods",
+  "description": "¥200 off health goods like knee/waist supports and blood pressure monitors (over ¥1,500)",
+  "discount_type": "yen",
+  "discount_value": 200,
+  "target": {
+   "categories": [
+    "Beauty & Personal Care > Health Goods"
+   ],
+   "product_ids": []
+  },
+  "valid_until": "2026-12-15",
+  "reason": "For daily walks and knee care",
+  "color": "#43a047"
+ },
+ {
+  "coupon_id": "CP-CR0002-03",
+  "customer_id": "CR-0002",
+  "store_id": null,
+  "title": "Triple points on health tea and aojiru (green juice)",
+  "description": "Triple points on health tea and aojiru (green juice)",
+  "discount_type": "points",
+  "discount_value": 3,
+  "target": {
+   "categories": [
+    "Beverages > Health Tea & Aojiru (Green Juice)"
+   ],
+   "product_ids": []
+  },
+  "valid_until": "2026-11-30",
+  "reason": "Regularly purchased health tea",
+  "color": "#8d6e63"
+ },
+ {
+  "coupon_id": "CP-CR0003-01",
+  "customer_id": "CR-0003",
+  "store_id": null,
+  "title": "15% OFF sensitive skin care",
+  "description": "15% OFF sensitive skin lotions, emulsions, creams, and face washes",
+  "discount_type": "percent",
+  "discount_value": 15,
+  "target": {
+   "categories": [],
+   "product_ids": [
+    "4902406378140",
+    "4908903962202",
+    "4920484522286",
+    "4924573170426",
+    "4933131063124",
+    "4933156210992"
+   ]
+  },
+  "valid_until": "2026-12-15",
+  "reason": "Frequently purchased hypoallergenic skincare",
+  "color": "#d81b60"
+ },
+ {
+  "coupon_id": "CP-CR0003-02",
+  "customer_id": "CR-0003",
+  "store_id": null,
+  "title": "¥100 off eye drops and eye care",
+  "description": "¥100 off eye drops and heated eye masks",
+  "discount_type": "yen",
+  "discount_value": 100,
+  "target": {
+   "categories": [
+    "Health & Medicine > Eye Drops",
+    "Beauty & Personal Care > Health Goods > Heated Eye Masks"
+   ],
+   "product_ids": []
+  },
+  "valid_until": "2026-12-15",
+  "reason": "Frequently purchased eye care products",
+  "color": "#3949ab"
+ },
+ {
+  "coupon_id": "CP-CR0003-03",
+  "customer_id": "CR-0003",
+  "store_id": "S03",
+  "title": "Cymbal Retail Shibuya 20% OFF 2 face masks",
+  "description": "20% OFF 2 or more face masks (Shibuya store)",
+  "discount_type": "percent",
+  "discount_value": 20,
+  "target": {
+   "categories": [
+    "Beauty & Personal Care > Skin Care > Face Masks"
+   ],
+   "product_ids": []
+  },
+  "valid_until": "2026-11-30",
+  "reason": "Special care for the dry season",
+  "color": "#ab47bc"
+ }
+]

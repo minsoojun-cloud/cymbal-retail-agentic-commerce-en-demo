@@ -1,0 +1,180 @@
+{
+  "product": {
+    "sku": "4946311911337",
+    "title": "Cymbal Select Deep Frying Pan with Glass Lid, Navy, 28 cm",
+    "brand": "Cymbal Select",
+    "category": "Kitchen > Frying Pans & Pots > Frying Pans",
+    "description": "A 7cm-deep design that handles stir-frying, simmering and shallow-frying in one pan. A durable 5-layer coating lasts long and it is dishwasher safe. The glass lid lets you check on food while it cooks.\nSize: 28cm / Material: Aluminum (5-layer fluorine coating) / Color: Navy / Country of manufacture: Made in Japan",
+    "product_url": "/?product=4946311911337",
+    "image_url": "/img/products/z_kitchen_deep_frying_pan_p.jpg",
+    "price": 6578.0,
+    "group": "kitchen",
+    "raw_attributes": {
+      "on_sale": "false",
+      "size": "28cm",
+      "labels": "Induction compatible / Dishwasher safe",
+      "origin": "Made in Japan",
+      "material": "Aluminum (5-layer fluorine coating)",
+      "color": "Navy",
+      "brand_line": "Cymbal Select",
+      "base_id": "z_kitchen_deep_frying_pan",
+      "dishes": "Simmered dishes / Shallow-frying / Pasta"
+    },
+    "group_label": "Kitchen & Cookware",
+    "doc_sources": [],
+    "source": "cymbal",
+    "images": []
+  },
+  "source_text": "[Title] Cymbal Select Deep Frying Pan with Glass Lid 28cm Navy\n[Brand] Cymbal Select\n[Category] Kitchen > Frying Pans & Pots > Frying Pans\n[Description] A 7cm-deep design that handles stir-frying, simmering and shallow-frying in one pan. A durable 5-layer coating lasts long and it is dishwasher safe. The glass lid lets you check on food while it cooks.\nSize: 28cm / Material: Aluminum (5-layer fluorine coating) / Color: Navy / Country of manufacture: Made in Japan\n[Attributes]\non_sale: false\nsize: 28cm\nlabels: Induction compatible / Dishwasher safe\norigin: Made in Japan\nmaterial: Aluminum (5-layer fluorine coating)\ncolor: Navy\nbrand_line: Cymbal Select\nbase_id: z_kitchen_deep_frying_pan\ndishes: Simmered dishes / Shallow-frying / Pasta",
+  "gmc": {
+    "sku": "4946311911337",
+    "item_group_id": "z_kitchen_deep_frying_pan",
+    "item_group_title": "Cymbal Select Deep Frying Pan with Glass Lid",
+    "variant_options": [
+      {
+        "name": "Size",
+        "value": "28cm",
+        "evidence": "28cm",
+        "evidence_match": 1.0
+      },
+      {
+        "name": "Color",
+        "value": "Navy",
+        "evidence": "Navy",
+        "evidence_match": 1.0
+      }
+    ],
+    "questions_and_answers": [
+      {
+        "question": "Is it induction compatible and dishwasher safe?",
+        "answer": "Yes, it is induction compatible and dishwasher safe.",
+        "evidence": "Induction compatible / Dishwasher safe",
+        "confidence": 1.0,
+        "evidence_match": 1.0,
+        "score": 1.0,
+        "status": "auto_approved"
+      },
+      {
+        "question": "How deep is the pan?",
+        "answer": "It has a 7cm-deep design.",
+        "evidence": "7cm-deep design",
+        "confidence": 1.0,
+        "evidence_match": 1.0,
+        "score": 1.0,
+        "status": "auto_approved"
+      },
+      {
+        "question": "What material and coating does it use?",
+        "answer": "It is aluminum with a durable 5-layer fluorine coating.",
+        "evidence": "Aluminum (5-layer fluorine coating)",
+        "confidence": 1.0,
+        "evidence_match": 1.0,
+        "score": 1.0,
+        "status": "auto_approved"
+      },
+      {
+        "question": "Where is it made?",
+        "answer": "It is made in Japan.",
+        "evidence": "Country of manufacture: Made in Japan",
+        "confidence": 1.0,
+        "evidence_match": 1.0,
+        "score": 1.0,
+        "status": "auto_approved"
+      },
+      {
+        "question": "Does it come with a lid?",
+        "answer": "Yes, it comes with a glass lid so you can check on food while it cooks.",
+        "evidence": "The glass lid lets you check on food while it cooks",
+        "confidence": 1.0,
+        "evidence_match": 1.0,
+        "score": 1.0,
+        "status": "auto_approved"
+      }
+    ],
+    "product_highlights": [
+      "7cm-deep design handles stir-frying, simmering and shallow-frying in one pan",
+      "Durable 5-layer coating lasts long and is dishwasher safe",
+      "Glass lid lets you watch your food as it cooks",
+      "Induction compatible and reliably made in Japan"
+    ],
+    "product_details": [
+      {
+        "section": "Basic Specs",
+        "attribute": "Color",
+        "value": "Navy"
+      },
+      {
+        "section": "Contents & Size",
+        "attribute": "Diameter",
+        "value": "28cm"
+      },
+      {
+        "section": "Basic Specs",
+        "attribute": "Dishwasher safe",
+        "value": "Yes"
+      },
+      {
+        "section": "Basic Specs",
+        "attribute": "Induction compatible",
+        "value": "Yes"
+      },
+      {
+        "section": "Basic Specs",
+        "attribute": "Material",
+        "value": "Aluminum (5-layer fluorine coating)"
+      },
+      {
+        "section": "Food Labeling & Storage",
+        "attribute": "Origin",
+        "value": "Made in Japan"
+      },
+      {
+        "section": "Features",
+        "attribute": "Features",
+        "value": "Induction compatible / Made in Japan / Dishwasher safe"
+      }
+    ],
+    "related_products": [
+      {
+        "relationship_type": "similar_to",
+        "identifier_type": "id",
+        "identifier": "4929021288920",
+        "title": "Cymbal Basic Freezer & Microwave-Safe Containers 700ml × 3"
+      },
+      {
+        "relationship_type": "similar_to",
+        "identifier_type": "id",
+        "identifier": "4938749288693",
+        "title": "Cymbal Select Copper Tamagoyaki Pan, Kanto Style 15 × 18cm"
+      }
+    ],
+    "popularity_rank": 88.0,
+    "document_link": "",
+    "model": "gemini-3.8-flash",
+    "job_id": "online-20261111_001308",
+    "updated_at": "2026-11-11T00:13:31.773459+00:00",
+    "variant_option": "Size:28cm,Color:Navy",
+    "question_and_answer": "\"Is it induction compatible and dishwasher safe?\":\"Yes, it is induction compatible and dishwasher safe.\", \"How deep is the pan?\":\"It has a 7cm-deep design.\", \"What material and coating does it use?\":\"It is aluminum with a durable 5-layer fluorine coating.\", \"Where is it made?\":\"It is made in Japan.\", \"Does it come with a lid?\":\"Yes, it comes with a glass lid so you can check on food while it cooks.\"",
+    "product_highlight": "\"7cm-deep design handles stir-frying, simmering and shallow-frying in one pan\", \"Durable 5-layer coating lasts long and is dishwasher safe\", \"Glass lid lets you watch your food as it cooks\", \"Induction compatible and reliably made in Japan\"",
+    "product_detail": "Basic Specs:Color:\"Navy\", Contents & Size:Diameter:\"28cm\", Basic Specs:Dishwasher safe:\"Yes\", Basic Specs:Induction compatible:\"Yes\", Basic Specs:Material:\"Aluminum (5-layer fluorine coating)\", Food Labeling & Storage:Origin:\"Made in Japan\", Features:Features:\"Induction compatible / Made in Japan / Dishwasher safe\"",
+    "related_product": "similar_to:id:4929021288920,similar_to:id:4938749288693"
+  },
+  "feed_row": {
+    "id": "4946311911337",
+    "item_group_id": "z_kitchen_deep_frying_pan",
+    "title": "Cymbal Select Deep Frying Pan with Glass Lid, Navy, 28 cm",
+    "item_group_title": "Cymbal Select Deep Frying Pan with Glass Lid",
+    "variant_option": "Size:28cm,Color:Navy",
+    "question_and_answer": "\"Is it induction compatible and dishwasher safe?\":\"Yes, it is induction compatible and dishwasher safe.\", \"How deep is the pan?\":\"It has a 7cm-deep design.\", \"What material and coating does it use?\":\"It is aluminum with a durable 5-layer fluorine coating.\", \"Where is it made?\":\"It is made in Japan.\", \"Does it come with a lid?\":\"Yes, it comes with a glass lid so you can check on food while it cooks.\"",
+    "product_highlight": "\"7cm-deep design handles stir-frying, simmering and shallow-frying in one pan\", \"Durable 5-layer coating lasts long and is dishwasher safe\", \"Glass lid lets you watch your food as it cooks\", \"Induction compatible and reliably made in Japan\"",
+    "product_detail": "Basic Specs:Color:\"Navy\", Contents & Size:Diameter:\"28cm\", Basic Specs:Dishwasher safe:\"Yes\", Basic Specs:Induction compatible:\"Yes\", Basic Specs:Material:\"Aluminum (5-layer fluorine coating)\", Food Labeling & Storage:Origin:\"Made in Japan\", Features:Features:\"Induction compatible / Made in Japan / Dishwasher safe\"",
+    "related_product": "similar_to:id:4929021288920,similar_to:id:4938749288693",
+    "popularity_rank": 88.0,
+    "document_link": "",
+    "brand": "Cymbal Select",
+    "price": "6578 JPY",
+    "link": "/?product=4946311911337",
+    "image_link": "/img/products/z_kitchen_deep_frying_pan_p.jpg",
+    "additional_image_link": ""
+  }
+}

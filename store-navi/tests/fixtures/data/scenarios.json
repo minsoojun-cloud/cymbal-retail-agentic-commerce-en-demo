@@ -1,0 +1,18 @@
+{
+ "cold_tablet_out_at_S01": {
+  "product_id": "4999100000011",
+  "in_stock_at": "S02"
+ },
+ "fever_set_S01": [
+  "4999100000059",
+  "4900025493107",
+  "4921789214258",
+  "4906832949998",
+  "4953631900798"
+ ],
+ "beauty_out_at_S03": {
+  "product_id": "4991674785415",
+  "in_stock_at": "S01"
+ },
+ "staff_photo_products": []
+}

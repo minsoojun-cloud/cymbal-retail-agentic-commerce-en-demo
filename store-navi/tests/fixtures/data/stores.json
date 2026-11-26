@@ -1,0 +1,75 @@
+[
+ {
+  "store_id": "S01",
+  "name": "Cymbal Retail 川崎駅前店",
+  "short_name": "川崎駅前店",
+  "lat": 35.5313,
+  "lng": 139.6977,
+  "address": "神奈川県川崎市川崎区駅前本町",
+  "phone": "044-000-0101",
+  "hours": {
+   "open": "09:00",
+   "close": "22:00"
+  },
+  "pharmacy": {
+   "open": "09:00",
+   "close": "19:00",
+   "closed": "日曜・祝日"
+  },
+  "services": [
+   "調剤",
+   "Cymbal Pay",
+   "免税"
+  ],
+  "radius_m": 150,
+  "layout_id": "S01",
+  "tagline": "駅前すぐ・調剤併設のコンパクト店"
+ },
+ {
+  "store_id": "S02",
+  "name": "Cymbal Retail 武蔵小杉店",
+  "short_name": "武蔵小杉店",
+  "lat": 35.5763,
+  "lng": 139.6596,
+  "address": "神奈川県川崎市中原区小杉町",
+  "phone": "044-000-0202",
+  "hours": {
+   "open": "10:00",
+   "close": "23:00"
+  },
+  "pharmacy": {
+   "open": "10:00",
+   "close": "20:00",
+   "closed": "日曜"
+  },
+  "services": [
+   "調剤",
+   "食品",
+   "駐車場"
+  ],
+  "radius_m": 150,
+  "layout_id": "S02",
+  "tagline": "食品も揃う大型店"
+ },
+ {
+  "store_id": "S03",
+  "name": "Cymbal Retail 渋谷店",
+  "short_name": "渋谷店",
+  "lat": 35.6595,
+  "lng": 139.7005,
+  "address": "東京都渋谷区道玄坂",
+  "phone": "03-0000-0303",
+  "hours": {
+   "open": "10:00",
+   "close": "22:00"
+  },
+  "pharmacy": null,
+  "services": [
+   "コスメカウンセリング",
+   "免税"
+  ],
+  "radius_m": 150,
+  "layout_id": "S03",
+  "tagline": "ビューティー旗艦店"
+ }
+]

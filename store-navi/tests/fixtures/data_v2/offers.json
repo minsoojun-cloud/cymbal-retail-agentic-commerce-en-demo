@@ -1,0 +1,62 @@
+[
+ {
+  "store_id": null,
+  "product_id": "4900025493107",
+  "sale_price": 398,
+  "original_price": 498,
+  "start_date": "2026-11-01",
+  "end_date": "2026-12-31",
+  "badge": "特価",
+  "theme": "冬のかぜ対策"
+ },
+ {
+  "store_id": "S01",
+  "product_id": "4921789214258",
+  "sale_price": 158,
+  "original_price": 181,
+  "start_date": "2026-11-01",
+  "end_date": "2026-12-31",
+  "badge": "店舗特価",
+  "theme": "冬のかぜ対策"
+ },
+ {
+  "store_id": null,
+  "product_id": "4999100000172",
+  "sale_price": 748,
+  "original_price": 858,
+  "start_date": "2026-11-01",
+  "end_date": "2026-12-31",
+  "badge": "特価",
+  "theme": "乾燥・冷え対策"
+ },
+ {
+  "store_id": null,
+  "product_id": "4999100000158",
+  "sale_price": 658,
+  "original_price": 748,
+  "start_date": "2026-11-01",
+  "end_date": "2026-12-31",
+  "badge": "特価",
+  "theme": "目の疲れ"
+ },
+ {
+  "store_id": null,
+  "product_id": "4953631900798",
+  "sale_price": 298,
+  "original_price": 398,
+  "start_date": "2026-11-01",
+  "end_date": "2026-12-31",
+  "badge": "特価",
+  "theme": "冬のかぜ対策"
+ },
+ {
+  "store_id": "S03",
+  "product_id": "4961626629296",
+  "sale_price": 1848,
+  "original_price": 2178,
+  "start_date": "2026-11-01",
+  "end_date": "2026-12-31",
+  "badge": "旗艦店特価",
+  "theme": "乾燥肌対策"
+ }
+]

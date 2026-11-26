@@ -1,0 +1,22 @@
+{
+ "jobs": [
+  {
+   "job_id": "online-20261111_001308",
+   "display_name": "online-gemini-3.8-flash-20261111_001308",
+   "model": "gemini-3.8-flash",
+   "state": "JOB_STATE_SUCCEEDED",
+   "sku_count": 42,
+   "request_count": 126,
+   "input_tokens": 177693,
+   "output_tokens": 49368,
+   "cost_jpy": 26.5092,
+   "src": "online (generateContent)",
+   "dest": "your-project.cymbal_enrichment.enriched_attributes",
+   "created_at": "2026-11-11T00:13:47.006298+00:00",
+   "updated_at": "2026-11-11T00:13:47.006298+00:00",
+   "ingested": true,
+   "ingested_skus": 42,
+   "error": null
+  }
+ ]
+}

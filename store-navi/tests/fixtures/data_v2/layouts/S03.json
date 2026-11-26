@@ -1,0 +1,1349 @@
+{
+ "store_id": "S03",
+ "version": 2,
+ "width": 44.0,
+ "height": 30.0,
+ "entrance": {
+  "x": 26.0,
+  "y": 29.7
+ },
+ "exit": {
+  "x": 23.0,
+  "y": 29.7
+ },
+ "register": {
+  "x": 4.0,
+  "y": 25.8,
+  "w": 12.0,
+  "h": 1.2
+ },
+ "counter": {
+  "id": "RX",
+  "label": "医薬品カウンター・調剤",
+  "x": 0.4,
+  "y": 0.3,
+  "w": 6.0,
+  "h": 1.2
+ },
+ "zones": [
+  {
+   "id": "Z-A",
+   "label": "医薬品",
+   "color": "#e8f0fe",
+   "rect": [
+    0,
+    2.7,
+    1.1,
+    14.5
+   ]
+  },
+  {
+   "id": "Z-B",
+   "label": "ビューティー",
+   "color": "#fce8f3",
+   "rect": [
+    4.2,
+    3.7,
+    1.5,
+    15.6
+   ]
+  },
+  {
+   "id": "Z-C",
+   "label": "ヘルスケア・衛生",
+   "color": "#fef7e0",
+   "rect": [
+    7.5,
+    3.7,
+    1.5,
+    15.6
+   ]
+  },
+  {
+   "id": "Z-D",
+   "label": "日用品",
+   "color": "#f1f3f4",
+   "rect": [
+    10.8,
+    3.7,
+    1.5,
+    15.6
+   ]
+  },
+  {
+   "id": "Z-E",
+   "label": "ベビー",
+   "color": "#fff3e0",
+   "rect": [
+    14.1,
+    3.7,
+    1.5,
+    15.6
+   ]
+  },
+  {
+   "id": "Z-F",
+   "label": "お菓子",
+   "color": "#fdf3e7",
+   "rect": [
+    17.4,
+    3.7,
+    14.7,
+    15.6
+   ]
+  },
+  {
+   "id": "Z-G",
+   "label": "飲料・お酒",
+   "color": "#e4f7fb",
+   "rect": [
+    20.7,
+    3.7,
+    8.1,
+    15.6
+   ]
+  },
+  {
+   "id": "Z-H",
+   "label": "グロッサリー",
+   "color": "#eef5e9",
+   "rect": [
+    24.0,
+    3.7,
+    1.5,
+    15.6
+   ]
+  },
+  {
+   "id": "Z-K",
+   "label": "日配",
+   "color": "#e8f5fd",
+   "rect": [
+    42.6,
+    2.2,
+    1.4,
+    19.0
+   ]
+  },
+  {
+   "id": "Z-L",
+   "label": "精肉",
+   "color": "#fde7e9",
+   "rect": [
+    7.7,
+    0,
+    11.6,
+    1.4
+   ]
+  },
+  {
+   "id": "Z-M",
+   "label": "鮮魚",
+   "color": "#e3f2fd",
+   "rect": [
+    18.8,
+    0,
+    11.6,
+    1.4
+   ]
+  },
+  {
+   "id": "Z-N",
+   "label": "惣菜・ベーカリー",
+   "color": "#fff8e1",
+   "rect": [
+    29.9,
+    0,
+    11.6,
+    1.4
+   ]
+  },
+  {
+   "id": "Z-P",
+   "label": "青果",
+   "color": "#e6f4ea",
+   "rect": [
+    30.7,
+    21.7,
+    9.6,
+    1.5
+   ]
+  },
+  {
+   "id": "Z-R",
+   "label": "レジ前",
+   "color": "#f3e8fd",
+   "rect": [
+    16.7,
+    24.3,
+    3.3,
+    1.05
+   ]
+  }
+ ],
+ "signs": [],
+ "fixtures": [
+  {
+   "id": "L01",
+   "body_id": "L01",
+   "type": "multideck",
+   "zone": "Z-L",
+   "label": "精肉",
+   "x": 8.0,
+   "y": 0.2,
+   "w": 3.6,
+   "h": 0.9,
+   "face": "S",
+   "length_cm": 360,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 12,
+   "categories": [
+    "お肉"
+   ]
+  },
+  {
+   "id": "L02",
+   "body_id": "L02",
+   "type": "multideck",
+   "zone": "Z-L",
+   "label": "精肉",
+   "x": 11.7,
+   "y": 0.2,
+   "w": 3.6,
+   "h": 0.9,
+   "face": "S",
+   "length_cm": 360,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 12,
+   "categories": [
+    "お肉"
+   ]
+  },
+  {
+   "id": "L03",
+   "body_id": "L03",
+   "type": "multideck",
+   "zone": "Z-L",
+   "label": "精肉",
+   "x": 15.4,
+   "y": 0.2,
+   "w": 3.6,
+   "h": 0.9,
+   "face": "S",
+   "length_cm": 360,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 12,
+   "categories": [
+    "お肉"
+   ]
+  },
+  {
+   "id": "M01",
+   "body_id": "M01",
+   "type": "multideck",
+   "zone": "Z-M",
+   "label": "鮮魚",
+   "x": 19.1,
+   "y": 0.2,
+   "w": 3.6,
+   "h": 0.9,
+   "face": "S",
+   "length_cm": 360,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 12,
+   "categories": [
+    "お魚・水産加工品"
+   ]
+  },
+  {
+   "id": "M02",
+   "body_id": "M02",
+   "type": "multideck",
+   "zone": "Z-M",
+   "label": "鮮魚",
+   "x": 22.8,
+   "y": 0.2,
+   "w": 3.6,
+   "h": 0.9,
+   "face": "S",
+   "length_cm": 360,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 12,
+   "categories": [
+    "お魚・水産加工品"
+   ]
+  },
+  {
+   "id": "M03",
+   "body_id": "M03",
+   "type": "multideck",
+   "zone": "Z-M",
+   "label": "鮮魚",
+   "x": 26.5,
+   "y": 0.2,
+   "w": 3.6,
+   "h": 0.9,
+   "face": "S",
+   "length_cm": 360,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 12,
+   "categories": [
+    "お魚・水産加工品"
+   ]
+  },
+  {
+   "id": "N01",
+   "body_id": "N01",
+   "type": "multideck",
+   "zone": "Z-N",
+   "label": "惣菜・ベーカリー",
+   "x": 30.2,
+   "y": 0.2,
+   "w": 3.6,
+   "h": 0.9,
+   "face": "S",
+   "length_cm": 360,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 12,
+   "categories": [
+    "惣菜"
+   ]
+  },
+  {
+   "id": "N02",
+   "body_id": "N02",
+   "type": "multideck",
+   "zone": "Z-N",
+   "label": "惣菜・ベーカリー",
+   "x": 33.9,
+   "y": 0.2,
+   "w": 3.6,
+   "h": 0.9,
+   "face": "S",
+   "length_cm": 360,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 12,
+   "categories": [
+    "惣菜"
+   ]
+  },
+  {
+   "id": "N03",
+   "body_id": "N03",
+   "type": "multideck",
+   "zone": "Z-N",
+   "label": "惣菜・ベーカリー",
+   "x": 37.6,
+   "y": 0.2,
+   "w": 3.6,
+   "h": 0.9,
+   "face": "S",
+   "length_cm": 360,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 12,
+   "categories": [
+    "惣菜"
+   ]
+  },
+  {
+   "id": "K01",
+   "body_id": "K01",
+   "type": "multideck",
+   "zone": "Z-K",
+   "label": "日配",
+   "x": 42.9,
+   "y": 2.5,
+   "w": 0.9,
+   "h": 3.6,
+   "face": "W",
+   "length_cm": 360,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 12,
+   "categories": [
+    "卵・乳製品・豆乳・デザート"
+   ]
+  },
+  {
+   "id": "K02",
+   "body_id": "K02",
+   "type": "multideck",
+   "zone": "Z-K",
+   "label": "日配",
+   "x": 42.9,
+   "y": 6.2,
+   "w": 0.9,
+   "h": 3.6,
+   "face": "W",
+   "length_cm": 360,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 12,
+   "categories": [
+    "卵・乳製品・豆乳・デザート"
+   ]
+  },
+  {
+   "id": "K03",
+   "body_id": "K03",
+   "type": "multideck",
+   "zone": "Z-K",
+   "label": "日配",
+   "x": 42.9,
+   "y": 9.9,
+   "w": 0.9,
+   "h": 3.6,
+   "face": "W",
+   "length_cm": 360,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 12,
+   "categories": [
+    "卵・乳製品・豆乳・デザート"
+   ]
+  },
+  {
+   "id": "K04",
+   "body_id": "K04",
+   "type": "multideck",
+   "zone": "Z-K",
+   "label": "日配",
+   "x": 42.9,
+   "y": 13.6,
+   "w": 0.9,
+   "h": 3.6,
+   "face": "W",
+   "length_cm": 360,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 12,
+   "categories": [
+    "卵・乳製品・豆乳・デザート"
+   ]
+  },
+  {
+   "id": "K05",
+   "body_id": "K05",
+   "type": "multideck",
+   "zone": "Z-K",
+   "label": "日配",
+   "x": 42.9,
+   "y": 17.3,
+   "w": 0.9,
+   "h": 3.6,
+   "face": "W",
+   "length_cm": 360,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 12,
+   "categories": [
+    "卵・乳製品・豆乳・デザート"
+   ]
+  },
+  {
+   "id": "A01",
+   "body_id": "A01",
+   "type": "wall",
+   "zone": "Z-A",
+   "label": "医薬品",
+   "x": 0.2,
+   "y": 3.0,
+   "w": 0.6,
+   "h": 2.7,
+   "face": "E",
+   "length_cm": 270,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 9,
+   "categories": [
+    "医薬品・ヘルスケア"
+   ]
+  },
+  {
+   "id": "A02",
+   "body_id": "A02",
+   "type": "wall",
+   "zone": "Z-A",
+   "label": "医薬品",
+   "x": 0.2,
+   "y": 5.8,
+   "w": 0.6,
+   "h": 2.7,
+   "face": "E",
+   "length_cm": 270,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 9,
+   "categories": [
+    "医薬品・ヘルスケア"
+   ]
+  },
+  {
+   "id": "A03",
+   "body_id": "A03",
+   "type": "wall",
+   "zone": "Z-A",
+   "label": "医薬品",
+   "x": 0.2,
+   "y": 8.6,
+   "w": 0.6,
+   "h": 2.7,
+   "face": "E",
+   "length_cm": 270,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 9,
+   "categories": [
+    "医薬品・ヘルスケア"
+   ]
+  },
+  {
+   "id": "A04",
+   "body_id": "A04",
+   "type": "wall",
+   "zone": "Z-A",
+   "label": "医薬品",
+   "x": 0.2,
+   "y": 11.4,
+   "w": 0.6,
+   "h": 2.7,
+   "face": "E",
+   "length_cm": 270,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 9,
+   "categories": [
+    "医薬品・ヘルスケア"
+   ]
+  },
+  {
+   "id": "A05",
+   "body_id": "A05",
+   "type": "wall",
+   "zone": "Z-A",
+   "label": "医薬品",
+   "x": 0.2,
+   "y": 14.2,
+   "w": 0.6,
+   "h": 2.7,
+   "face": "E",
+   "length_cm": 270,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 9,
+   "categories": [
+    "医薬品・ヘルスケア"
+   ]
+  },
+  {
+   "id": "B01",
+   "body_id": "S03-body-0-4",
+   "type": "gondola",
+   "zone": "Z-B",
+   "label": "ビューティー",
+   "x": 4.5,
+   "y": 4.0,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "W",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "ビューティー・パーソナルケア > スキンケア",
+    "ビューティー・パーソナルケア > ヘアケア",
+    "ビューティー・パーソナルケア > ボディケア",
+    "ビューティー・パーソナルケア > 美容雑貨",
+    "ビューティー・パーソナルケア > オーラルケア"
+   ]
+  },
+  {
+   "id": "B02",
+   "body_id": "S03-body-0-4",
+   "type": "gondola",
+   "zone": "Z-B",
+   "label": "ビューティー",
+   "x": 4.95,
+   "y": 4.0,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "E",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "ビューティー・パーソナルケア > スキンケア",
+    "ビューティー・パーソナルケア > ヘアケア",
+    "ビューティー・パーソナルケア > ボディケア",
+    "ビューティー・パーソナルケア > 美容雑貨",
+    "ビューティー・パーソナルケア > オーラルケア"
+   ]
+  },
+  {
+   "id": "B03",
+   "body_id": "S03-body-0-12",
+   "type": "gondola",
+   "zone": "Z-B",
+   "label": "ビューティー",
+   "x": 4.5,
+   "y": 12.4,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "W",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "ビューティー・パーソナルケア > スキンケア",
+    "ビューティー・パーソナルケア > ヘアケア",
+    "ビューティー・パーソナルケア > ボディケア",
+    "ビューティー・パーソナルケア > 美容雑貨",
+    "ビューティー・パーソナルケア > オーラルケア"
+   ]
+  },
+  {
+   "id": "B04",
+   "body_id": "S03-body-0-12",
+   "type": "gondola",
+   "zone": "Z-B",
+   "label": "ビューティー",
+   "x": 4.95,
+   "y": 12.4,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "E",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "ビューティー・パーソナルケア > スキンケア",
+    "ビューティー・パーソナルケア > ヘアケア",
+    "ビューティー・パーソナルケア > ボディケア",
+    "ビューティー・パーソナルケア > 美容雑貨",
+    "ビューティー・パーソナルケア > オーラルケア"
+   ]
+  },
+  {
+   "id": "C01",
+   "body_id": "S03-body-1-4",
+   "type": "gondola",
+   "zone": "Z-C",
+   "label": "ヘルスケア・衛生",
+   "x": 7.8,
+   "y": 4.0,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "W",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "ビューティー・パーソナルケア",
+    "日用品・キッチン消耗品 > 衛生用品"
+   ]
+  },
+  {
+   "id": "C02",
+   "body_id": "S03-body-1-4",
+   "type": "gondola",
+   "zone": "Z-C",
+   "label": "ヘルスケア・衛生",
+   "x": 8.25,
+   "y": 4.0,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "E",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "ビューティー・パーソナルケア",
+    "日用品・キッチン消耗品 > 衛生用品"
+   ]
+  },
+  {
+   "id": "C03",
+   "body_id": "S03-body-1-12",
+   "type": "gondola",
+   "zone": "Z-C",
+   "label": "ヘルスケア・衛生",
+   "x": 7.8,
+   "y": 12.4,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "W",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "ビューティー・パーソナルケア",
+    "日用品・キッチン消耗品 > 衛生用品"
+   ]
+  },
+  {
+   "id": "C04",
+   "body_id": "S03-body-1-12",
+   "type": "gondola",
+   "zone": "Z-C",
+   "label": "ヘルスケア・衛生",
+   "x": 8.25,
+   "y": 12.4,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "E",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "ビューティー・パーソナルケア",
+    "日用品・キッチン消耗品 > 衛生用品"
+   ]
+  },
+  {
+   "id": "D01",
+   "body_id": "S03-body-2-4",
+   "type": "gondola",
+   "zone": "Z-D",
+   "label": "日用品",
+   "x": 11.1,
+   "y": 4.0,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "W",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "日用品・キッチン消耗品"
+   ]
+  },
+  {
+   "id": "D02",
+   "body_id": "S03-body-2-4",
+   "type": "gondola",
+   "zone": "Z-D",
+   "label": "日用品",
+   "x": 11.55,
+   "y": 4.0,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "E",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "日用品・キッチン消耗品"
+   ]
+  },
+  {
+   "id": "D03",
+   "body_id": "S03-body-2-12",
+   "type": "gondola",
+   "zone": "Z-D",
+   "label": "日用品",
+   "x": 11.1,
+   "y": 12.4,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "W",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "日用品・キッチン消耗品"
+   ]
+  },
+  {
+   "id": "D04",
+   "body_id": "S03-body-2-12",
+   "type": "gondola",
+   "zone": "Z-D",
+   "label": "日用品",
+   "x": 11.55,
+   "y": 12.4,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "E",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "日用品・キッチン消耗品"
+   ]
+  },
+  {
+   "id": "E01",
+   "body_id": "S03-body-3-4",
+   "type": "gondola",
+   "zone": "Z-E",
+   "label": "ベビー",
+   "x": 14.4,
+   "y": 4.0,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "W",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "ベビー・キッズ食品"
+   ]
+  },
+  {
+   "id": "E02",
+   "body_id": "S03-body-3-4",
+   "type": "gondola",
+   "zone": "Z-E",
+   "label": "ベビー",
+   "x": 14.85,
+   "y": 4.0,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "E",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "ベビー・キッズ食品"
+   ]
+  },
+  {
+   "id": "E03",
+   "body_id": "S03-body-3-12",
+   "type": "gondola",
+   "zone": "Z-E",
+   "label": "ベビー",
+   "x": 14.4,
+   "y": 12.4,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "W",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "ベビー・キッズ食品"
+   ]
+  },
+  {
+   "id": "E04",
+   "body_id": "S03-body-3-12",
+   "type": "gondola",
+   "zone": "Z-E",
+   "label": "ベビー",
+   "x": 14.85,
+   "y": 12.4,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "E",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "ベビー・キッズ食品"
+   ]
+  },
+  {
+   "id": "F01",
+   "body_id": "S03-body-4-4",
+   "type": "gondola",
+   "zone": "Z-F",
+   "label": "お菓子",
+   "x": 17.7,
+   "y": 4.0,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "W",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "お菓子・製菓"
+   ]
+  },
+  {
+   "id": "F02",
+   "body_id": "S03-body-4-4",
+   "type": "gondola",
+   "zone": "Z-F",
+   "label": "お菓子",
+   "x": 18.15,
+   "y": 4.0,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "E",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "お菓子・製菓"
+   ]
+  },
+  {
+   "id": "F03",
+   "body_id": "S03-body-4-12",
+   "type": "gondola",
+   "zone": "Z-F",
+   "label": "お菓子",
+   "x": 17.7,
+   "y": 12.4,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "W",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "お菓子・製菓"
+   ]
+  },
+  {
+   "id": "F04",
+   "body_id": "S03-body-4-12",
+   "type": "gondola",
+   "zone": "Z-F",
+   "label": "お菓子",
+   "x": 18.15,
+   "y": 12.4,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "E",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "お菓子・製菓"
+   ]
+  },
+  {
+   "id": "G01",
+   "body_id": "S03-body-5-4",
+   "type": "gondola",
+   "zone": "Z-G",
+   "label": "飲料・お酒",
+   "x": 21.0,
+   "y": 4.0,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "W",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "飲料・水"
+   ]
+  },
+  {
+   "id": "G02",
+   "body_id": "S03-body-5-4",
+   "type": "gondola",
+   "zone": "Z-G",
+   "label": "飲料・お酒",
+   "x": 21.45,
+   "y": 4.0,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "E",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "飲料・水"
+   ]
+  },
+  {
+   "id": "G03",
+   "body_id": "S03-body-5-12",
+   "type": "gondola",
+   "zone": "Z-G",
+   "label": "飲料・お酒",
+   "x": 21.0,
+   "y": 12.4,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "W",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "飲料・水"
+   ]
+  },
+  {
+   "id": "G04",
+   "body_id": "S03-body-5-12",
+   "type": "gondola",
+   "zone": "Z-G",
+   "label": "飲料・お酒",
+   "x": 21.45,
+   "y": 12.4,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "E",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "飲料・水"
+   ]
+  },
+  {
+   "id": "H01",
+   "body_id": "S03-body-6-4",
+   "type": "gondola",
+   "zone": "Z-H",
+   "label": "グロッサリー",
+   "x": 24.3,
+   "y": 4.0,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "W",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "インスタント・レトルト",
+    "調味料"
+   ]
+  },
+  {
+   "id": "H02",
+   "body_id": "S03-body-6-4",
+   "type": "gondola",
+   "zone": "Z-H",
+   "label": "グロッサリー",
+   "x": 24.75,
+   "y": 4.0,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "E",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "インスタント・レトルト",
+    "調味料"
+   ]
+  },
+  {
+   "id": "H03",
+   "body_id": "S03-body-6-12",
+   "type": "gondola",
+   "zone": "Z-H",
+   "label": "グロッサリー",
+   "x": 24.3,
+   "y": 12.4,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "W",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "インスタント・レトルト",
+    "調味料"
+   ]
+  },
+  {
+   "id": "H04",
+   "body_id": "S03-body-6-12",
+   "type": "gondola",
+   "zone": "Z-H",
+   "label": "グロッサリー",
+   "x": 24.75,
+   "y": 12.4,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "E",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "インスタント・レトルト",
+    "調味料"
+   ]
+  },
+  {
+   "id": "G05",
+   "body_id": "S03-body-7-4",
+   "type": "gondola",
+   "zone": "Z-G",
+   "label": "飲料・お酒",
+   "x": 27.6,
+   "y": 4.0,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "W",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "飲料・水"
+   ]
+  },
+  {
+   "id": "G06",
+   "body_id": "S03-body-7-4",
+   "type": "gondola",
+   "zone": "Z-G",
+   "label": "飲料・お酒",
+   "x": 28.05,
+   "y": 4.0,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "E",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "飲料・水"
+   ]
+  },
+  {
+   "id": "G07",
+   "body_id": "S03-body-7-12",
+   "type": "gondola",
+   "zone": "Z-G",
+   "label": "飲料・お酒",
+   "x": 27.6,
+   "y": 12.4,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "W",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "飲料・水"
+   ]
+  },
+  {
+   "id": "G08",
+   "body_id": "S03-body-7-12",
+   "type": "gondola",
+   "zone": "Z-G",
+   "label": "飲料・お酒",
+   "x": 28.05,
+   "y": 12.4,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "E",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "飲料・水"
+   ]
+  },
+  {
+   "id": "F05",
+   "body_id": "S03-body-8-4",
+   "type": "gondola",
+   "zone": "Z-F",
+   "label": "お菓子",
+   "x": 30.9,
+   "y": 4.0,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "W",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "お菓子・製菓"
+   ]
+  },
+  {
+   "id": "F06",
+   "body_id": "S03-body-8-4",
+   "type": "gondola",
+   "zone": "Z-F",
+   "label": "お菓子",
+   "x": 31.35,
+   "y": 4.0,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "E",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "お菓子・製菓"
+   ]
+  },
+  {
+   "id": "F07",
+   "body_id": "S03-body-8-12",
+   "type": "gondola",
+   "zone": "Z-F",
+   "label": "お菓子",
+   "x": 30.9,
+   "y": 12.4,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "W",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "お菓子・製菓"
+   ]
+  },
+  {
+   "id": "F08",
+   "body_id": "S03-body-8-12",
+   "type": "gondola",
+   "zone": "Z-F",
+   "label": "お菓子",
+   "x": 31.35,
+   "y": 12.4,
+   "w": 0.45,
+   "h": 6.6,
+   "face": "E",
+   "length_cm": 660,
+   "tiers": 5,
+   "slot_width_cm": 30,
+   "slots_per_tier": 22,
+   "categories": [
+    "お菓子・製菓"
+   ]
+  },
+  {
+   "id": "P01",
+   "body_id": "P01",
+   "type": "flat_table",
+   "zone": "Z-P",
+   "label": "青果",
+   "x": 31.0,
+   "y": 22.0,
+   "w": 1.8,
+   "h": 0.9,
+   "face": "S",
+   "length_cm": 180,
+   "tiers": 1,
+   "slot_width_cm": 60,
+   "slots_per_tier": 3,
+   "categories": [
+    "野菜・果物"
+   ]
+  },
+  {
+   "id": "P02",
+   "body_id": "P02",
+   "type": "flat_table",
+   "zone": "Z-P",
+   "label": "青果",
+   "x": 33.4,
+   "y": 22.0,
+   "w": 1.8,
+   "h": 0.9,
+   "face": "S",
+   "length_cm": 180,
+   "tiers": 1,
+   "slot_width_cm": 60,
+   "slots_per_tier": 3,
+   "categories": [
+    "野菜・果物"
+   ]
+  },
+  {
+   "id": "P03",
+   "body_id": "P03",
+   "type": "flat_table",
+   "zone": "Z-P",
+   "label": "青果",
+   "x": 35.8,
+   "y": 22.0,
+   "w": 1.8,
+   "h": 0.9,
+   "face": "S",
+   "length_cm": 180,
+   "tiers": 1,
+   "slot_width_cm": 60,
+   "slots_per_tier": 3,
+   "categories": [
+    "野菜・果物"
+   ]
+  },
+  {
+   "id": "P04",
+   "body_id": "P04",
+   "type": "flat_table",
+   "zone": "Z-P",
+   "label": "青果",
+   "x": 38.2,
+   "y": 22.0,
+   "w": 1.8,
+   "h": 0.9,
+   "face": "S",
+   "length_cm": 180,
+   "tiers": 1,
+   "slot_width_cm": 60,
+   "slots_per_tier": 3,
+   "categories": [
+    "野菜・果物"
+   ]
+  },
+  {
+   "id": "R01",
+   "body_id": "R01",
+   "type": "gondola",
+   "zone": "Z-R",
+   "label": "レジ前",
+   "x": 17.0,
+   "y": 24.6,
+   "w": 2.7,
+   "h": 0.45,
+   "face": "N",
+   "length_cm": 270,
+   "tiers": 4,
+   "slot_width_cm": 30,
+   "slots_per_tier": 9,
+   "categories": []
+  }
+ ]
+}

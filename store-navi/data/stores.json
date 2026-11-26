@@ -1,0 +1,96 @@
+[
+ {
+  "store_id": "S01",
+  "name": "Cymbal Retail Kawasaki Station",
+  "short_name": "Kawasaki Station",
+  "lat": 35.5313,
+  "lng": 139.6977,
+  "address": "Ekimae-honcho, Kawasaki-ku, Kawasaki, Kanagawa",
+  "phone": "044-000-0101",
+  "hours": {
+   "open": "09:00",
+   "close": "22:00"
+  },
+  "pharmacy": {
+   "open": "09:00",
+   "close": "19:00",
+   "closed": "Sundays & holidays"
+  },
+  "services": [
+   "Fresh food & deli",
+   "Pharmacy (prescriptions)",
+   "OTC medicine counter (pharmacist & registered seller)",
+   "Order online, pick up in store",
+   "Cashless payment",
+   "Cymbal Points"
+  ],
+  "radius_m": 150,
+  "layout_id": "S01",
+  "tagline": "Station-front supermarket & drugstore, open until 10 pm",
+  "format": "Compact urban"
+ },
+ {
+  "store_id": "S02",
+  "name": "Cymbal Retail Musashi-Kosugi",
+  "short_name": "Musashi-Kosugi",
+  "lat": 35.5763,
+  "lng": 139.6596,
+  "address": "Shinmaruko-higashi, Nakahara-ku, Kawasaki, Kanagawa",
+  "phone": "044-000-0202",
+  "hours": {
+   "open": "09:00",
+   "close": "23:00"
+  },
+  "pharmacy": {
+   "open": "10:00",
+   "close": "20:00",
+   "closed": "Sundays"
+  },
+  "services": [
+   "Fresh food & deli",
+   "In-store bakery",
+   "Local farmers market",
+   "Flowers",
+   "Pharmacy (prescriptions)",
+   "OTC medicine counter (pharmacist & registered seller)",
+   "Parking (120 spaces)",
+   "Order online, pick up in store",
+   "Cymbal Points"
+  ],
+  "radius_m": 150,
+  "layout_id": "S02",
+  "tagline": "Flagship with fresh food, deli and an in-store bakery",
+  "format": "Large supermarket"
+ },
+ {
+  "store_id": "S03",
+  "name": "Cymbal Retail Shibuya",
+  "short_name": "Shibuya",
+  "lat": 35.6595,
+  "lng": 139.7005,
+  "address": "Dogenzaka, Shibuya-ku, Tokyo",
+  "phone": "03-0000-0303",
+  "hours": {
+   "open": "09:00",
+   "close": "23:00"
+  },
+  "pharmacy": {
+   "open": "10:00",
+   "close": "19:00",
+   "closed": "Weekends & holidays"
+  },
+  "services": [
+   "Fresh food & deli",
+   "Beauty counseling",
+   "OTC medicine counter (pharmacist & registered seller)",
+   "Pharmacy (prescriptions)",
+   "Tax-free counter",
+   "Cashless payment",
+   "Cymbal Points"
+  ],
+  "radius_m": 150,
+  "layout_id": "S03",
+  "tagline": "Urban supermarket & drugstore with a big beauty floor",
+  "format": "Beauty & OTC flagship"
+ }
+]

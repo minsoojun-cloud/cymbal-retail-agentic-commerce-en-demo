@@ -1,0 +1,41 @@
+[
+ {
+  "store_id": "S01",
+  "name": "Cymbal Retail Kawasaki Station",
+  "short_name": "Kawasaki Station",
+  "lat": 35.5313,
+  "lng": 139.6977,
+  "address": "Ekimae-honcho, Kawasaki-ku, Kawasaki, Kanagawa",
+  "phone": "044-000-0101",
+  "hours": {
+   "open": "09:00",
+   "close": "22:00"
+  }
+ },
+ {
+  "store_id": "S02",
+  "name": "Cymbal Retail Musashi-Kosugi",
+  "short_name": "Musashi-Kosugi",
+  "lat": 35.5763,
+  "lng": 139.6596,
+  "address": "Shinmaruko-higashi, Nakahara-ku, Kawasaki, Kanagawa",
+  "phone": "044-000-0202",
+  "hours": {
+   "open": "09:00",
+   "close": "23:00"
+  }
+ },
+ {
+  "store_id": "S03",
+  "name": "Cymbal Retail Shibuya",
+  "short_name": "Shibuya",
+  "lat": 35.6595,
+  "lng": 139.7005,
+  "address": "Dogenzaka, Shibuya-ku, Tokyo",
+  "phone": "03-0000-0303",
+  "hours": {
+   "open": "10:00",
+   "close": "21:00"
+  }
+ }
+]

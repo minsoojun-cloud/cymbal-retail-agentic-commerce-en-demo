@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cymbal Retail Online Store | AI Commerce Search Demo</title>
+  <meta name="description" content="Cymbal Retail online store. An AI shopping experience powered by Vertex AI Search for Commerce and Gemini: shop by chatting with the AI Concierge.">
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/theme.css">
+  <script src="/config.js"></script>
+</head>
+<body>
+  <header class="cr-header" id="cr-header">
+    <div class="cr-header__row">
+      <a class="cr-logo" href="/" id="cr-logo" aria-label="Cymbal Retail home">
+        <svg viewBox="0 0 196 40" width="168" height="34" aria-hidden="true">
+          <defs><linearGradient id="crg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4285f4"/><stop offset="1" stop-color="#1a5fd0"/></linearGradient></defs>
+          <g transform="translate(20 20)">
+            <circle r="17" fill="url(#crg)"/>
+            <circle r="11.5" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1.6"/>
+            <circle r="6" fill="none" stroke="#fff" stroke-opacity=".85" stroke-width="1.6"/>
+            <circle r="2.2" fill="#fbbc04"/>
+          </g>
+          <text x="45" y="27.5"><tspan class="cr-logo__a">Cymbal</tspan><tspan class="cr-logo__b" dx="5">Retail</tspan></text>
+        </svg>
+      </a>
+
+      <form class="cr-search" id="cr-search-form" role="search" autocomplete="off">
+        <svg class="cr-search__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+        <input id="cr-search-input" type="search" name="q" placeholder="Search products (e.g. medium-hot curry, frying pan, dog food)" aria-label="Search products" aria-autocomplete="list" aria-controls="cr-ac-list" enterkeyhint="search">
+        <button type="button" class="cr-search__clear" id="cr-search-clear" aria-label="Clear" hidden>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+        <ul class="cr-ac" id="cr-ac-list" role="listbox" hidden></ul>
+      </form>
+
+      <nav class="cr-header__actions" aria-label="Account">
+        <button type="button" class="cr-icon-btn" id="cr-orders-btn" title="Orders" aria-label="Orders">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm0 16H5V5h14v14zM7 7h10v2H7zm0 4h10v2H7zm0 4h7v2H7z"/></svg>
+          <span class="cr-icon-btn__label">Orders</span>
+        </button>
+        <button type="button" class="cr-icon-btn cr-cart-btn" id="cr-cart-btn" title="Cart" aria-label="Cart">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0 0 20 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+          <span class="cr-icon-btn__label">Cart</span>
+          <span class="cr-badge" id="cr-cart-count">0</span>
+        </button>
+        <div class="cr-account" id="cr-account" title="Signed in">
+          <span class="cr-avatar" id="cr-avatar">S</span>
+          <span class="cr-account__name" id="cr-greeting">Hi, Sakura</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="cr-main" id="cr-main">
+    <!-- views rendered by JS: home / search / agent / compare / checkout / order / orders -->
+    <div id="cr-view"></div>
+  </main>
+
+  <footer class="cr-footer">
+    <div class="cr-footer__inner">
+      <span>© 2026 Cymbal Retail (demo site)</span>
+      <span class="cr-footer__powered">Powered by Vertex AI Search for Commerce • Gemini • <span id="cr-powered-agent">GECX AI Studio</span></span>
+    </div>
+  </footer>
+
+  <!-- Product detail modal -->
+  <div class="cr-modal" id="cr-product-modal" role="dialog" aria-modal="true" aria-label="Product details" hidden>
+    <div class="cr-modal__scrim" data-close></div>
+    <div class="cr-modal__panel" id="cr-pm-body"></div>
+  </div>
+
+  <!-- Cart drawer -->
+  <div class="cr-overlay" id="cr-overlay" hidden></div>
+  <aside class="cr-drawer" id="cr-drawer" aria-hidden="true" aria-label="Cart">
+    <div class="cr-drawer__head">
+      <h2>Cart <span id="cr-drawer-qty"></span></h2>
+      <button type="button" class="cr-icon-btn" id="cr-drawer-close" aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+      </button>
+    </div>
+    <div class="cr-ship-meter" id="cr-ship-meter"></div>
+    <ul class="cr-drawer__list" id="cr-drawer-list"></ul>
+    <div class="cr-drawer__foot">
+      <div class="cr-drawer__row"><span>Subtotal (tax incl.)</span><strong id="cr-drawer-total">¥0</strong></div>
+      <button type="button" class="cr-btn cr-btn--primary cr-btn--block" id="cr-checkout-btn">Proceed to checkout</button>
+    </div>
+  </aside>
+
+  <!-- AI concierge launcher -->
+  <button type="button" class="cr-fab" id="cr-fab" aria-label="Open AI Concierge">
+    <span class="cr-fab__spark" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path d="M12 2c.4 4.9 2.9 8.5 9 10-6.1 1.5-8.6 5.1-9 10-.4-4.9-2.9-8.5-9-10 6.1-1.5 8.6-5.1 9-10z"/></svg>
+    </span>
+    <span>AI Concierge</span>
+  </button>
+
+  <!-- AI concierge slide-over panel (own UI → POST /api/agent/stream → CES bridge / ADK agent; CONTRACT v3/v4) -->
+  <aside class="cr-chat" id="cr-chat" aria-label="AI Concierge" aria-hidden="true">
+    <header class="cr-chat__head">
+      <span class="cr-chat__avatar" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2c.4 4.9 2.9 8.5 9 10-6.1 1.5-8.6 5.1-9 10-.4-4.9-2.9-8.5-9-10 6.1-1.5 8.6-5.1 9-10z"/></svg></span>
+      <div class="cr-chat__title"><span>AI Concierge</span><small id="cr-chat-sub">Cymbal Retail</small></div>
+      <button type="button" class="cr-icon-btn" id="cr-chat-reset" title="Start a new conversation" aria-label="Start a new conversation">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.65 6.35A7.958 7.958 0 0 0 12 4a8 8 0 1 0 7.73 10h-2.08A5.99 5.99 0 0 1 12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+      </button>
+      <button type="button" class="cr-icon-btn" id="cr-chat-close" title="Close" aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+      </button>
+    </header>
+    <div class="cr-chat__log" id="cr-chat-log" aria-live="polite">
+      <div class="cr-chat__typing" id="cr-chat-typing" hidden><span class="cr-chat__dots" aria-hidden="true"><i></i><i></i><i></i></span><span id="cr-chat-status">Thinking…</span></div>
+    </div>
+    <form class="cr-chat__form" id="cr-chat-form" autocomplete="off">
+      <textarea id="cr-chat-input" rows="1" placeholder="Type a message (Enter to send)" aria-label="Message" enterkeyhint="send"></textarea>
+      <button type="submit" class="cr-chat__send" id="cr-chat-send" aria-label="Send"></button>
+    </form>
+    <p class="cr-chat__note">AI responses may contain mistakes.</p>
+  </aside>
+
+  <div class="cr-toast" id="cr-toast" role="status" aria-live="polite"></div>
+
+  <script src="/js/app.js"></script>
+  <script src="/js/cart.js"></script>
+  <script src="/js/orders.js"></script>
+  <script src="/js/checkout.js"></script>
+  <script src="/js/autocomplete.js"></script>
+  <script src="/js/ai_summary.js"></script>
+  <script src="/js/search.js"></script>
+  <script src="/js/home.js"></script>
+  <script src="/js/chat.js"></script>
+  <script src="/js/chat_rich.js"></script>
+  <script src="/js/chat_cards.js"></script>
+  <script src="/js/stores.js"></script>
+  <script src="/js/voice.js"></script>
+  <script src="/js/router.js"></script>
+</body>
+</html>

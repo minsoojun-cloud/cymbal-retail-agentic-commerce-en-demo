@@ -1,0 +1,146 @@
+[
+ {
+  "customer_id": "CR-0001",
+  "name": "Sakura Tanaka",
+  "age": 38,
+  "gender": "female",
+  "residence": "Kawasaki City, Kanagawa",
+  "household": [
+   {
+    "relation": "self",
+    "name": "Sakura",
+    "age": 38
+   },
+   {
+    "relation": "husband",
+    "name": "Ken",
+    "age": 40
+   },
+   {
+    "relation": "son",
+    "name": "Haru",
+    "age": 6
+   },
+   {
+    "relation": "daughter",
+    "name": "Yui",
+    "age": 9
+   }
+  ],
+  "household_size": 4,
+  "allergies": [
+   {
+    "member": "daughter (Yui)",
+    "allergen": "shrimp",
+    "severity": "must exclude",
+    "note": "do not purchase products containing shrimp or shrimp extract"
+   }
+  ],
+  "concerns": [
+   "Children's Cold Care (Haru 6, Yui 9)",
+   "Family Health Management (Fever Preparedness)",
+   "Winter Dryness Care"
+  ],
+  "interest_categories": [
+   "Health & Medicine > Cold Medicine",
+   "Health & Medicine > Pain & Fever Relief",
+   "Beauty & Personal Care > Hygiene & First Aid",
+   "Beverages > Sports Drinks",
+   "Household > Hygiene Products",
+   "Baby"
+  ],
+  "notes": "Existing Cymbal Retail online supermarket member (weekend bulk buyer). Uses the Kawasaki Station store after work. Has two children and wants to stock up on children's cold medicine, cooling sheets, and oral rehydration solutions during cold and fever season. Eldest daughter has a shrimp allergy.",
+  "home_store_id": "S01",
+  "avatar": "🌸",
+  "loyalty": {
+   "tier": "gold",
+   "member_since": "2022-04-01",
+   "points_balance": 2840
+  },
+  "source": "60_personas/personas.json (summary; full profile unchanged in cymbal.customers)",
+  "note": "Fictional persona for demo purposes (not a real person or member).",
+  "first_name": "Sakura"
+ },
+ {
+  "customer_id": "CR-0002",
+  "name": "Hiroshi Sato",
+  "age": 67,
+  "gender": "Male",
+  "residence": "Nakahara, Kawasaki, Kanagawa",
+  "household": [
+   {
+    "relation": "self",
+    "name": "Hiroshi",
+    "age": 67
+   },
+   {
+    "relation": "Wife",
+    "name": "Kazuko",
+    "age": 64
+   }
+  ],
+  "household_size": 2,
+  "allergies": [],
+  "concerns": [
+   "Concerned about blood pressure (Undergoing treatment with primary doctor)",
+   "Knee Pain (Going up and down stairs)",
+   "stiff shoulders"
+  ],
+  "interest_categories": [
+   "Health & Medicine > Topical Meds & Patches",
+   "Beauty & Personal Care > Health Goods",
+   "Health & Medicine > Vitamins & Tonics",
+   "Beverages > Health Tea & Aojiru (Green Juice)",
+   "Beauty & Personal Care > Adult Diapers & Nursing Care"
+  ],
+  "notes": "Living with wife after retirement. Morning walks are a daily routine. Regularly purchases patches (warm/cold), knee supports, and health tea. Prescribed blood pressure medication; consults a pharmacist before choosing OTC drugs. Uses Musashi-Kosugi and Kawasaki Station stores for prescriptions.",
+  "home_store_id": "S02",
+  "avatar": "🧓",
+  "loyalty": {
+   "tier": "Silver",
+   "member_since": "2019-06-01",
+   "points_balance": 1520
+  },
+  "medication_note": "Taking antihypertensive medication (fictional setting for demo) -> Consult doctor/pharmacist for OTC drugs",
+  "note": "Fictional persona for demo purposes (not a real person or member).",
+  "first_name": "Hiroshi"
+ },
+ {
+  "customer_id": "CR-0003",
+  "name": "Mika Ito",
+  "age": 29,
+  "gender": "female",
+  "residence": "Setagaya, Tokyo",
+  "household": [
+   {
+    "relation": "self",
+    "name": "Mika",
+    "age": 26
+   }
+  ],
+  "household_size": 1,
+  "allergies": [],
+  "concerns": [
+   "Sensitive Skin (Prone to irritation during seasonal changes)",
+   "Eye Strain (Frequent PC work)",
+   "Winter Dryness"
+  ],
+  "interest_categories": [
+   "Beauty & Personal Care > Skin Care",
+   "Health & Medicine > Eye Drops",
+   "Beauty & Personal Care > Body Care",
+   "Beauty & Personal Care > Beauty Accessories",
+   "Beauty & Personal Care > Hair Care"
+  ],
+  "notes": "Designer working at an IT company in Shibuya. Stops by the Shibuya store after work. Prefers hypoallergenic, fragrance-free skincare; frequently buys eye drops for eye strain and heated eye masks. Enjoys checking out new cosmetics and limited-edition items.",
+  "home_store_id": "S03",
+  "avatar": "💄",
+  "loyalty": {
+   "tier": "gold",
+   "member_since": "2023-04-01",
+   "points_balance": 3260
+  },
+  "note": "Fictional persona for demo purposes (not a real person or member).",
+  "first_name": "Mika"
+ }
+]

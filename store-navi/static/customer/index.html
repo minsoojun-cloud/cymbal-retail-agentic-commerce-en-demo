@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <title>Cymbal Retail Store App | In-store stock, shelf finder &amp; AI Concierge</title>
+  <meta name="description" content="Cymbal Retail Store App: hours and coupons for nearby stores, in-store stock and shelf locations, and shopping help from the AI Concierge.">
+  <link rel="icon" href="/static/shared/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/shared/css/tokens.css">
+  <link rel="stylesheet" href="/css/app.css">
+  <link rel="stylesheet" href="/css/features.css">
+  <script src="/config.js"></script>
+</head>
+<body>
+  <div class="app" id="app">
+    <header class="hdr" id="hdr">
+      <button type="button" class="sn-icon-btn hdr__back" id="hdr-back" aria-label="Back" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+      </button>
+      <a class="sn-logo hdr__logo" href="#/" id="hdr-logo" aria-label="Cymbal Retail Store App home">
+        <svg viewBox="0 0 196 40" width="124" height="26" aria-hidden="true">
+          <defs><linearGradient id="crg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4285f4"/><stop offset="1" stop-color="#1a5fd0"/></linearGradient></defs>
+          <g transform="translate(20 20)">
+            <circle r="17" fill="url(#crg)"/>
+            <circle r="11.5" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1.6"/>
+            <circle r="6" fill="none" stroke="#fff" stroke-opacity=".85" stroke-width="1.6"/>
+            <circle r="2.2" fill="#fbbc04"/>
+          </g>
+          <text x="45" y="27.5"><tspan class="sn-logo__a">Cymbal</tspan><tspan class="sn-logo__b" dx="5">Retail</tspan></text>
+        </svg>
+      </a>
+      <button type="button" class="hdr__store" id="hdr-store" hidden>
+        <span class="hdr__store-dot" id="hdr-store-dot"></span><span id="hdr-store-name"></span>
+      </button>
+      <div class="hdr__actions" id="hdr-actions">
+        <button type="button" class="hdr__avatar" id="hdr-login" aria-label="Switch demo user">
+          <span class="hdr__avatar-emoji" id="hdr-avatar">👩</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="view" id="view" tabindex="-1"></main>
+
+    <!-- phone: bottom tab bar · tablet/desktop: left navigation rail (CSS) -->
+    <nav class="tabbar" id="tabbar" aria-label="Main">
+      <span class="tabbar__brand" aria-hidden="true"><svg viewBox="0 0 40 40"><defs><linearGradient id="crg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4285f4"/><stop offset="1" stop-color="#1a5fd0"/></linearGradient></defs><g transform="translate(20 20)"><circle r="17" fill="url(#crg2)"/><circle r="11.5" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1.6"/><circle r="6" fill="none" stroke="#fff" stroke-opacity=".85" stroke-width="1.6"/><circle r="2.2" fill="#fbbc04"/></g></svg></span>
+      <button type="button" class="tab" data-tab="home" aria-label="Home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg><span>Home</span></button>
+      <button type="button" class="tab" data-tab="store" aria-label="My store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4v2h16V4zm1 10v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6h1zm-9 4H6v-4h6v4z"/></svg><span>Store</span></button>
+      <button type="button" class="tab tab--ai" data-tab="ai" aria-label="Ask the AI Concierge"><span class="tab__ai"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l1.9 5.6L19.5 9.5 13.9 11.4 12 17l-1.9-5.6L4.5 9.5l5.6-1.9L12 2zm7 11 1 2.8 2.8 1-2.8 1-1 2.8-1-2.8-2.8-1 2.8-1 1-2.8z"/></svg></span><span>Ask AI</span></button>
+      <button type="button" class="tab" data-tab="recipes" aria-label="Recipe ideas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.1 13.34l2.83-2.83L3.91 3.5a4.008 4.008 0 0 0 0 5.66l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88 1.41-1.41L13.41 13l1.47-1.47z"/></svg><span>Recipes</span></button>
+      <button type="button" class="tab" data-tab="cart" aria-label="Cart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0 0 20 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg><span>Cart</span><b class="tab__badge" id="tab-cart-badge" hidden>0</b></button>
+    </nav>
+
+    <button type="button" class="fab" id="fab-ai" hidden aria-label="Ask the AI Concierge">
+      <span class="fab__spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l1.9 5.6L19.5 9.5 13.9 11.4 12 17l-1.9-5.6L4.5 9.5l5.6-1.9L12 2zm7 11 1 2.8 2.8 1-2.8 1-1 2.8-1-2.8-2.8-1 2.8-1 1-2.8z"/></svg></span>
+      <span class="fab__label">Ask AI</span>
+    </button>
+  </div>
+
+  <!-- bottom sheets -->
+  <div class="scrim" id="scrim" hidden></div>
+  <section class="sheet" id="sheet-login" role="dialog" aria-modal="true" aria-labelledby="login-title" hidden>
+    <div class="sheet__grip"></div>
+    <h2 class="sheet__title" id="login-title">Switch demo user</h2>
+    <p class="sheet__sub">Coupons, deals and AI suggestions are personalized for each user.</p>
+    <div class="login-list" id="login-list"></div>
+  </section>
+
+  <section class="sheet" id="sheet-geo" role="dialog" aria-modal="true" aria-labelledby="geo-title" hidden>
+    <div class="sheet__grip"></div>
+    <h2 class="sheet__title" id="geo-title">Location simulation</h2>
+    <p class="sheet__sub">Simulate being near or inside a store, even where GPS is unavailable (e.g. at a demo venue).</p>
+    <div class="geo-list" id="geo-list"></div>
+  </section>
+
+  <section class="chat" id="chat" role="dialog" aria-modal="true" aria-labelledby="chat-title" hidden>
+    <div class="chat__head">
+      <div class="chat__grip"></div>
+      <div class="chat__titlebar">
+        <span class="chat__logo" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l1.9 5.6L19.5 9.5 13.9 11.4 12 17l-1.9-5.6L4.5 9.5l5.6-1.9L12 2zm7 11 1 2.8 2.8 1-2.8 1-1 2.8-1-2.8-2.8-1 2.8-1 1-2.8z"/></svg></span>
+        <div class="chat__titles">
+          <h2 id="chat-title">AI Concierge</h2>
+          <p id="chat-sub">Gemini • Agent Development Kit</p>
+        </div>
+        <button type="button" class="sn-icon-btn" id="chat-close" aria-label="Close">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="chat__log" id="chat-log" aria-live="polite"></div>
+    <div class="chat__chips" id="chat-chips"></div>
+    <form class="chat__form" id="chat-form" autocomplete="off">
+      <input id="chat-input" type="text" placeholder="Describe symptoms or a product (e.g. feeling feverish)" aria-label="Message" enterkeyhint="send">
+      <button type="submit" class="chat__send" id="chat-send" aria-label="Send">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.4 20.4 20.85 12.92a1 1 0 0 0 0-1.84L3.4 3.6a.993.993 0 0 0-1.39.91L2 9.12c0 .5.37.93.87.99L17 12 2.87 13.88c-.5.07-.87.5-.87 1l.01 4.61c0 .71.73 1.2 1.39.91z"/></svg>
+      </button>
+    </form>
+  </section>
+
+  <section class="mapv" id="mapv" role="dialog" aria-modal="true" aria-labelledby="map-title" hidden>
+    <div class="mapv__head">
+      <button type="button" class="sn-icon-btn" id="map-close" aria-label="Back">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+      </button>
+      <div class="mapv__titles"><h2 id="map-title">Find on map</h2><p id="map-sub"></p></div>
+      <span class="mapv__len" id="map-len"></span>
+    </div>
+    <div class="mapv__product" id="map-product"></div>
+    <div class="mapv__canvas" id="map-canvas">
+      <div class="mapv__zoom">
+        <button type="button" class="sn-icon-btn" id="map-zoom-in" aria-label="Zoom in"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></button>
+        <button type="button" class="sn-icon-btn" id="map-zoom-out" aria-label="Zoom out"><svg viewBox="0 0 24 24"><path d="M19 13H5v-2h14v2z"/></svg></button>
+        <button type="button" class="sn-icon-btn" id="map-zoom-reset" aria-label="Fit to screen"><svg viewBox="0 0 24 24"><path d="M5 15H3v4c0 1.1.9 2 2 2h4v-2H5v-4zM5 5h4V3H5c-1.1 0-2 .9-2 2v4h2V5zm14-2h-4v2h4v4h2V5c0-1.1-.9-2-2-2zm0 16h-4v2h4c1.1 0 2-.9 2-2v-4h-2v4z"/></svg></button>
+      </div>
+    </div>
+    <div class="mapv__elev" id="map-elev"></div>
+    <div class="mapv__foot" id="map-foot">
+      <button type="button" class="sn-btn sn-btn--outline" id="map-back">← Back</button>
+      <button type="button" class="sn-btn sn-btn--outline" id="mp-prev" hidden>Previous</button>
+      <button type="button" class="sn-btn sn-btn--primary" id="mp-next" hidden>Next</button>
+    </div>
+  </section>
+
+  <section class="sheet sheet--tall" id="sheet-cart" role="dialog" aria-modal="true" aria-labelledby="cart-title" hidden>
+    <div class="sheet__grip"></div>
+    <div class="cart" id="cart"></div>
+  </section>
+
+  <script src="/static/shared/js/sn-common.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/geo.js"></script>
+  <script src="/js/home.js"></script>
+  <script src="/js/autocomplete.js"></script>
+  <script src="/js/store.js"></script>
+  <script src="/js/search.js"></script>
+  <script src="/js/floormap.js"></script>
+  <script src="/js/cart.js"></script>
+  <script src="/js/chat.js"></script>
+  <script src="/js/forgot.js"></script>
+  <script src="/js/detail.js"></script>
+  <script src="/js/recipes.js"></script>
+  <script src="/js/voice.js"></script>
+  <script>window.SNC.boot();</script>
+</body>
+</html>

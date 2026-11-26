@@ -1,0 +1,119 @@
+{
+ "totals": {
+  "skus": 42,
+  "processed": 42,
+  "attributes": 235,
+  "tags": 111,
+  "auto_approved": 326,
+  "needs_review": 17,
+  "rejected": 3,
+  "human_approved": 0,
+  "human_rejected": 0
+ },
+ "fill_rate": {
+  "before": 0.287,
+  "after": 0.509
+ },
+ "auto_approve_rate": 0.919,
+ "by_group": [
+  {
+   "group": "fresh",
+   "label": "Fresh (Produce, Meat, Seafood)",
+   "skus": 9,
+   "processed": 9,
+   "fill_before": 0.469,
+   "fill_after": 0.692,
+   "auto_rate": 0.862,
+   "needs_review": 8,
+   "avg_tags_after": 3.2
+  },
+  {
+   "group": "prepared",
+   "label": "Deli, Frozen & Staples",
+   "skus": 10,
+   "processed": 10,
+   "fill_before": 0.258,
+   "fill_after": 0.508,
+   "auto_rate": 0.952,
+   "needs_review": 4,
+   "avg_tags_after": 2.5
+  },
+  {
+   "group": "grocery",
+   "label": "Packaged Foods & Beverages",
+   "skus": 8,
+   "processed": 8,
+   "fill_before": 0.291,
+   "fill_after": 0.469,
+   "auto_rate": 0.911,
+   "needs_review": 4,
+   "avg_tags_after": 1.8
+  },
+  {
+   "group": "kitchen",
+   "label": "Kitchen & Cookware",
+   "skus": 5,
+   "processed": 5,
+   "fill_before": 0.2,
+   "fill_after": 0.5,
+   "auto_rate": 0.968,
+   "needs_review": 1,
+   "avg_tags_after": 3.4
+  },
+  {
+   "group": "living",
+   "label": "Household & Home",
+   "skus": 3,
+   "processed": 3,
+   "fill_before": 0.259,
+   "fill_after": 0.333,
+   "auto_rate": 1.0,
+   "needs_review": 0,
+   "avg_tags_after": 2.0
+  },
+  {
+   "group": "beauty",
+   "label": "Beauty",
+   "skus": 3,
+   "processed": 3,
+   "fill_before": 0.143,
+   "fill_after": 0.334,
+   "auto_rate": 1.0,
+   "needs_review": 0,
+   "avg_tags_after": 2.7
+  },
+  {
+   "group": "pet",
+   "label": "Pet Supplies",
+   "skus": 4,
+   "processed": 4,
+   "fill_before": 0.182,
+   "fill_after": 0.455,
+   "auto_rate": 0.87,
+   "needs_review": 0,
+   "avg_tags_after": 2.8
+  }
+ ],
+ "funnel": {
+  "source_skus": 42,
+  "extracted": 235,
+  "normalized": 233,
+  "gate1_passed": 216,
+  "auto_approved": 216,
+  "needs_review": 16,
+  "rejected": 3,
+  "golden_skus": 26
+ },
+ "cost": {
+  "basis": "Measured online → converted to batch",
+  "per_sku_jpy": 0.3156,
+  "slide_per_sku_jpy": 0.35,
+  "total_jpy": 13.25,
+  "input_tokens": 177693,
+  "output_tokens": 49368,
+  "skus_measured": 42,
+  "avg_input_tokens": 4231,
+  "avg_output_tokens": 1175
+ },
+ "recent_reviews": []
+}

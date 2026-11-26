@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <meta name="theme-color" content="#1a73e8"/>
+  <meta name="description" content="Cymbal Retail store staff app — shelf registration and stock lookup"/>
+  <meta name="mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+  <meta name="apple-mobile-web-app-title" content="Cymbal Staff"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <title>Cymbal Staff — Shelf Registration &amp; Stock Lookup</title>
+  <link rel="manifest" href="/manifest.webmanifest"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="/static/staff/icons/icon-192.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/staff/icons/apple-touch-icon.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&amp;family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/static/staff/css/staff.css"/>
+  <link rel="stylesheet" href="/static/staff/css/unassigned.css"/>
+  <script src="/config.js"></script>
+</head>
+<body>
+<div class="app" id="app">
+  <!-- ================= top app bar ================= -->
+  <header class="topbar">
+    <button type="button" class="icon-btn topbar__back" id="back-btn" aria-label="Back" hidden>
+      <svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+    </button>
+    <a class="topbar__brand" href="#register" aria-label="Cymbal Staff home">
+      <svg class="mark" viewBox="0 0 40 40" aria-hidden="true">
+        <defs><linearGradient id="crg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4285f4"/><stop offset="1" stop-color="#1a5fd0"/></linearGradient></defs>
+        <g transform="translate(20 20)"><circle r="17" fill="url(#crg)"/><circle r="11.5" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1.6"/><circle r="6" fill="none" stroke="#fff" stroke-opacity=".85" stroke-width="1.6"/><circle r="2.2" fill="#fbbc04"/></g>
+      </svg>
+      <span class="topbar__title" id="topbar-title">Staff</span>
+    </a>
+    <div class="topbar__chips">
+      <button type="button" class="chip-btn" id="store-chip" aria-label="Switch store">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4v2h16V4zm1 10v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6h1zm-9 4H6v-4h6v4z"/></svg>
+        <span id="who-store">Store</span>
+      </button>
+      <button type="button" class="chip-btn chip-btn--staff" id="staff-chip" aria-label="Switch staff member">
+        <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+        <span id="who-name">Staff</span>
+      </button>
+    </div>
+    <nav class="xlinks" id="xlinks" aria-label="Other Cymbal apps">
+      <a class="xlink" id="xl-store" href="#" hidden data-tip="Store App" aria-label="Store App"><svg viewBox="0 0 24 24"><path d="M17 1H7c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zm0 18H7V5h10v14zm-5-3.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg></a>
+      <a class="xlink" id="xl-online" href="#" hidden data-tip="Online Store" aria-label="Online Store"><svg viewBox="0 0 24 24"><path d="M20 4H4v2h16V4zm1 10v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6h1zm-9 4H6v-4h6v4z"/></svg></a>
+      <a class="xlink" id="xl-enrich" href="#" hidden data-tip="Data Enrichment Studio" aria-label="Data Enrichment Studio"><svg viewBox="0 0 24 24"><path d="M19 9l1.25-2.75L23 5l-2.75-1.25L19 1l-1.25 2.75L15 5l2.75 1.25L19 9zm-7.5.5L9 4 6.5 9.5 1 12l5.5 2.5L9 20l2.5-5.5L17 12l-5.5-2.5zM19 15l-1.25 2.75L15 19l2.75 1.25L19 23l1.25-2.75L23 19l-2.75-1.25L19 15z"/></svg></a>
+    </nav>
+    <button type="button" class="icon-btn" id="more-btn" aria-label="More options" aria-haspopup="menu">
+      <svg viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+    </button>
+    <div class="menu" id="more-menu" role="menu" hidden>
+      <a class="menu__item" id="customer-link" role="menuitem" href="#" hidden data-tooltip="Store App" aria-label="Store App">
+        <svg viewBox="0 0 24 24"><path d="M17 1H7c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zm0 18H7V5h10v14zm-5-3.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg>
+        Store App (customer)
+      </a>
+      <a class="menu__item" id="admin-link" role="menuitem" href="/admin/">
+        <svg viewBox="0 0 24 24"><path d="M3 3h8v8H3V3zm2 2v4h4V5H5zm8-2h8v8h-8V3zm2 2v4h4V5h-4zM3 13h8v8H3v-8zm2 2v4h4v-4H5zm11-2h2v3h3v2h-3v3h-2v-3h-3v-2h3v-3z"/></svg>
+        Shelf Manager (manager)
+      </a>
+      <button type="button" class="menu__item" role="menuitem" id="menu-switch">
+        <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+        Switch store / staff member
+      </button>
+      <button type="button" class="menu__item" role="menuitem" id="menu-reload">
+        <svg viewBox="0 0 24 24"><path d="M17.65 6.35A7.958 7.958 0 0 0 12 4a8 8 0 1 0 7.73 10h-2.08A6 6 0 1 1 12 6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+        Refresh
+      </button>
+    </div>
+    <div class="progress" id="progress" hidden><i></i></div>
+  </header>
+
+  <!-- ================= navigation (bottom bar on phone / rail on tablet) ================= -->
+  <nav class="nav" role="tablist" aria-label="Menu">
+    <button class="nav__item active" data-tab="register" role="tab" id="tab-register">
+      <span class="nav__icon"><svg viewBox="0 0 24 24"><path d="M12 15.2A3.2 3.2 0 1 0 12 8.8a3.2 3.2 0 0 0 0 6.4zM9 2 7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9z"/></svg></span>
+      <span class="nav__label">Register</span>
+    </button>
+    <button class="nav__item" data-tab="stock" role="tab" id="tab-stock">
+      <span class="nav__icon"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1 0-2 .9-2 2v3.01c0 .72.43 1.34 1 1.69V20c0 1.1 1.1 2 2 2h14c.9 0 2-.9 2-2V8.7c.57-.35 1-.97 1-1.69V4c0-1.1-1-2-2-2zm-5 12H9v-2h6v2zm5-7H4V4l16-.02V7z"/></svg></span>
+      <span class="nav__label">Stock</span>
+    </button>
+    <button class="nav__item" data-tab="history" role="tab" id="tab-history">
+      <span class="nav__icon"><svg viewBox="0 0 24 24"><path d="M13 3a9 9 0 0 0-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42A8.954 8.954 0 0 0 13 21a9 9 0 0 0 0-18zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/></svg></span>
+      <span class="nav__label">History</span>
+    </button>
+  </nav>
+
+  <main class="content" id="content">
+    <!-- persistent unassigned warning banner -->
+    <div class="unassigned-banner" id="unassigned-banner" hidden>
+      <div class="unassigned-banner__content">
+        <svg viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
+        <span><strong id="unassigned-count">0</strong> products have no shelf number</span>
+      </div>
+      <button type="button" class="btn btn--sm btn--warning" id="unassigned-btn">View list</button>
+    </div>
+    <!-- ======================= Register ======================= -->
+    <section class="panel active" id="panel-register" data-panel="register">
+      <!-- step 1: capture -->
+      <div class="stage active" id="stage-1">
+        <div class="store-banner" id="reg-store-banner">
+          <div class="store-banner__map" id="reg-store-map" aria-hidden="true"></div>
+          <div class="store-banner__txt"><small>Registering for store</small><b id="reg-store-name">—</b><span id="reg-store-sub"></span></div>
+          <button type="button" class="btn btn--tonal btn--sm-h" id="reg-store-switch">Switch store</button>
+        </div>
+        <div class="hero">
+          <div class="hero__text">
+            <h1>Register a shelf location from a photo</h1>
+            <p>Take a photo that shows the product and its shelf-edge slot label (e.g. A02-406). Gemini reads the shelf number, tier and product for you.</p>
+          </div>
+          <label class="btn btn--primary btn--xl hero__cta" for="file-input">
+            <svg viewBox="0 0 24 24"><path d="M12 15.2A3.2 3.2 0 1 0 12 8.8a3.2 3.2 0 0 0 0 6.4zM9 2 7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9z"/></svg>
+            Take shelf photo
+          </label>
+        </div>
+        <input type="file" id="file-input" accept="image/*" capture="environment" hidden/>
+        <div class="section-hd">
+          <h2>Or pick a demo photo</h2>
+          <label class="switch"><input type="checkbox" id="demo-all"/><span>All stores</span></label>
+        </div>
+        <div class="gallery" id="gallery"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>
+        <label class="fab" for="file-input" aria-label="Take shelf photo">
+          <svg viewBox="0 0 24 24"><path d="M12 15.2A3.2 3.2 0 1 0 12 8.8a3.2 3.2 0 0 0 0 6.4zM9 2 7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9z"/></svg>
+          <span>Photo</span>
+        </label>
+      </div>
+
+      <!-- step 2: analyzing -->
+      <div class="stage" id="stage-2">
+        <div class="scan">
+          <img id="scan-img" alt="Photo being analyzed"/>
+          <div class="scan__beam"></div>
+          <div class="scan__label"><span class="spinner"></span><span>Reading slot label, tier and product…</span></div>
+        </div>
+      </div>
+
+      <!-- step 3: confirm -->
+      <div class="stage" id="stage-3">
+        <form class="confirm" id="reg-form" autocomplete="off">
+          <div class="confirm__a">
+            <div class="detect-card">
+              <img id="confirm-img" class="detect-card__img" alt="Photo to register"/>
+              <div class="detect-card__body">
+                <div class="detect" id="detect"></div>
+              </div>
+            </div>
+            <div class="extra" id="extra"></div>
+            <div class="card">
+              <div class="card__hd"><h3>Product</h3><span class="muted" id="cand-sub"></span></div>
+              <div class="cands" id="cands"></div>
+              <button type="button" class="btn btn--ghost btn--block" id="more-cands">
+                <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                Other candidates / search products
+              </button>
+            </div>
+          </div>
+          <div class="confirm__b">
+            <div class="card">
+              <div class="card__hd"><h3>Shelf location</h3></div>
+              <button type="button" class="picker" id="fixture-btn" aria-haspopup="dialog">
+                <span class="picker__k">Fixture</span>
+                <span class="picker__v" id="fixture-val">Select a fixture</span>
+                <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+              </button>
+              <div class="hint" id="fixture-hint"></div>
+              <div class="fmap" id="confirm-map">
+                <div class="fmap__hd">
+                  <span class="fmap__store"><svg viewBox="0 0 24 24"><path d="M20 4H4v2h16V4zm1 10v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6h1zm-9 4H6v-4h6v4z"/></svg><b id="confirm-map-store">—</b></span>
+                  <span class="fmap__title">Floor map</span>
+                  <span class="fmap__seg"><button type="button" data-fz="near" class="on">Nearby</button><button type="button" data-fz="all">Whole store</button></span>
+                </div>
+                <div class="fmap__svg" id="confirm-map-svg"></div>
+                <div class="fmap__cap" id="confirm-map-cap">You can also tap a shelf on the map to select it</div>
+              </div>
+              <div class="elev-tools">
+                <span class="muted small">Tap 1–3 adjacent slots on one tier</span>
+                <span class="zoom">
+                  <button type="button" class="icon-btn icon-btn--sm" id="zoom-out" aria-label="Zoom out">−</button>
+                  <button type="button" class="icon-btn icon-btn--sm" id="zoom-in" aria-label="Zoom in">+</button>
+                </span>
+              </div>
+              <div class="elev-wrap" id="elev-wrap"><div class="elev" id="f-elev" role="grid" aria-label="Shelf front view"></div></div>
+              <div class="elev-legend"><span><i class="lg lg--sel"></i>Selected</span><span><i class="lg lg--ai"></i>AI detected</span><span><i class="lg lg--cur"></i>Current location</span></div>
+              <div class="sel-sum" id="sel-sum"></div>
+              <details class="memo">
+                <summary>Add a note</summary>
+                <textarea id="f-note" rows="3" maxlength="200" placeholder="e.g. Moved to tier 4 for the winter fair"></textarea>
+              </details>
+            </div>
+          </div>
+          <div class="actionbar">
+            <button type="button" class="btn btn--tonal" id="btn-back">Retake</button>
+            <button type="submit" class="btn btn--primary btn--grow" id="btn-register">Register location</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- step 4: done -->
+      <div class="stage" id="stage-4">
+        <div class="done">
+          <div class="done__head">
+            <div class="done__check"><svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></div>
+            <div><h2>Shelf location registered</h2><p class="muted" id="done-sub"></p></div>
+          </div>
+          <div class="done__grid">
+            <div class="card">
+              <div class="done__prod" id="done-prod"></div>
+              <div class="done__loc" id="done-loc"></div>
+              <div class="elev-wrap elev-wrap--mini"><div class="elev elev--mini" id="done-elev"></div></div>
+              <div class="done__sync" id="done-sync"></div>
+              <p class="muted small">Instantly reflected in the Store App shelf guide and floor map.</p>
+            </div>
+            <div class="card map-card">
+              <div class="card__hd"><h3>Floor map</h3><span class="muted" id="map-store"></span></div>
+              <div class="minimap" id="minimap"></div>
+            </div>
+          </div>
+          <div class="actionbar actionbar--done">
+            <a class="btn btn--tonal" id="btn-open-customer" target="_blank" rel="noopener" hidden>Open Store App</a>
+            <a class="btn btn--tonal" id="btn-back-admin" href="/admin/" hidden>Back to Shelf Manager</a>
+            <button type="button" class="btn btn--primary btn--grow" id="btn-again">Register another</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= Stock ======================= -->
+    <section class="panel" id="panel-stock" data-panel="stock">
+      <form class="searchbar" id="stock-form" autocomplete="off" role="search">
+        <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+        <input type="search" id="stock-q" placeholder="Search stock in all stores by product name or JAN" aria-label="Stock search" enterkeyhint="search"/>
+        <button type="submit" class="btn btn--primary btn--sm-h">Search</button>
+        <ul class="ac" id="stock-ac" role="listbox" hidden></ul>
+      </form>
+      <div class="stock-layout">
+        <div class="stock-list" id="stock-results">
+          <div class="empty">
+            <svg viewBox="0 0 24 24"><path d="M20 2H4c-1 0-2 .9-2 2v3.01c0 .72.43 1.34 1 1.69V20c0 1.1 1.1 2 2 2h14c.9 0 2-.9 2-2V8.7c.57-.35 1-.97 1-1.69V4c0-1.1-1-2-2-2zm-5 12H9v-2h6v2zm5-7H4V4l16-.02V7z"/></svg>
+            <p>Check stock levels and slot locations across all 3 stores at once.</p>
+          </div>
+        </div>
+        <aside class="stock-detail" id="stock-detail" aria-live="polite">
+          <div class="empty"><p>Select a product from the list</p></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ======================= History ======================= -->
+    <section class="panel" id="panel-history" data-panel="history">
+      <div class="section-hd">
+        <h2>Recent shelf registrations</h2>
+        <label class="switch"><input type="checkbox" id="hist-all"/><span>All stores</span></label>
+      </div>
+      <div class="ptr" id="ptr" aria-hidden="true"><span class="spinner"></span></div>
+      <div class="history" id="history"></div>
+    </section>
+
+  </main>
+</div>
+
+<!-- ================= bottom sheets ================= -->
+<div class="scrim" id="scrim" hidden></div>
+<section class="sheet" id="who-sheet" role="dialog" aria-modal="true" aria-labelledby="who-title" hidden>
+  <div class="sheet__grip"></div>
+  <h2 id="who-title">Store &amp; staff member</h2>
+  <p class="muted small">Demo sign-in. The staff name is recorded in the registration history.</p>
+  <label class="field__label">Role</label>
+  <div style="display:flex; gap:8px; margin-bottom:14px;">
+    <button type="button" class="btn btn--sm btn--primary" id="btn-role-staff" style="flex:1;">Staff</button>
+    <button type="button" class="btn btn--sm btn--tonal" id="btn-role-manager" style="flex:1;">Manager (Shelf Manager)</button>
+  </div>
+  <div class="store-pick" id="store-pick"></div>
+  <label class="field__label" for="staff-name">Staff name</label>
+  <input id="staff-name" class="input" maxlength="20" placeholder="e.g. Sato" autocomplete="off"/>
+  <div class="name-chips" id="name-chips"></div>
+  <div class="sheet__actions"><button type="button" class="btn btn--primary btn--grow" id="who-ok">Start</button></div>
+</section>
+
+<section class="sheet sheet--tall" id="fixture-sheet" role="dialog" aria-modal="true" aria-labelledby="fx-title" hidden>
+  <div class="sheet__grip"></div>
+  <div class="sheet__hd"><h2 id="fx-title">Select fixture</h2><button type="button" class="icon-btn" data-close aria-label="Close"><svg viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></button></div>
+  <input type="search" class="input" id="fx-q" placeholder="Filter by fixture number or section (e.g. A02, sauces)" aria-label="Filter fixtures"/>
+  <div class="fx-list" id="fx-list"></div>
+</section>
+
+<section class="sheet sheet--tall" id="cand-sheet" role="dialog" aria-modal="true" aria-labelledby="cs-title" hidden>
+  <div class="sheet__grip"></div>
+  <div class="sheet__hd"><h2 id="cs-title">Select product</h2><button type="button" class="icon-btn" data-close aria-label="Close"><svg viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></button></div>
+  <form class="cand-search" id="cand-search-form">
+    <input type="search" class="input" id="cand-q" placeholder="Search by product name" aria-label="Product search" enterkeyhint="search"/>
+    <button type="submit" class="btn btn--primary">Search</button>
+  </form>
+  <div class="cands cands--sheet" id="cands-all"></div>
+</section>
+
+<section class="sheet" id="confirm-sheet" role="alertdialog" aria-modal="true" aria-labelledby="cf-title" hidden>
+  <div class="sheet__grip"></div>
+  <h2 id="cf-title">Set stock to 0?</h2>
+  <p class="muted" id="cf-body"></p>
+  <div class="sheet__actions">
+    <button type="button" class="btn btn--tonal" data-close>Cancel</button>
+    <button type="button" class="btn btn--danger btn--grow" id="cf-ok">Set to 0</button>
+  </div>
+</section>
+
+<section class="sheet sheet--tall" id="map-sheet" role="dialog" aria-modal="true" aria-labelledby="ms-title" hidden>
+  <div class="sheet__grip"></div>
+  <div class="sheet__hd"><h2 id="ms-title">Shelf location</h2><button type="button" class="icon-btn" data-close aria-label="Close"><svg viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></button></div>
+  <div class="ms-prod" id="ms-prod"></div>
+  <div class="fmap fmap--sheet" id="ms-map">
+    <div class="fmap__hd">
+      <span class="fmap__store"><svg viewBox="0 0 24 24"><path d="M20 4H4v2h16V4zm1 10v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6h1zm-9 4H6v-4h6v4z"/></svg><b id="ms-store">—</b></span>
+      <span class="fmap__title" id="ms-slot"></span>
+      <span class="fmap__seg"><button type="button" data-fz="near" class="on">Nearby</button><button type="button" data-fz="all">Whole store</button></span>
+    </div>
+    <div class="fmap__svg" id="ms-svg"></div>
+  </div>
+  <div class="elev-wrap elev-wrap--mini"><div class="elev elev--mini" id="ms-elev"></div></div>
+</section>
+
+<!-- ================= unassigned list ================= -->
+<section class="sheet sheet--tall" id="unassigned-sheet" role="dialog" aria-modal="true" aria-labelledby="unassigned-title" hidden>
+  <div class="sheet__grip"></div>
+  <div class="sheet__hd">
+    <h2 id="unassigned-title">Products without a shelf number</h2>
+    <button type="button" class="icon-btn" data-close aria-label="Close"><svg viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></button>
+  </div>
+  <p class="small muted" style="margin:4px 0 12px;">These products lost their shelf location because a shelf or shelf number was removed in the Shelf Manager. Use "Assign shelf" to register a new location (no photo needed).</p>
+  <div class="unassigned-list" id="unassigned-items-list"></div>
+</section>
+
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/static/staff/js/unassigned.js"></script>
+<script src="/static/staff/js/staff.js"></script>
+</body>
+</html>

@@ -1,0 +1,532 @@
+{
+  "items": [
+    {
+      "rec": {
+        "sku": "4909270706758",
+        "kind": "attribute",
+        "attr_key": "allergens",
+        "label": "Allergens",
+        "raw_value": "",
+        "unit": "",
+        "norm_note": "Not stated in source (not inferred)",
+        "evidence": "",
+        "source_field": "",
+        "self_conf": 0.0,
+        "evidence_match": 0.0,
+        "token_conf": null,
+        "score": 0.0,
+        "gate_status": "needs_review",
+        "gate": "gate1",
+        "reason": "Food safety rule: allergens are not stated in the source. Not filled in by inference — check the package label.",
+        "job_id": "online-20261111_001308",
+        "model": "gemini-3.8-flash",
+        "created_at": "2026-11-11T00:13:13.739538+00:00",
+        "value": null
+      },
+      "product": {
+        "sku": "4909270706758",
+        "title": "Shizuoka Swordfish Fillets, 3 pcs (approx. 240 g)",
+        "image_url": "/img/products/x_fish_swordfish_fillet_p.jpg",
+        "group_label": "Fresh (Produce, Meat, Seafood)"
+      },
+      "source_text": "[Title] Shizuoka Swordfish Fillets, 3 fillets (about 240g)\n[Brand] \n[Category] Seafood > Spanish Mackerel & Swordfish > Swordfish\n[Description] Boneless swordfish fillets that are easy for kids to eat. Great for teriyaki, meunière or tatsuta-age — Japanese or Western dishes — and handy for bento. ■ Net weight 3 fillets (about 240g) ■ Origin Shizuoka Prefecture  Keep refrigerated\n[Attributes]\nbase_id: x_fish_swordfish_fillet"
+    },
+    {
+      "rec": {
+        "sku": "4929728033878",
+        "kind": "attribute",
+        "attr_key": "allergens",
+        "label": "Allergens",
+        "raw_value": "",
+        "unit": "",
+        "norm_note": "Not stated in source (not inferred)",
+        "evidence": "",
+        "source_field": "",
+        "self_conf": 0.0,
+        "evidence_match": 0.0,
+        "token_conf": null,
+        "score": 0.0,
+        "gate_status": "needs_review",
+        "gate": "gate1",
+        "reason": "Food safety rule: allergens are not stated in the source. Not filled in by inference — check the package label.",
+        "job_id": "online-20261111_001308",
+        "model": "gemini-3.8-flash",
+        "created_at": "2026-11-11T00:13:42.198077+00:00",
+        "value": null
+      },
+      "product": {
+        "sku": "4929728033878",
+        "title": "Cymbal Frozen Thick-Cut Seasoned Beef Tongue, Salt Flavor, 400g",
+        "image_url": "/img/products/x_processed_meat_frozen_seasoned_gyutan_p.jpg",
+        "group_label": "Deli, Frozen & Staples"
+      },
+      "source_text": "[Title] Cymbal Frozen Thick-Cut Seasoned Beef Tongue, Salt Flavor 400g\n[Brand] Cymbal\n[Category] Frozen > Frozen Meat & Processed Meat > Seasoned Beef Tongue\n[Description] Thick-cut beef tongue pre-seasoned with salt and frozen. Just thaw and grill in a frying pan or on a hot plate for chewy, satisfying grilled beef tongue. Also great over rice as a beef tongue bowl. ■ Net weight 400g ■ Origin USA  Keep frozen (-18°C or below)\n[Attributes]\nbase_id: x_processed_meat_frozen_seasoned_gyutan"
+    },
+    {
+      "rec": {
+        "sku": "4946311911337",
+        "kind": "attribute",
+        "attr_key": "height_cm",
+        "label": "Height",
+        "raw_value": "7cm deep",
+        "unit": "cm",
+        "norm_note": "Ambiguous dimension: \"7cm deep\" is depth, not height",
+        "evidence": "7cm deep",
+        "source_field": "description",
+        "self_conf": 0.95,
+        "evidence_match": 1.0,
+        "token_conf": null,
+        "score": 0.5,
+        "gate_status": "needs_review",
+        "gate": "gate1",
+        "reason": "Unit normalization failed: ambiguous dimension (\"7cm deep\" = depth vs. height)",
+        "job_id": "online-20261111_001308",
+        "model": "gemini-3.8-flash",
+        "created_at": "2026-11-11T00:13:31.773110+00:00",
+        "value": null
+      },
+      "product": {
+        "sku": "4946311911337",
+        "title": "Cymbal Select Deep Frying Pan with Glass Lid, Navy, 28 cm",
+        "image_url": "/img/products/z_kitchen_deep_frying_pan_p.jpg",
+        "group_label": "Kitchen & Cookware"
+      },
+      "source_text": "[Title] Cymbal Select Deep Frying Pan with Glass Lid 28cm Navy\n[Brand] Cymbal Select\n[Category] Kitchen > Frying Pans & Pots > Frying Pans\n[Description] A 7cm-deep design that handles stir-frying, simmering and shallow-frying in one pan. A durable 5-layer coating lasts long and it is dishwasher safe. The glass lid lets you check on food while it cooks.\nSize: 28cm / Material: Aluminum (5-layer fluorine coating) / Color: Navy / Country of manufacture: Made in Japan\n[Attributes]\non_sale: false\nsize: 28cm\nlabels: Induction compatible / Dishwasher safe\norigin: Made in Japan\nmaterial: Aluminum (5-layer fluorine coating)\ncolor: Navy\nbrand_line: Cymbal Select\nbase_id: z_kitchen_deep_frying_pan\ndishes: Simmered dishes / Shallow-frying / Pasta"
+    },
+    {
+      "rec": {
+        "sku": "4913667472959",
+        "kind": "attribute",
+        "attr_key": "pack_count",
+        "label": "Pack count",
+        "raw_value": "1/2 cut",
+        "unit": "pcs",
+        "norm_note": "No quantity unit (pcs, pieces, fillets, etc.)",
+        "evidence": "size: 1/2 cut",
+        "source_field": "attributes",
+        "self_conf": 1.0,
+        "evidence_match": 1.0,
+        "token_conf": null,
+        "score": 0.5,
+        "gate_status": "needs_review",
+        "gate": "gate1",
+        "reason": "Unit normalization failed: no quantity unit (pcs, pieces, fillets, etc.)",
+        "job_id": "online-20261111_001308",
+        "model": "gemini-3.8-flash",
+        "created_at": "2026-11-11T00:13:15.539984+00:00",
+        "value": null
+      },
+      "product": {
+        "sku": "4913667472959",
+        "title": "Ibaraki Napa Cabbage, 1/2 Cut",
+        "image_url": "/img/products/veg_hakusai_p.jpg",
+        "group_label": "Fresh (Produce, Meat, Seafood)"
+      },
+      "source_text": "[Title] Ibaraki Napa Cabbage, 1/2 cut\n[Brand]\n[Category] Produce > Vegetables > Leafy Greens\n[Description] Napa cabbage that grows sweeter as the weather turns cold. Perfect for hot pot, cream stew, and quick pickles. Enjoy the different textures of each part: crisp cores and melt-in-your-mouth leaves.\nNet contents: 1/2 cut / Origin: Ibaraki Prefecture / Storage: Chilled\n[Attributes]\non_sale: true\npromo_text: Time sale\nsize: 1/2 cut\nstorage_type: Chilled\nlabels: Chilled / In season\norigin: Ibaraki Prefecture\nallergens: none\nseason_months: 10 / 11 / 12 / 1 / 2\nbase_id: veg_hakusai\ndishes: Yosenabe hot pot / Napa cabbage and pork mille-feuille hot pot / Quick pickles / Cream stew / Happosai"
+    },
+    {
+      "rec": {
+        "sku": "4913667472959",
+        "kind": "attribute",
+        "attr_key": "allergens",
+        "label": "Allergens",
+        "raw_value": "none",
+        "unit": "",
+        "norm_note": "Nothing to display",
+        "evidence": "allergens: none",
+        "source_field": "attributes",
+        "self_conf": 1.0,
+        "evidence_match": 1.0,
+        "token_conf": null,
+        "score": 0.6,
+        "gate_status": "needs_review",
+        "gate": "gate1",
+        "reason": "Food safety rule: \"none\" reflects structured attributes only. Please check the package label",
+        "job_id": "online-20261111_001308",
+        "model": "gemini-3.8-flash",
+        "created_at": "2026-11-11T00:13:15.540069+00:00",
+        "value": "none"
+      },
+      "product": {
+        "sku": "4913667472959",
+        "title": "Ibaraki Napa Cabbage, 1/2 Cut",
+        "image_url": "/img/products/veg_hakusai_p.jpg",
+        "group_label": "Fresh (Produce, Meat, Seafood)"
+      },
+      "source_text": "[Title] Ibaraki Napa Cabbage, 1/2 cut\n[Brand]\n[Category] Produce > Vegetables > Leafy Greens\n[Description] Napa cabbage that grows sweeter as the weather turns cold. Perfect for hot pot, cream stew, and quick pickles. Enjoy the different textures of each part: crisp cores and melt-in-your-mouth leaves.\nNet contents: 1/2 cut / Origin: Ibaraki Prefecture / Storage: Chilled\n[Attributes]\non_sale: true\npromo_text: Time sale\nsize: 1/2 cut\nstorage_type: Chilled\nlabels: Chilled / In season\norigin: Ibaraki Prefecture\nallergens: none\nseason_months: 10 / 11 / 12 / 1 / 2\nbase_id: veg_hakusai\ndishes: Yosenabe hot pot / Napa cabbage and pork mille-feuille hot pot / Quick pickles / Cream stew / Happosai"
+    },
+    {
+      "rec": {
+        "sku": "4922773303767",
+        "kind": "attribute",
+        "attr_key": "allergens",
+        "label": "Allergens",
+        "raw_value": "none",
+        "unit": "",
+        "norm_note": "Nothing to display",
+        "evidence": "allergens: none",
+        "source_field": "attributes",
+        "self_conf": 1.0,
+        "evidence_match": 1.0,
+        "token_conf": null,
+        "score": 0.6,
+        "gate_status": "needs_review",
+        "gate": "gate1",
+        "reason": "Food safety rule: \"none\" reflects structured attributes only. Please check the package label",
+        "job_id": "online-20261111_001308",
+        "model": "gemini-3.8-flash",
+        "created_at": "2026-11-11T00:13:15.020224+00:00",
+        "value": "none"
+      },
+      "product": {
+        "sku": "4922773303767",
+        "title": "Aomori Kogyoku Apples, 4 ct Bag",
+        "image_url": "/img/products/y_fresh_premium_apple_kogyoku_p.jpg",
+        "group_label": "Fresh (Produce, Meat, Seafood)"
+      },
+      "source_text": "[Title] Aomori Apples (Kogyoku), 4 pcs, bagged\n[Brand]\n[Category] Produce > Fruit > Apples\n[Description] Kogyoku apples have a distinct sweet-tart flavor and hold their shape when cooked, making them ideal for baking. Recommended for apple pie, baked apples, and homemade jam.\nNet contents: 4 pcs / Origin: Aomori Prefecture / Storage: Ambient\n[Attributes]\non_sale: true\npromo_text: Time sale / 20 Cymbal points awarded\nsize: 4 pcs\nstorage_type: Ambient\nlabels: Ambient / In season\norigin: Aomori Prefecture\nallergens: none\nseason_months: 9 / 10 / 11\nbase_id: y_fresh_premium_apple_kogyoku\ndishes: Apple pie / Baked apples / Jam / Compote / Snack"
+    },
+    {
+      "rec": {
+        "sku": "4925319234365",
+        "kind": "attribute",
+        "attr_key": "allergens",
+        "label": "Allergens",
+        "raw_value": "none",
+        "unit": "",
+        "norm_note": "Nothing to display",
+        "evidence": "allergens: none",
+        "source_field": "attributes",
+        "self_conf": 1.0,
+        "evidence_match": 1.0,
+        "token_conf": null,
+        "score": 0.6,
+        "gate_status": "needs_review",
+        "gate": "gate1",
+        "reason": "Food safety rule: \"none\" reflects structured attributes only. Please check the package label",
+        "job_id": "online-20261111_001308",
+        "model": "gemini-3.8-flash",
+        "created_at": "2026-11-11T00:13:18.601736+00:00",
+        "value": "none"
+      },
+      "product": {
+        "sku": "4925319234365",
+        "title": "Hokkaido Fresh Sanma (Pacific Saury), 2 pcs",
+        "image_url": "/img/products/fish_fresh_saury_p.jpg",
+        "group_label": "Fresh (Produce, Meat, Seafood)"
+      },
+      "source_text": "[Title] Hokkaido Fresh Pacific Saury, 2 whole\n[Brand]\n[Category] Seafood > Fresh Fish > Saury & Sardines\n[Description] Fresh Pacific saury landed off Hokkaido, a classic taste of autumn. The rich, fatty flesh turns fragrant when salt-grilled; serve with grated daikon and sudachi citrus for a true seasonal treat.\nNet contents: 2 whole / Origin: Hokkaido / Storage: Chilled\n[Attributes]\non_sale: true\npromo_text: This week's great deals! / 10 Cymbal points awarded\nsize: 2 whole\nstorage_type: Chilled\nlabels: Chilled / In season\norigin: Hokkaido\nallergens: none\nseason_months: 9 / 10 / 11\nbase_id: fish_fresh_saury\ndishes: Salt-grilled saury / Kabayaki-glazed saury / Simmered saury / Saury rice"
+    },
+    {
+      "rec": {
+        "sku": "4978886449342",
+        "kind": "attribute",
+        "attr_key": "allergens",
+        "label": "Allergens",
+        "raw_value": "none",
+        "unit": "",
+        "norm_note": "Nothing to display",
+        "evidence": "allergens: none",
+        "source_field": "attributes",
+        "self_conf": 1.0,
+        "evidence_match": 1.0,
+        "token_conf": null,
+        "score": 0.6,
+        "gate_status": "needs_review",
+        "gate": "gate1",
+        "reason": "Food safety rule: \"none\" reflects structured attributes only. Please check the package label",
+        "job_id": "online-20261111_001308",
+        "model": "gemini-3.8-flash",
+        "created_at": "2026-11-11T00:13:20.467895+00:00",
+        "value": "none"
+      },
+      "product": {
+        "sku": "4978886449342",
+        "title": "Domestic Bunashimeji Mushrooms, 3 packs (approx. 300 g)",
+        "image_url": "/img/products/fruit_bunashimeji_p.jpg",
+        "group_label": "Fresh (Produce, Meat, Seafood)"
+      },
+      "source_text": "[Title] Domestic Bunashimeji Mushrooms, 3 packs (about 300g)\n[Brand]\n[Category] Produce > Mushrooms > Shimeji\n[Description] Tightly packed clusters of buna-shimeji with a pleasant bite. Just trim the base and separate to add them easily to stir-fries, miso soup, or seasoned rice. When cooked, their umami melts into the broth, giving Japanese meals an autumnal touch.\nNet contents: approx. 300g / Origin: Domestic / Storage: Chilled\n[Attributes]\non_sale: true\npromo_text: Save when you buy in bulk\nsize: approx. 300g\nstorage_type: Chilled\nlabels: Chilled / In season\norigin: Domestic\nallergens: none\nseason_months: 9 / 10 / 11\nbase_id: fruit_bunashimeji\ndishes: Seasoned mixed rice / Miso soup / Butter-soy sautéed mushrooms / Yosenabe hot pot / Japanese-style pasta"
+    },
+    {
+      "rec": {
+        "sku": "4966160611684",
+        "kind": "attribute",
+        "attr_key": "allergens",
+        "label": "Allergens",
+        "raw_value": "none",
+        "unit": "",
+        "norm_note": "Nothing to display",
+        "evidence": "allergens: none",
+        "source_field": "attributes",
+        "self_conf": 1.0,
+        "evidence_match": 1.0,
+        "token_conf": null,
+        "score": 0.6,
+        "gate_status": "needs_review",
+        "gate": "gate1",
+        "reason": "Food safety rule: \"none\" reflects structured attributes only. Please check the package label",
+        "job_id": "online-20261111_001308",
+        "model": "gemini-3.8-flash",
+        "created_at": "2026-11-11T00:13:22.598150+00:00",
+        "value": "none"
+      },
+      "product": {
+        "sku": "4966160611684",
+        "title": "Miyazaki Young Chicken Thighs for Karaage, 400 g",
+        "image_url": "/img/products/x_beef_chicken_chicken_thigh_karaage_cut_p.jpg",
+        "group_label": "Fresh (Produce, Meat, Seafood)"
+      },
+      "source_text": "[Title] Miyazaki Chicken Thigh, Karaage Cut, 400g\n[Brand]\n[Category] Meat > Chicken > Thigh\n[Description] Young chicken thigh cut into large, karaage-friendly pieces. Just season and fry to quickly make karaage or tatsuta-age.\nNet contents: 400g / Origin: Miyazaki Prefecture / Storage: Chilled\n[Attributes]\non_sale: false\nsize: 400g\nstorage_type: Chilled\nlabels: Chilled\norigin: Miyazaki Prefecture\nallergens: none\nbase_id: x_beef_chicken_chicken_thigh_karaage_cut\ndishes: Karaage / Tatsuta-age / Chicken nanban / Bento side dish"
+    },
+    {
+      "rec": {
+        "sku": "4946948029931",
+        "kind": "attribute",
+        "attr_key": "allergens",
+        "label": "Allergens",
+        "raw_value": "none",
+        "unit": "",
+        "norm_note": "Nothing to display",
+        "evidence": "allergens: none",
+        "source_field": "attributes",
+        "self_conf": 1.0,
+        "evidence_match": 1.0,
+        "token_conf": null,
+        "score": 0.6,
+        "gate_status": "needs_review",
+        "gate": "gate1",
+        "reason": "Food safety rule: \"none\" reflects structured attributes only. Please check the package label",
+        "job_id": "online-20261111_001308",
+        "model": "gemini-3.8-flash",
+        "created_at": "2026-11-11T00:13:24.183725+00:00",
+        "value": "none"
+      },
+      "product": {
+        "sku": "4946948029931",
+        "title": "Cymbal Basic Sweet Corn Whole Kernel, 190 g",
+        "image_url": "/img/products/x_dry_can_corn_can_p.jpg",
+        "group_label": "Packaged Foods & Beverages"
+      },
+      "source_text": "[Title] Cymbal Basic Whole Kernel Sweet Corn 190g\n[Brand] Cymbal Basic\n[Category] Canned & Dry Goods > Canned Goods > Canned Corn\n[Description] Sweet corn in cans and pouches. The kernel type is perfect for salads, fried rice, and butter corn, while the cream type suits corn soup and gratin.\nNet contents: 190g / Origin: Thailand / Storage: Ambient\n[Attributes]\non_sale: true\npromo_text: This week's great deals!\nsize: 190g\nstorage_type: Ambient\nlabels: Ambient\norigin: Thailand\nallergens: none\nbrand_line: Cymbal Basic\nbase_id: x_dry_can_corn_can\ndishes: Corn soup / Butter corn / Potato salad / Fried rice / Gratin / Bento side dish"
+    },
+    {
+      "rec": {
+        "sku": "4958688424846",
+        "kind": "attribute",
+        "attr_key": "allergens",
+        "label": "Allergens",
+        "raw_value": "none",
+        "unit": "",
+        "norm_note": "Nothing to display",
+        "evidence": "allergens: none",
+        "source_field": "attributes",
+        "self_conf": 1.0,
+        "evidence_match": 1.0,
+        "token_conf": null,
+        "score": 0.6,
+        "gate_status": "needs_review",
+        "gate": "gate1",
+        "reason": "Food safety rule: \"none\" reflects structured attributes only. Please check the package label",
+        "job_id": "online-20261111_001308",
+        "model": "gemini-3.8-flash",
+        "created_at": "2026-11-11T00:13:24.933309+00:00",
+        "value": "none"
+      },
+      "product": {
+        "sku": "4958688424846",
+        "title": "Shucked Raw Oysters from Miyagi, 150 g",
+        "image_url": "/img/products/x_fish_raw_oyster_p.jpg",
+        "group_label": "Fresh (Produce, Meat, Seafood)"
+      },
+      "source_text": "[Title] Miyagi Shucked Oysters, Raw-Eating Grade, 150g\n[Brand]\n[Category] Seafood > Shellfish > Oysters\n[Description] Plump shucked oysters. Use them for winter feasts like fried oysters, dote-nabe hot pot, and oyster rice; in gratin they pair beautifully with creamy sauce.\nNet contents: 150g / Origin: Miyagi Prefecture / Storage: Chilled\n[Attributes]\non_sale: false\nsize: 150g\nstorage_type: Chilled\nlabels: Chilled / In season\norigin: Miyagi Prefecture\nallergens: none\nseason_months: 11 / 12 / 1 / 2 / 3\nbase_id: x_fish_raw_oyster\ndishes: Fried oysters / Hot pot / Dote-nabe hot pot / Oyster rice / Gratin"
+    },
+    {
+      "rec": {
+        "sku": "4966417877245",
+        "kind": "attribute",
+        "attr_key": "allergens",
+        "label": "Allergens",
+        "raw_value": "none",
+        "unit": "",
+        "norm_note": "Nothing to display",
+        "evidence": "allergens: none",
+        "source_field": "attributes",
+        "self_conf": 1.0,
+        "evidence_match": 1.0,
+        "token_conf": null,
+        "score": 0.6,
+        "gate_status": "needs_review",
+        "gate": "gate1",
+        "reason": "Food safety rule: \"none\" reflects structured attributes only. Please check the package label",
+        "job_id": "online-20261111_001308",
+        "model": "gemini-3.8-flash",
+        "created_at": "2026-11-11T00:13:26.711213+00:00",
+        "value": "none"
+      },
+      "product": {
+        "sku": "4966417877245",
+        "title": "Cymbal Brown Sugar Ginger Throat Lozenges, 100 g",
+        "image_url": "/img/products/y_snack_nodo_ame_p.jpg",
+        "group_label": "Packaged Foods & Beverages"
+      },
+      "source_text": "[Title] Cymbal Brown Sugar Ginger Throat Drops 100g\n[Brand] Cymbal\n[Category] Snacks & Sweets > Gummies & Candy > Throat Drops\n[Description] Throat drops with a refreshing taste, in flavors like herb and honey lemon. Individually wrapped, so they are easy to keep in a bag or pocket, and each family member can pick a favorite. Large assorted bags are also great to keep on hand at home.\nNet contents: 100g / Origin: Made in Japan / Storage: Ambient\n[Attributes]\non_sale: false\nsize: 100g\nstorage_type: Ambient\nlabels: Ambient\norigin: Made in Japan\nallergens: none\nbrand_line: Cymbal\nbase_id: y_snack_nodo_ame\ndishes: Pantry snack / Outings / Work breaks / Road trips"
+    },
+    {
+      "rec": {
+        "sku": "4958140347720",
+        "kind": "attribute",
+        "attr_key": "allergens",
+        "label": "Allergens",
+        "raw_value": "none",
+        "unit": "",
+        "norm_note": "Nothing to display",
+        "evidence": "allergens: none",
+        "source_field": "attributes",
+        "self_conf": 1.0,
+        "evidence_match": 1.0,
+        "token_conf": null,
+        "score": 0.6,
+        "gate_status": "needs_review",
+        "gate": "gate1",
+        "reason": "Food safety rule: \"none\" reflects structured attributes only. Please check the package label",
+        "job_id": "online-20261111_001308",
+        "model": "gemini-3.8-flash",
+        "created_at": "2026-11-11T00:13:27.159296+00:00",
+        "value": "none"
+      },
+      "product": {
+        "sku": "4958140347720",
+        "title": "Japanese Narazuke Assorted Pickles (Gourd, Cucumber, Watermelon), 200 g",
+        "image_url": "/img/products/y_tofu_natto_pickles_narazuke_kasuzuke_p.jpg",
+        "group_label": "Packaged Foods & Beverages"
+      },
+      "source_text": "[Title] Domestic Narazuke Pickles Assortment (White Melon, Cucumber, Watermelon) 200g\n[Brand]\n[Category] Tofu & Natto > Pickles > Narazuke & Sake-lees Pickles\n[Description] Richly aromatic pickles slowly cured in sake lees. Slice thinly to enjoy with rice or as a snack with evening drinks; they also make a great palate cleanser with unadon.\nNet contents: 200g / Origin: Domestic / Storage: Chilled\n[Attributes]\non_sale: false\npromo_text: 10 Cymbal points awarded\nsize: 200g\nstorage_type: Chilled\nlabels: Chilled\norigin: Domestic\nallergens: none\nbase_id: y_tofu_natto_pickles_narazuke_kasuzuke\ndishes: Evening drinks / Breakfast / Ochazuke / Unadon / Entertaining"
+    },
+    {
+      "rec": {
+        "sku": "4982888192861",
+        "kind": "attribute",
+        "attr_key": "allergens",
+        "label": "Allergens",
+        "raw_value": "none",
+        "unit": "",
+        "norm_note": "Nothing to display",
+        "evidence": "allergens: none",
+        "source_field": "attributes",
+        "self_conf": 1.0,
+        "evidence_match": 1.0,
+        "token_conf": null,
+        "score": 0.6,
+        "gate_status": "needs_review",
+        "gate": "gate1",
+        "reason": "Food safety rule: \"none\" reflects structured attributes only. Please check the package label",
+        "job_id": "online-20261111_001308",
+        "model": "gemini-3.8-flash",
+        "created_at": "2026-11-11T00:13:31.989552+00:00",
+        "value": "none"
+      },
+      "product": {
+        "sku": "4982888192861",
+        "title": "Cymbal Chilled Zenzai (Sweet Red Bean Soup) with Shiratama Mochi, 300 g",
+        "image_url": "/img/products/y_dessert_ice_shiratama_zenzai_p.jpg",
+        "group_label": "Packaged Foods & Beverages"
+      },
+      "source_text": "[Title] Cymbal Chilled Sweet Red Bean Soup with Shiratama, Value Size 300g\n[Brand] Cymbal\n[Category] Eggs & Dairy > Japanese Sweets > Zenzai & Oshiruko\n[Description] Shiratama zenzai combining soft rice-flour dumplings with plump simmered azuki beans. Delicious chilled or warmed. Enjoy as a snack or with tea.\nNet contents: 300g / Origin: Made in Japan / Storage: Chilled\n[Attributes]\non_sale: true\npromo_text: Save when you buy in bulk\nsize: 300g\nstorage_type: Chilled\nlabels: Chilled\norigin: Made in Japan\nallergens: none\nbrand_line: Cymbal\nbase_id: y_dessert_ice_shiratama_zenzai\ndishes: Snack / Teatime treat / After-meal dessert"
+    },
+    {
+      "rec": {
+        "sku": "4939722637538",
+        "kind": "attribute",
+        "attr_key": "allergens",
+        "label": "Allergens",
+        "raw_value": "none",
+        "unit": "",
+        "norm_note": "Nothing to display",
+        "evidence": "allergens: none",
+        "source_field": "attributes",
+        "self_conf": 1.0,
+        "evidence_match": 1.0,
+        "token_conf": null,
+        "score": 0.6,
+        "gate_status": "needs_review",
+        "gate": "gate1",
+        "reason": "Food safety rule: \"none\" reflects structured attributes only. Please check the package label",
+        "job_id": "online-20261111_001308",
+        "model": "gemini-3.8-flash",
+        "created_at": "2026-11-11T00:13:42.210217+00:00",
+        "value": "none"
+      },
+      "product": {
+        "sku": "4939722637538",
+        "title": "Cymbal Cooked Rice, 100% Japanese Rice, 200 g x 3 pcs",
+        "image_url": "/img/products/staple_pack_rice_p.jpg",
+        "group_label": "Deli, Frozen & Staples"
+      },
+      "source_text": "[Title] Cymbal Cooked Rice, 100% Domestic Rice, 200g × 3\n[Brand] Cymbal\n[Category] Rice & Noodles > Rice > Microwavable Rice\n[Description] Microwavable rice packs that taste fluffy and freshly cooked; just heat in the microwave. Made with 100% domestic rice, convenient for busy weeknight dinners, bento, or stocking up. Available in sizes to suit your household.\nNet contents: 200g x 3 / Origin: Domestic / Storage: Ambient\n[Attributes]\non_sale: true\npromo_text: Autumn Flavors Fair special price\nsize: 200g x 3\nstorage_type: Ambient\nlabels: Ambient\norigin: Domestic\nallergens: none\nbrand_line: Cymbal\nbase_id: staple_pack_rice\ndishes: Plain rice / Ochazuke / Rice porridge / Fried rice / Rice bowls"
+    },
+    {
+      "rec": {
+        "sku": "4998110953391",
+        "kind": "attribute",
+        "attr_key": "allergens",
+        "label": "Allergens",
+        "raw_value": "none",
+        "unit": "",
+        "norm_note": "Nothing to display",
+        "evidence": "allergens: none",
+        "source_field": "attributes",
+        "self_conf": 1.0,
+        "evidence_match": 1.0,
+        "token_conf": null,
+        "score": 0.6,
+        "gate_status": "needs_review",
+        "gate": "gate1",
+        "reason": "Food safety rule: \"none\" reflects structured attributes only. Please check the package label",
+        "job_id": "online-20261111_001308",
+        "model": "gemini-3.8-flash",
+        "created_at": "2026-11-11T00:13:46.986120+00:00",
+        "value": "none"
+      },
+      "product": {
+        "sku": "4998110953391",
+        "title": "Cymbal Freeze-Dried Tofu Miso Soup, 5 ct",
+        "image_url": "/img/products/y_rice_retort_freeze_dried_miso_soup_p.jpg",
+        "group_label": "Deli, Frozen & Staples"
+      },
+      "source_text": "[Title] Cymbal Freeze-Dried Tofu Miso Soup, 5 servings\n[Brand] Cymbal\n[Category] Rice & Noodles > Instant Soup & Miso Soup > Instant Miso Soup\n[Description] Freeze-dried miso soup that preserves the shape and texture of its ingredients. Just place in a bowl and add hot water, and ingredients like eggplant, spinach, and tofu plump right up. The block format also makes it easy to store.\nNet contents: 5 servings / Origin: Made in Japan / Storage: Ambient\n[Attributes]\non_sale: true\npromo_text: Weekend-only deal\nsize: 5 servings\nstorage_type: Ambient\nlabels: Ambient\norigin: Made in Japan\nallergens: none\nbrand_line: Cymbal\nbase_id: y_rice_retort_freeze_dried_miso_soup\ndishes: Breakfast / Bento companion / Late-night snack / Set-meal soup"
+    },
+    {
+      "rec": {
+        "sku": "4973176388264",
+        "kind": "tag",
+        "attr_key": "tag:Entertaining",
+        "label": "Entertaining",
+        "raw_value": "",
+        "unit": "",
+        "norm_note": "",
+        "evidence": "Enjoy it to close out the year",
+        "source_field": "",
+        "self_conf": 0.7,
+        "evidence_match": 1.0,
+        "token_conf": null,
+        "score": 0.88,
+        "gate_status": "needs_review",
+        "gate": "gate2",
+        "reason": "Composite score 0.88 < 0.90 (insufficient confidence)",
+        "job_id": "online-20261111_001308",
+        "model": "gemini-3.8-flash",
+        "created_at": "2026-11-11T00:13:45.123192+00:00",
+        "value": "Entertaining"
+      },
+      "product": {
+        "sku": "4973176388264",
+        "title": "Cymbal New Year's Eve Tempura Soba with Shrimp and Soup, 2 ct",
+        "image_url": "/img/products/y_seasonal_event_toshikoshi_soba_p.jpg",
+        "group_label": "Deli, Frozen & Staples"
+      },
+      "source_text": "[Title] Cymbal New Year's Eve Tempura Soba with Shrimp Tempura & Broth, 2 servings\n[Brand] Cymbal\n[Category] Rice & Noodles > Soba > New Year's Eve Soba\n[Description] New Year's Eve soba with broth, to enjoy with family on December 31. Top with shrimp tempura or kakiage and enjoy it to close out the year.\nNet contents: 2 servings / Origin: Made in Japan / Storage: Chilled / Allergens: buckwheat, wheat, shrimp\n[Attributes]\non_sale: true\npromo_text: Weekend-only deal\nsize: 2 servings\nstorage_type: Chilled\nlabels: Chilled\norigin: Made in Japan\nallergens: buckwheat / wheat / shrimp\nbrand_line: Cymbal\nseason_months: 12\nbase_id: y_seasonal_event_toshikoshi_soba\ndishes: New Year's Eve soba / Tempura soba / Herring soba / Duck nanban soba"
+    }
+  ],
+  "count": 17
+}

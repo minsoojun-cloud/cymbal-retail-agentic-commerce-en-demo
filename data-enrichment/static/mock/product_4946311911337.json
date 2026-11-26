@@ -1,0 +1,504 @@
+{
+  "product": {
+    "sku": "4946311911337",
+    "title": "Cymbal Select Deep Frying Pan with Glass Lid, Navy, 28 cm",
+    "brand": "Cymbal Select",
+    "category": "Kitchen > Frying Pans & Pots > Frying Pans",
+    "description": "A 7cm-deep design that handles stir-frying, simmering and shallow-frying in one pan. A durable 5-layer coating lasts long and it is dishwasher safe. The glass lid lets you check on food while it cooks.\nSize: 28cm / Material: Aluminum (5-layer fluorine coating) / Color: Navy / Country of manufacture: Made in Japan",
+    "product_url": "/?product=4946311911337",
+    "image_url": "/img/products/z_kitchen_deep_frying_pan_p.jpg",
+    "price": 6578.0,
+    "group": "kitchen",
+    "raw_attributes": {
+      "on_sale": "false",
+      "size": "28cm",
+      "labels": "Induction compatible / Dishwasher safe",
+      "origin": "Made in Japan",
+      "material": "Aluminum (5-layer fluorine coating)",
+      "color": "Navy",
+      "brand_line": "Cymbal Select",
+      "base_id": "z_kitchen_deep_frying_pan",
+      "dishes": "Simmered dishes / Shallow-frying / Pasta"
+    },
+    "group_label": "Kitchen & Cookware",
+    "doc_sources": [],
+    "source": "cymbal",
+    "images": []
+  },
+  "source_text": "[Title] Cymbal Select Deep Frying Pan with Glass Lid 28cm Navy\n[Brand] Cymbal Select\n[Category] Kitchen > Frying Pans & Pots > Frying Pans\n[Description] A 7cm-deep design that handles stir-frying, simmering and shallow-frying in one pan. A durable 5-layer coating lasts long and it is dishwasher safe. The glass lid lets you check on food while it cooks.\nSize: 28cm / Material: Aluminum (5-layer fluorine coating) / Color: Navy / Country of manufacture: Made in Japan\n[Attributes]\non_sale: false\nsize: 28cm\nlabels: Induction compatible / Dishwasher safe\norigin: Made in Japan\nmaterial: Aluminum (5-layer fluorine coating)\ncolor: Navy\nbrand_line: Cymbal Select\nbase_id: z_kitchen_deep_frying_pan\ndishes: Simmered dishes / Shallow-frying / Pasta",
+  "targets": [
+    {
+      "key": "net_volume_ml",
+      "label": "Volume (ml)",
+      "unit": "ml",
+      "type": "number",
+      "raw_keys": [
+        "size",
+        "capacity"
+      ]
+    },
+    {
+      "key": "pack_count",
+      "label": "Pack count",
+      "unit": "pcs",
+      "type": "number",
+      "raw_keys": [
+        "size"
+      ]
+    },
+    {
+      "key": "origin",
+      "label": "Origin",
+      "unit": "",
+      "type": "text",
+      "raw_keys": [
+        "origin"
+      ]
+    },
+    {
+      "key": "material",
+      "label": "Material",
+      "unit": "",
+      "type": "text",
+      "raw_keys": [
+        "material"
+      ]
+    },
+    {
+      "key": "width_cm",
+      "label": "Width",
+      "unit": "cm",
+      "type": "number",
+      "raw_keys": [
+        "size"
+      ]
+    },
+    {
+      "key": "depth_cm",
+      "label": "Depth",
+      "unit": "cm",
+      "type": "number",
+      "raw_keys": [
+        "size"
+      ]
+    },
+    {
+      "key": "height_cm",
+      "label": "Height",
+      "unit": "cm",
+      "type": "number",
+      "raw_keys": [
+        "size"
+      ]
+    },
+    {
+      "key": "diameter_cm",
+      "label": "Diameter",
+      "unit": "cm",
+      "type": "number",
+      "raw_keys": [
+        "size"
+      ]
+    },
+    {
+      "key": "color",
+      "label": "Color",
+      "unit": "",
+      "type": "text",
+      "raw_keys": [
+        "color"
+      ]
+    },
+    {
+      "key": "ih_compatible",
+      "label": "Induction compatible",
+      "unit": "",
+      "type": "bool",
+      "raw_keys": []
+    },
+    {
+      "key": "dishwasher_safe",
+      "label": "Dishwasher safe",
+      "unit": "",
+      "type": "bool",
+      "raw_keys": []
+    },
+    {
+      "key": "microwave_safe",
+      "label": "Microwave safe",
+      "unit": "",
+      "type": "bool",
+      "raw_keys": []
+    }
+  ],
+  "records": [
+    {
+      "sku": "4946311911337",
+      "kind": "attribute",
+      "attr_key": "origin",
+      "label": "Origin",
+      "raw_value": "Made in Japan",
+      "unit": "",
+      "norm_note": "",
+      "evidence": "origin: Made in Japan",
+      "source_field": "attributes",
+      "self_conf": 1.0,
+      "evidence_match": 1.0,
+      "token_conf": null,
+      "score": 1.0,
+      "gate_status": "auto_approved",
+      "gate": "gate2",
+      "reason": "Composite score 1.00 ≥ 0.90",
+      "job_id": "online-20261111_001308",
+      "model": "gemini-3.8-flash",
+      "created_at": "2026-11-11T00:13:31.773080+00:00",
+      "value": "Made in Japan"
+    },
+    {
+      "sku": "4946311911337",
+      "kind": "attribute",
+      "attr_key": "material",
+      "label": "Material",
+      "raw_value": "Aluminum (5-layer fluorine coating)",
+      "unit": "",
+      "norm_note": "",
+      "evidence": "material: Aluminum (5-layer fluorine coating)",
+      "source_field": "attributes",
+      "self_conf": 1.0,
+      "evidence_match": 1.0,
+      "token_conf": null,
+      "score": 1.0,
+      "gate_status": "auto_approved",
+      "gate": "gate2",
+      "reason": "Composite score 1.00 ≥ 0.90",
+      "job_id": "online-20261111_001308",
+      "model": "gemini-3.8-flash",
+      "created_at": "2026-11-11T00:13:31.773100+00:00",
+      "value": "Aluminum (5-layer fluorine coating)"
+    },
+    {
+      "sku": "4946311911337",
+      "kind": "attribute",
+      "attr_key": "height_cm",
+      "label": "Height",
+      "raw_value": "7cm deep",
+      "unit": "cm",
+      "norm_note": "Ambiguous dimension: \"7cm deep\" is depth, not height",
+      "evidence": "7cm deep",
+      "source_field": "description",
+      "self_conf": 0.95,
+      "evidence_match": 1.0,
+      "token_conf": null,
+      "score": 0.5,
+      "gate_status": "needs_review",
+      "gate": "gate1",
+      "reason": "Unit normalization failed: ambiguous dimension (\"7cm deep\" = depth vs. height)",
+      "job_id": "online-20261111_001308",
+      "model": "gemini-3.8-flash",
+      "created_at": "2026-11-11T00:13:31.773110+00:00",
+      "value": null
+    },
+    {
+      "sku": "4946311911337",
+      "kind": "attribute",
+      "attr_key": "diameter_cm",
+      "label": "Diameter",
+      "raw_value": "28cm",
+      "unit": "cm",
+      "norm_note": "Treated single dimension as diameter",
+      "evidence": "size: 28cm",
+      "source_field": "attributes",
+      "self_conf": 1.0,
+      "evidence_match": 1.0,
+      "token_conf": null,
+      "score": 1.0,
+      "gate_status": "auto_approved",
+      "gate": "gate2",
+      "reason": "Composite score 1.00 ≥ 0.90",
+      "job_id": "online-20261111_001308",
+      "model": "gemini-3.8-flash",
+      "created_at": "2026-11-11T00:13:31.773120+00:00",
+      "value": 28
+    },
+    {
+      "sku": "4946311911337",
+      "kind": "attribute",
+      "attr_key": "color",
+      "label": "Color",
+      "raw_value": "Navy",
+      "unit": "",
+      "norm_note": "",
+      "evidence": "color: Navy",
+      "source_field": "attributes",
+      "self_conf": 1.0,
+      "evidence_match": 1.0,
+      "token_conf": null,
+      "score": 1.0,
+      "gate_status": "auto_approved",
+      "gate": "gate2",
+      "reason": "Composite score 1.00 ≥ 0.90",
+      "job_id": "online-20261111_001308",
+      "model": "gemini-3.8-flash",
+      "created_at": "2026-11-11T00:13:31.773128+00:00",
+      "value": "Navy"
+    },
+    {
+      "sku": "4946311911337",
+      "kind": "attribute",
+      "attr_key": "ih_compatible",
+      "label": "Induction compatible",
+      "raw_value": "Induction compatible",
+      "unit": "",
+      "norm_note": "",
+      "evidence": "labels: Induction compatible / Dishwasher safe",
+      "source_field": "attributes",
+      "self_conf": 1.0,
+      "evidence_match": 1.0,
+      "token_conf": null,
+      "score": 1.0,
+      "gate_status": "auto_approved",
+      "gate": "gate2",
+      "reason": "Composite score 1.00 ≥ 0.90",
+      "job_id": "online-20261111_001308",
+      "model": "gemini-3.8-flash",
+      "created_at": "2026-11-11T00:13:31.773136+00:00",
+      "value": true
+    },
+    {
+      "sku": "4946311911337",
+      "kind": "attribute",
+      "attr_key": "dishwasher_safe",
+      "label": "Dishwasher safe",
+      "raw_value": "Dishwasher safe",
+      "unit": "",
+      "norm_note": "",
+      "evidence": "labels: Induction compatible / Dishwasher safe",
+      "source_field": "attributes",
+      "self_conf": 1.0,
+      "evidence_match": 1.0,
+      "token_conf": null,
+      "score": 1.0,
+      "gate_status": "auto_approved",
+      "gate": "gate2",
+      "reason": "Composite score 1.00 ≥ 0.90",
+      "job_id": "online-20261111_001308",
+      "model": "gemini-3.8-flash",
+      "created_at": "2026-11-11T00:13:31.773143+00:00",
+      "value": true
+    },
+    {
+      "sku": "4946311911337",
+      "kind": "tag",
+      "attr_key": "tag:Induction compatible",
+      "label": "Induction compatible",
+      "raw_value": "",
+      "unit": "",
+      "norm_note": "",
+      "evidence": "Induction compatible",
+      "source_field": "",
+      "self_conf": 1.0,
+      "evidence_match": 1.0,
+      "token_conf": null,
+      "score": 1.0,
+      "gate_status": "auto_approved",
+      "gate": "gate2",
+      "reason": "Composite score 1.00 ≥ 0.90",
+      "job_id": "online-20261111_001308",
+      "model": "gemini-3.8-flash",
+      "created_at": "2026-11-11T00:13:31.773163+00:00",
+      "value": "Induction compatible"
+    },
+    {
+      "sku": "4946311911337",
+      "kind": "tag",
+      "attr_key": "tag:Made in Japan",
+      "label": "Made in Japan",
+      "raw_value": "",
+      "unit": "",
+      "norm_note": "",
+      "evidence": "Country of manufacture: Made in Japan",
+      "source_field": "",
+      "self_conf": 1.0,
+      "evidence_match": 1.0,
+      "token_conf": null,
+      "score": 1.0,
+      "gate_status": "auto_approved",
+      "gate": "gate2",
+      "reason": "Composite score 1.00 ≥ 0.90",
+      "job_id": "online-20261111_001308",
+      "model": "gemini-3.8-flash",
+      "created_at": "2026-11-11T00:13:31.773177+00:00",
+      "value": "Made in Japan"
+    },
+    {
+      "sku": "4946311911337",
+      "kind": "tag",
+      "attr_key": "tag:Dishwasher safe",
+      "label": "Dishwasher safe",
+      "raw_value": "",
+      "unit": "",
+      "norm_note": "",
+      "evidence": "dishwasher safe",
+      "source_field": "",
+      "self_conf": 1.0,
+      "evidence_match": 1.0,
+      "token_conf": null,
+      "score": 1.0,
+      "gate_status": "auto_approved",
+      "gate": "gate2",
+      "reason": "Composite score 1.00 ≥ 0.90",
+      "job_id": "online-20261111_001308",
+      "model": "gemini-3.8-flash",
+      "created_at": "2026-11-11T00:13:31.773171+00:00",
+      "value": "Dishwasher safe"
+    }
+  ],
+  "extras": {
+    "search_keywords": [
+      "deep frying pan",
+      "frying pan 28cm",
+      "with glass lid",
+      "induction frying pan",
+      "dishwasher-safe frying pan",
+      "Japan-made frying pan",
+      "fluorine-coated frying pan"
+    ],
+    "ai_summary": "A 28cm deep frying pan, 7cm deep, for stir-frying, simmering and shallow-frying. Made in Japan with a durable 5-layer fluorine coating and a glass lid. Dishwasher safe and induction compatible."
+  },
+  "gmc": {
+    "sku": "4946311911337",
+    "item_group_id": "z_kitchen_deep_frying_pan",
+    "item_group_title": "Cymbal Select Deep Frying Pan with Glass Lid",
+    "variant_options": [
+      {
+        "name": "Size",
+        "value": "28cm",
+        "evidence": "28cm",
+        "evidence_match": 1.0
+      },
+      {
+        "name": "Color",
+        "value": "Navy",
+        "evidence": "Navy",
+        "evidence_match": 1.0
+      }
+    ],
+    "questions_and_answers": [
+      {
+        "question": "Is it induction compatible and dishwasher safe?",
+        "answer": "Yes, it is induction compatible and dishwasher safe.",
+        "evidence": "Induction compatible / Dishwasher safe",
+        "confidence": 1.0,
+        "evidence_match": 1.0,
+        "score": 1.0,
+        "status": "auto_approved"
+      },
+      {
+        "question": "How deep is the pan?",
+        "answer": "It has a 7cm-deep design.",
+        "evidence": "7cm-deep design",
+        "confidence": 1.0,
+        "evidence_match": 1.0,
+        "score": 1.0,
+        "status": "auto_approved"
+      },
+      {
+        "question": "What material and coating does it use?",
+        "answer": "It is aluminum with a durable 5-layer fluorine coating.",
+        "evidence": "Aluminum (5-layer fluorine coating)",
+        "confidence": 1.0,
+        "evidence_match": 1.0,
+        "score": 1.0,
+        "status": "auto_approved"
+      },
+      {
+        "question": "Where is it made?",
+        "answer": "It is made in Japan.",
+        "evidence": "Country of manufacture: Made in Japan",
+        "confidence": 1.0,
+        "evidence_match": 1.0,
+        "score": 1.0,
+        "status": "auto_approved"
+      },
+      {
+        "question": "Does it come with a lid?",
+        "answer": "Yes, it comes with a glass lid so you can check on food while it cooks.",
+        "evidence": "The glass lid lets you check on food while it cooks",
+        "confidence": 1.0,
+        "evidence_match": 1.0,
+        "score": 1.0,
+        "status": "auto_approved"
+      }
+    ],
+    "product_highlights": [
+      "7cm-deep design handles stir-frying, simmering and shallow-frying in one pan",
+      "Durable 5-layer coating lasts long and is dishwasher safe",
+      "Glass lid lets you watch your food as it cooks",
+      "Induction compatible and reliably made in Japan"
+    ],
+    "product_details": [
+      {
+        "section": "Basic Specs",
+        "attribute": "Color",
+        "value": "Navy"
+      },
+      {
+        "section": "Contents & Size",
+        "attribute": "Diameter",
+        "value": "28cm"
+      },
+      {
+        "section": "Basic Specs",
+        "attribute": "Dishwasher safe",
+        "value": "Yes"
+      },
+      {
+        "section": "Basic Specs",
+        "attribute": "Induction compatible",
+        "value": "Yes"
+      },
+      {
+        "section": "Basic Specs",
+        "attribute": "Material",
+        "value": "Aluminum (5-layer fluorine coating)"
+      },
+      {
+        "section": "Food Labeling & Storage",
+        "attribute": "Origin",
+        "value": "Made in Japan"
+      },
+      {
+        "section": "Features",
+        "attribute": "Features",
+        "value": "Induction compatible / Made in Japan / Dishwasher safe"
+      }
+    ],
+    "related_products": [
+      {
+        "relationship_type": "similar_to",
+        "identifier_type": "id",
+        "identifier": "4929021288920",
+        "title": "Cymbal Basic Freezer & Microwave-Safe Containers 700ml × 3"
+      },
+      {
+        "relationship_type": "similar_to",
+        "identifier_type": "id",
+        "identifier": "4938749288693",
+        "title": "Cymbal Select Copper Tamagoyaki Pan, Kanto Style 15 × 18cm"
+      }
+    ],
+    "popularity_rank": 88.0,
+    "document_link": "",
+    "model": "gemini-3.8-flash",
+    "job_id": "online-20261111_001308",
+    "updated_at": "2026-11-11T00:13:31.773459+00:00",
+    "variant_option": "Size:28cm,Color:Navy",
+    "question_and_answer": "\"Is it induction compatible and dishwasher safe?\":\"Yes, it is induction compatible and dishwasher safe.\", \"How deep is the pan?\":\"It has a 7cm-deep design.\", \"What material and coating does it use?\":\"It is aluminum with a durable 5-layer fluorine coating.\", \"Where is it made?\":\"It is made in Japan.\", \"Does it come with a lid?\":\"Yes, it comes with a glass lid so you can check on food while it cooks.\"",
+    "product_highlight": "\"7cm-deep design handles stir-frying, simmering and shallow-frying in one pan\", \"Durable 5-layer coating lasts long and is dishwasher safe\", \"Glass lid lets you watch your food as it cooks\", \"Induction compatible and reliably made in Japan\"",
+    "product_detail": "Basic Specs:Color:\"Navy\", Contents & Size:Diameter:\"28cm\", Basic Specs:Dishwasher safe:\"Yes\", Basic Specs:Induction compatible:\"Yes\", Basic Specs:Material:\"Aluminum (5-layer fluorine coating)\", Food Labeling & Storage:Origin:\"Made in Japan\", Features:Features:\"Induction compatible / Made in Japan / Dishwasher safe\"",
+    "related_product": "similar_to:id:4929021288920,similar_to:id:4938749288693"
+  },
+  "status": "needs_review",
+  "fill_before": 0.25,
+  "fill_after": 0.5
+}

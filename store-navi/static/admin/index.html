@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <meta name="theme-color" content="#1a73e8"/>
+  <title>Cymbal Retail — Shelf Manager</title>
+  <link rel="icon" href="/static/shared/img/favicon.svg" type="image/svg+xml"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/static/shared/css/tokens.css"/>
+  <link rel="stylesheet" href="/static/admin/css/admin.css"/>
+</head>
+<body>
+<header class="ah">
+  <a class="ah__brand" href="/admin/" aria-label="Shelf Manager">
+    <img src="/static/shared/img/logo.svg" alt="Cymbal Retail" class="ah__logo"/>
+    <span class="ah__title">Shelf Manager</span>
+  </a>
+  <select id="store-select" class="ah__store" aria-label="Store"></select>
+  <span class="badge" id="status-badge">Loading…</span>
+  <div class="ah__spacer"></div>
+  <div class="ah__actions">
+    <button type="button" class="btn btn--text" id="btn-undo" title="Undo (Ctrl+Z)" disabled>
+      <svg viewBox="0 0 24 24"><path d="M12.5 8c-2.65 0-5.05.99-6.9 2.6L2 7v9h9l-3.62-3.62A7.95 7.95 0 0 1 12.5 10c3.54 0 6.55 2.31 7.6 5.5l2.37-.78C21.08 10.53 17.15 8 12.5 8z"/></svg>Undo
+    </button>
+    <button type="button" class="btn btn--tonal" id="btn-save">Save draft</button>
+    <button type="button" class="btn btn--text" id="btn-discard">Discard draft</button>
+    <button type="button" class="btn btn--text" id="btn-history">History</button>
+    <button type="button" class="btn btn--primary" id="btn-publish">Review &amp; publish</button>
+    <a class="btn btn--text" id="staff-link" href="/">Shelf Registration app ↗</a>
+  </div>
+</header>
+
+<main class="aw">
+  <!-- ① floor plan -->
+  <section class="card plan" aria-label="Store floor plan">
+    <div class="plan__tools">
+      <div class="seg" role="toolbar" aria-label="Tools">
+        <button type="button" class="seg__btn active" data-tool="select" title="Click a shelf to select it (Shift for multi-select). Drag empty space to pan.">
+          <svg viewBox="0 0 24 24"><path d="M7 2l12 11.2-5.8.5 3.3 7.3-2.2 1-3.2-7.4L7 18.5z"/></svg>Select</button>
+        <button type="button" class="seg__btn tool--edit" data-tool="draw" title="Drag on the floor plan to draw a new shelf">
+          <svg viewBox="0 0 24 24"><path d="M3 5v14h18V5H3zm16 12H5V7h14v10zM7 9h4v2H7z"/><path d="M13 13h4v2h-4z"/></svg>Draw shelf</button>
+        <button type="button" class="seg__btn tool--edit" data-tool="move" title="Drag selected shelves to move them (0.3 m steps)">
+          <svg viewBox="0 0 24 24"><path d="M10 9h4V6h3l-5-5-5 5h3v3zm-1 1H6V7l-5 5 5 5v-3h3v-4zm14 2-5-5v3h-3v4h3v3l5-5zm-9 3h-4v3H7l5 5 5-5h-3v-3z"/></svg>Move</button>
+      </div>
+      <div class="plan__legend" aria-hidden="true">
+        <span><i class="lg lg--sel"></i>Selected</span>
+        <span><i class="lg lg--none"></i>No number</span>
+        <span><i class="lg lg--err"></i>Number error</span>
+        <span><i class="lg lg--chg"></i>Changed</span>
+      </div>
+      <div class="seg seg--zoom">
+        <button type="button" class="seg__btn" id="zoom-fit" title="Zoom to fit">Fit</button>
+        <button type="button" class="seg__btn" id="zoom-out" aria-label="Zoom out">−</button>
+        <button type="button" class="seg__btn" id="zoom-in" aria-label="Zoom in">+</button>
+      </div>
+    </div>
+    <div class="plan__hint" id="plan-hint">Click a shelf to set its shelf number in the right panel. Use “Draw shelf” to add a new shelf.</div>
+    <div class="plan__canvas" id="plan-canvas">
+      <svg id="plan-svg" xmlns="http://www.w3.org/2000/svg" role="application" aria-label="Store floor plan (select shelves)"></svg>
+    </div>
+  </section>
+
+  <!-- ② side panel -->
+  <aside class="card side" aria-label="Shelf number settings">
+    <div class="tabs" role="tablist">
+      <button type="button" class="tabs__btn active" data-ptab="shelf" role="tab" id="ptab-shelf">Shelf number</button>
+      <button type="button" class="tabs__btn" data-ptab="zone" role="tab" id="ptab-zone">Zones</button>
+    </div>
+    <div class="side__body" id="side-body"></div>
+  </aside>
+
+  <!-- ③ errors -->
+  <section class="card errs" id="errs" aria-label="Errors and products without a shelf number">
+    <div class="errs__hd">
+      <h2><svg viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>Needs attention</h2>
+      <span class="muted small" id="errs-sub"></span>
+    </div>
+    <div class="errs__grid">
+      <div>
+        <h3>Fix before publishing (shelf numbers)<span class="cnt" id="val-count">0</span></h3>
+        <ul class="errs__list" id="val-list"></ul>
+      </div>
+      <div>
+        <h3>Products without a shelf number <span class="cnt cnt--red" id="un-count">0</span></h3>
+        <p class="muted small">These products lost their display location because a shelf or shelf number was removed. Use “Assign shelf” to register a new shelf number in the Shelf Registration app (no photo needed).</p>
+        <ul class="errs__list" id="un-list"></ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- publish modal -->
+<div class="scrim" id="scrim" hidden></div>
+<div class="modal" id="publish-modal" role="dialog" aria-modal="true" aria-labelledby="pm-title" hidden>
+  <div class="modal__hd"><h2 id="pm-title">Review changes &amp; publish</h2><button type="button" class="icon-btn" data-close aria-label="Close">✕</button></div>
+  <div class="modal__body" id="pm-body"></div>
+  <div class="modal__ft">
+    <button type="button" class="btn btn--text" data-close>Cancel</button>
+    <button type="button" class="btn btn--primary" id="pm-submit">Publish</button>
+  </div>
+</div>
+<div class="modal" id="history-modal" role="dialog" aria-modal="true" aria-labelledby="hm-title" hidden>
+  <div class="modal__hd"><h2 id="hm-title">Version history</h2><button type="button" class="icon-btn" data-close aria-label="Close">✕</button></div>
+  <div class="modal__body" id="hm-body"></div>
+  <div class="modal__ft"><button type="button" class="btn btn--text" data-close>Close</button></div>
+</div>
+
+<!-- manager gate -->
+<div class="gate" id="gate" hidden>
+  <div class="gate__card">
+    <img src="/static/shared/img/logo.svg" alt="Cymbal Retail" class="ah__logo"/>
+    <h2>Shelf Manager is for store managers only</h2>
+    <p class="muted">In this demo you can sign in as the manager with the button below.</p>
+    <button type="button" class="btn btn--primary" id="gate-login">Sign in as manager (demo)</button>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="/static/admin/js/floorplan.js"></script>
+<script src="/static/admin/js/admin.js"></script>
+</body>
+</html>

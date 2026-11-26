@@ -1,0 +1,134 @@
+[
+ {
+  "customer_id": "CR-0001",
+  "name": "Sakura Tanaka",
+  "age": 38,
+  "household_size": 4,
+  "household": [
+   {
+    "relation": "self",
+    "name": "Sakura",
+    "age": 38
+   },
+   {
+    "relation": "husband",
+    "name": "Ken",
+    "age": 40
+   },
+   {
+    "relation": "daughter",
+    "name": "Yui",
+    "age": 9
+   },
+   {
+    "relation": "son",
+    "name": "Haru",
+    "age": 6
+   }
+  ],
+  "family_preferences": [
+   {
+    "relation": "self",
+    "name": "Sakura",
+    "call_name": "Sakura",
+    "like_keywords": [
+     {
+      "label": "fish",
+      "keywords": [
+       "salmon",
+       "yellowtail",
+       "mackerel"
+      ]
+     },
+     {
+      "label": "Japanese food",
+      "keywords": [
+       "miso",
+       "tofu",
+       "natto"
+      ]
+     }
+    ]
+   },
+   {
+    "relation": "husband",
+    "name": "Ken",
+    "call_name": "Ken",
+    "like_keywords": [
+     {
+      "label": "meat dishes",
+      "keywords": [
+       "pork",
+       "chicken",
+       "beef"
+      ]
+     },
+     {
+      "label": "beer snacks",
+      "keywords": [
+       "beer",
+       "chips"
+      ]
+     }
+    ]
+   },
+   {
+    "relation": "daughter",
+    "name": "Yui",
+    "call_name": "Yui",
+    "like_keywords": [
+     {
+      "label": "rolled omelet",
+      "keywords": [
+       "omelet"
+      ]
+     },
+     {
+      "label": "fruit",
+      "keywords": [
+       "apple",
+       "persimmon"
+      ]
+     }
+    ]
+   },
+   {
+    "relation": "son",
+    "name": "Haru",
+    "call_name": "Haru",
+    "like_keywords": [
+     {
+      "label": "curry",
+      "keywords": [
+       "curry"
+      ]
+     },
+     {
+      "label": "pudding",
+      "keywords": [
+       "pudding"
+      ]
+     }
+    ]
+   }
+  ],
+  "allergies": [
+   {
+    "member": "kids",
+    "allergen": "shrimp"
+   }
+  ],
+  "exclude_keywords": [
+   "shrimp",
+   "prawn"
+  ],
+  "favorite_categories": [
+   "Seafood",
+   "Produce",
+   "Deli & Meal Kits"
+  ],
+  "taste_preferences": {
+   "curry_spiciness": "medium-hot"
+  }
+ }
+]

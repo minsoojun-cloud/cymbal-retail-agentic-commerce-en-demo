@@ -1,0 +1,253 @@
+{
+ "cold_tablet_out_at_S01": {
+  "product_id": "4997989851807",
+  "title": "Cymbal Healthcare Multi-Symptom Cold Relief Tablets, 30 ct",
+  "in_stock_at": "S02",
+  "quantity_S01": 0,
+  "quantity_S02": 12,
+  "online_available": true
+ },
+ "fever_set_S01": [
+  "4900025493107",
+  "4921789214258",
+  "4906832949998",
+  "4915851860504",
+  "4950519592175",
+  "4913031854046"
+ ],
+ "fever_set_S01_detail": [
+  {
+   "role": "cooling_sheet",
+   "product_id": "4900025493107",
+   "title": "Cymbal Cooling Gel Sheets for Adults, 12 sheets",
+   "fixture_id": "U02",
+   "gondola_id": "U02",
+   "slot_ids": [
+    "U02-403"
+   ],
+   "side": "S",
+   "tier": 4,
+   "quantity": 8,
+   "image": "/img/products/w_healthcare_cooling_sheet_adult_p.jpg"
+  },
+  {
+   "role": "ors",
+   "product_id": "4921789214258",
+   "title": "Cymbal Oral Rehydration Solution, 500 ml",
+   "fixture_id": "G07",
+   "gondola_id": "G07",
+   "slot_ids": [
+    "G07-406"
+   ],
+   "side": "W",
+   "tier": 4,
+   "quantity": 20,
+   "image": "/img/products/w_drink_soft_oral_rehydration_p.jpg"
+  },
+  {
+   "role": "thermometer",
+   "product_id": "4906832949998",
+   "title": "Cymbal Digital Thermometer, Actual Measurement Type",
+   "fixture_id": "C03",
+   "gondola_id": "C03",
+   "slot_ids": [
+    "C03-407"
+   ],
+   "side": "W",
+   "tier": 4,
+   "quantity": 8,
+   "image": "/img/products/w_healthcare_thermometer_p.jpg"
+  },
+  {
+   "role": "mask",
+   "product_id": "4915851860504",
+   "title": "Cymbal Non-Woven Face Masks, Regular Size, 30 ct",
+   "fixture_id": "R01",
+   "gondola_id": "R01",
+   "slot_ids": [
+    "R01-404"
+   ],
+   "side": "E",
+   "tier": 4,
+   "quantity": 21,
+   "image": "/img/products/y_household_nonwoven_mask_p.jpg"
+  },
+  {
+   "role": "kids_syrup",
+   "product_id": "4950519592175",
+   "title": "Cymbal Healthcare Children's Cold Syrup Strawberry Flavor, 120 ml",
+   "fixture_id": "A01",
+   "gondola_id": "A01",
+   "slot_ids": [
+    "A01-401"
+   ],
+   "side": "E",
+   "tier": 4,
+   "quantity": 11,
+   "image": "/img/products/v_otc_cold_kids_syrup_p.jpg"
+  },
+  {
+   "role": "antipyretic",
+   "product_id": "4913031854046",
+   "title": "Cymbal Healthcare Pain Relief Tablets A, 24 tablets",
+   "fixture_id": "A03",
+   "gondola_id": "A03",
+   "slot_ids": [
+    "A03-404"
+   ],
+   "side": "E",
+   "tier": 4,
+   "quantity": 16,
+   "image": "/img/products/v_otc_pain_standard_p.jpg"
+  }
+ ],
+ "beauty_out_at_S03": {
+  "product_id": "4933156210992",
+  "title": "Cymbal Beauty Gentle Moisturizing Cream for Sensitive Skin, 50 g",
+  "in_stock_at": "S01"
+ },
+ "staff_photo_products": [
+  "4939504329545",
+  "4905727212964",
+  "4955767937563",
+  "4985174822213",
+  "4964209610049",
+  "4928035434224",
+  "4922071158755",
+  "4930570250191",
+  "4988024799147",
+  "4956401337961"
+ ],
+ "staff_photo_products_detail": [
+  {
+   "product_id": "4939504329545",
+   "title": "Cymbal Healthcare Vitamin Eye Drops for Tired Eyes, 12 ml",
+   "fixture_id": "A02",
+   "gondola_id": "A02",
+   "slot_ids": [
+    "A02-307"
+   ],
+   "side": "E",
+   "tier": 3,
+   "quantity": 16,
+   "image": "/img/products/v_otc_eye_tired_p.jpg"
+  },
+  {
+   "product_id": "4905727212964",
+   "title": "Cymbal Healthcare Cooling Pain Relief Patches, Large, 7 sheets",
+   "fixture_id": "A01",
+   "gondola_id": "A01",
+   "slot_ids": [
+    "A01-312"
+   ],
+   "side": "E",
+   "tier": 3,
+   "quantity": 20,
+   "image": "/img/products/v_otc_patch_cold_p.jpg"
+  },
+  {
+   "product_id": "4955767937563",
+   "title": "Cymbal Healthcare Stomach and Abdominal Pain Relief, 18 tablets",
+   "fixture_id": "A03",
+   "gondola_id": "A03",
+   "slot_ids": [
+    "A03-403"
+   ],
+   "side": "E",
+   "tier": 4,
+   "quantity": 5,
+   "image": "/img/products/v_otc_gi_stomachache_p.jpg"
+  },
+  {
+   "product_id": "4985174822213",
+   "title": "Cymbal Beauty High Moisture Facial Toner, Rich Type Refill, 180 ml",
+   "fixture_id": "B03",
+   "gondola_id": "B03",
+   "slot_ids": [
+    "B03-406"
+   ],
+   "side": "W",
+   "tier": 4,
+   "quantity": 13,
+   "image": "/img/products/z_beauty_moist_lotion_p.jpg"
+  },
+  {
+   "product_id": "4964209610049",
+   "title": "Cymbal Basic Toothpaste 3-Pack, 140 g x 3",
+   "fixture_id": "B01",
+   "gondola_id": "B01",
+   "slot_ids": [
+    "B01-304"
+   ],
+   "side": "W",
+   "tier": 3,
+   "quantity": 18,
+   "image": "/img/products/z_beauty_toothpaste_p.jpg"
+  },
+  {
+   "product_id": "4928035434224",
+   "title": "Cymbal Basic Powder Laundry Detergent, 1.0 kg",
+   "fixture_id": "D12",
+   "gondola_id": "D12",
+   "slot_ids": [
+    "D12-108"
+   ],
+   "side": "W",
+   "tier": 1,
+   "quantity": 19,
+   "image": "/img/products/y_household_powder_laundry_detergent_p.jpg"
+  },
+  {
+   "product_id": "4922071158755",
+   "title": "Cymbal Sesame Ponzu Sauce, 500 ml",
+   "fixture_id": "H44",
+   "gondola_id": "H44",
+   "slot_ids": [
+    "H44-401"
+   ],
+   "side": "W",
+   "tier": 4,
+   "quantity": 13,
+   "image": "/img/products/w_seasoning_sauce_goma_ponzu_p.jpg"
+  },
+  {
+   "product_id": "4930570250191",
+   "title": "Cymbal Basic Cup Yakisoba Sauce Flavor, 100 g",
+   "fixture_id": "H10",
+   "gondola_id": "H10",
+   "slot_ids": [
+    "H10-301"
+   ],
+   "side": "W",
+   "tier": 3,
+   "quantity": 9,
+   "image": "/img/products/y_rice_retort_cup_yakisoba_p.jpg"
+  },
+  {
+   "product_id": "4988024799147",
+   "title": "Cymbal Crunch Chocolate Large Pack, 180 g",
+   "fixture_id": "F06",
+   "gondola_id": "F06",
+   "slot_ids": [
+    "F06-403"
+   ],
+   "side": "E",
+   "tier": 4,
+   "quantity": 21,
+   "image": "/img/products/y_snack_bag_chocolate_assortment_p.jpg"
+  },
+  {
+   "product_id": "4956401337961",
+   "title": "Cymbal Green Tea, 525 ml",
+   "fixture_id": "G03",
+   "gondola_id": "G03",
+   "slot_ids": [
+    "G03-408"
+   ],
+   "side": "W",
+   "tier": 4,
+   "quantity": 25,
+   "image": "/img/products/frozen_snack_green_tea_p.jpg"
+  }
+ ]
+}

@@ -1,0 +1,191 @@
+{
+  "product": {
+    "sku": "4913067859176",
+    "title": "Cymbal Shrimp Pilaf, 450 g",
+    "brand": "Cymbal",
+    "category": "Frozen > Frozen Rice & Fried Rice > Pilaf & Fried Rice",
+    "description": "Frozen shrimp pilaf with plump shrimp and vegetables sautéed in butter. Easy to make in a frying pan or microwave — top with white sauce and bake to turn it into doria.\nNet weight: 450g / Origin: Made in Japan / Storage: Frozen / Allergens: shrimp, wheat, milk",
+    "product_url": "/?product=4913067859176",
+    "image_url": "/img/products/x_frozen_shrimp_pilaf_p.jpg",
+    "price": 354.0,
+    "group": "prepared",
+    "raw_attributes": {
+      "on_sale": "false",
+      "size": "450g",
+      "storage_type": "Frozen",
+      "labels": "Frozen",
+      "origin": "Made in Japan",
+      "allergens": "shrimp / wheat / milk",
+      "brand_line": "Cymbal",
+      "base_id": "x_frozen_shrimp_pilaf",
+      "dishes": "pilaf / doria / omurice / bento / gratin"
+    },
+    "group_label": "Deli, Frozen & Staples",
+    "doc_sources": [],
+    "source": "cymbal",
+    "images": []
+  },
+  "source_text": "[Title] Cymbal Shrimp Pilaf 450g\n[Brand] Cymbal\n[Category] Frozen > Frozen Rice & Fried Rice > Pilaf & Fried Rice\n[Description] Frozen shrimp pilaf with plump shrimp and vegetables sautéed in butter. Easy to make in a frying pan or microwave — top with white sauce and bake to turn it into doria.\nNet weight: 450g / Origin: Made in Japan / Storage: Frozen / Allergens: shrimp, wheat, milk\n[Attributes]\non_sale: false\nsize: 450g\nstorage_type: Frozen\nlabels: Frozen\norigin: Made in Japan\nallergens: shrimp / wheat / milk\nbrand_line: Cymbal\nbase_id: x_frozen_shrimp_pilaf\ndishes: pilaf / doria / omurice / bento / gratin",
+  "gmc": {
+    "sku": "4913067859176",
+    "item_group_id": "x_frozen_shrimp_pilaf",
+    "item_group_title": "Cymbal Shrimp Pilaf",
+    "variant_options": [
+      {
+        "name": "Net contents",
+        "value": "450g",
+        "evidence": "Net contents: 450g",
+        "evidence_match": 1.0
+      },
+      {
+        "name": "Origin",
+        "value": "Made in Japan",
+        "evidence": "Origin: Made in Japan",
+        "evidence_match": 1.0
+      }
+    ],
+    "questions_and_answers": [
+      {
+        "question": "How much does it contain?",
+        "answer": "It contains 450g.",
+        "evidence": "Net contents: 450g",
+        "confidence": 1.0,
+        "evidence_match": 1.0,
+        "score": 1.0,
+        "status": "auto_approved"
+      },
+      {
+        "question": "How do I cook it?",
+        "answer": "You can cook it easily in a frying pan or microwave.",
+        "evidence": "Easy to make in a frying pan or microwave",
+        "confidence": 1.0,
+        "evidence_match": 1.0,
+        "score": 1.0,
+        "status": "auto_approved"
+      },
+      {
+        "question": "Which allergens (specified ingredients) does it contain?",
+        "answer": "It contains shrimp, wheat and milk.",
+        "evidence": "Allergens: shrimp, wheat, milk",
+        "confidence": 1.0,
+        "evidence_match": 1.0,
+        "score": 1.0,
+        "status": "auto_approved"
+      },
+      {
+        "question": "How should I store it?",
+        "answer": "Keep frozen.",
+        "evidence": "Storage: Frozen",
+        "confidence": 1.0,
+        "evidence_match": 1.0,
+        "score": 1.0,
+        "status": "auto_approved"
+      },
+      {
+        "question": "Any recommended ways to serve it?",
+        "answer": "Top it with white sauce and bake it to make doria.",
+        "evidence": "top with white sauce and bake to turn it into doria",
+        "confidence": 1.0,
+        "evidence_match": 1.0,
+        "score": 1.0,
+        "status": "auto_approved"
+      }
+    ],
+    "product_highlights": [
+      "Plump shrimp and vegetables with a rich butter flavor",
+      "Quick and easy in a frying pan or microwave",
+      "Top with white sauce to turn it into doria",
+      "Made in Japan, generous 450g pack"
+    ],
+    "product_details": [
+      {
+        "section": "Cooking & Suggestions",
+        "attribute": "Flavor & spiciness",
+        "value": "Butter flavor"
+      },
+      {
+        "section": "Cooking & Suggestions",
+        "attribute": "Cooking method",
+        "value": "Microwave, Frying pan"
+      },
+      {
+        "section": "Food Labeling & Storage",
+        "attribute": "Allergens",
+        "value": "shrimp, wheat, milk"
+      },
+      {
+        "section": "Cooking & Suggestions",
+        "attribute": "Suggested dishes",
+        "value": "Pilaf, Doria, Omurice, Bento, Gratin"
+      },
+      {
+        "section": "Contents & Size",
+        "attribute": "Net weight",
+        "value": "450g"
+      },
+      {
+        "section": "Food Labeling & Storage",
+        "attribute": "Origin",
+        "value": "Made in Japan"
+      },
+      {
+        "section": "Food Labeling & Storage",
+        "attribute": "Storage",
+        "value": "Frozen"
+      },
+      {
+        "section": "Features",
+        "attribute": "Features",
+        "value": "Good for bento / Pan cooking / Freezer storage / Microwave cooking"
+      }
+    ],
+    "related_products": [
+      {
+        "relationship_type": "often_bought_with",
+        "identifier_type": "id",
+        "identifier": "white sauce",
+        "title": "white sauce"
+      },
+      {
+        "relationship_type": "often_bought_with",
+        "identifier_type": "id",
+        "identifier": "4958688424846",
+        "title": "Miyagi Shucked Oysters, Raw-Eating Grade, 150g"
+      },
+      {
+        "relationship_type": "often_bought_with",
+        "identifier_type": "id",
+        "identifier": "4903577695999",
+        "title": "Cymbal Basic White Eggs, Size M, 10 pcs"
+      }
+    ],
+    "popularity_rank": 90.0,
+    "document_link": "",
+    "model": "gemini-3.8-flash",
+    "job_id": "online-20261111_001308",
+    "updated_at": "2026-11-11T00:13:41.299346+00:00",
+    "variant_option": "Net contents:450g,Origin:Made in Japan",
+    "question_and_answer": "\"How much does it contain?\":\"It contains 450g.\", \"How do I cook it?\":\"You can cook it easily in a frying pan or microwave.\", \"Which allergens (specified ingredients) does it contain?\":\"It contains shrimp, wheat and milk.\", \"How should I store it?\":\"Keep frozen.\", \"Any recommended ways to serve it?\":\"Top it with white sauce and bake it to make doria.\"",
+    "product_highlight": "\"Plump shrimp and vegetables with a rich butter flavor\", \"Quick and easy in a frying pan or microwave\", \"Top with white sauce to turn it into doria\", \"Made in Japan, generous 450g pack\"",
+    "product_detail": "Cooking & Suggestions:Flavor & spiciness:\"Butter flavor\", Cooking & Suggestions:Cooking method:\"Microwave, Frying pan\", Food Labeling & Storage:Allergens:\"shrimp, wheat, milk\", Cooking & Suggestions:Suggested dishes:\"Pilaf, Doria, Omurice, Bento, Gratin\", Contents & Size:Net weight:\"450g\", Food Labeling & Storage:Origin:\"Made in Japan\", Food Labeling & Storage:Storage:\"Frozen\", Features:Features:\"Good for bento / Pan cooking / Freezer storage / Microwave cooking\"",
+    "related_product": "often_bought_with:id:white sauce,often_bought_with:id:4958688424846,often_bought_with:id:4903577695999"
+  },
+  "feed_row": {
+    "id": "4913067859176",
+    "item_group_id": "x_frozen_shrimp_pilaf",
+    "title": "Cymbal Shrimp Pilaf, 450 g",
+    "item_group_title": "Cymbal Shrimp Pilaf",
+    "variant_option": "Net contents:450g,Origin:Made in Japan",
+    "question_and_answer": "\"How much does it contain?\":\"It contains 450g.\", \"How do I cook it?\":\"You can cook it easily in a frying pan or microwave.\", \"Which allergens (specified ingredients) does it contain?\":\"It contains shrimp, wheat and milk.\", \"How should I store it?\":\"Keep frozen.\", \"Any recommended ways to serve it?\":\"Top it with white sauce and bake it to make doria.\"",
+    "product_highlight": "\"Plump shrimp and vegetables with a rich butter flavor\", \"Quick and easy in a frying pan or microwave\", \"Top with white sauce to turn it into doria\", \"Made in Japan, generous 450g pack\"",
+    "product_detail": "Cooking & Suggestions:Flavor & spiciness:\"Butter flavor\", Cooking & Suggestions:Cooking method:\"Microwave, Frying pan\", Food Labeling & Storage:Allergens:\"shrimp, wheat, milk\", Cooking & Suggestions:Suggested dishes:\"Pilaf, Doria, Omurice, Bento, Gratin\", Contents & Size:Net weight:\"450g\", Food Labeling & Storage:Origin:\"Made in Japan\", Food Labeling & Storage:Storage:\"Frozen\", Features:Features:\"Good for bento / Pan cooking / Freezer storage / Microwave cooking\"",
+    "related_product": "often_bought_with:id:white sauce,often_bought_with:id:4958688424846,often_bought_with:id:4903577695999",
+    "popularity_rank": 90.0,
+    "document_link": "",
+    "brand": "Cymbal",
+    "price": "354 JPY",
+    "link": "/?product=4913067859176",
+    "image_link": "/img/products/x_frozen_shrimp_pilaf_p.jpg",
+    "additional_image_link": ""
+  }
+}

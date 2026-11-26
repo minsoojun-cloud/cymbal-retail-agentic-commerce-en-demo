@@ -1,0 +1,2317 @@
+{
+  "items": [
+    {
+      "sku": "4909270706758",
+      "title": "Shizuoka Swordfish Fillets, 3 pcs (approx. 240 g)",
+      "group": "fresh",
+      "attributes": {
+        "dishes": {
+          "value": "Works for both Japanese and Western dishes such as teriyaki, meunière, and tatsuta-age, and is handy for bento too",
+          "unit": "",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "net_weight_g": {
+          "value": 240,
+          "unit": "g",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "pack_count": {
+          "value": 3,
+          "unit": "pcs",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Shizuoka Prefecture",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "storage_method": {
+          "value": "Chilled",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Pre-cut / prepped",
+        "Good for bento",
+        "Boneless / easy to eat",
+        "Domestic"
+      ],
+      "search_keywords": [
+        "Swordfish",
+        "Swordfish",
+        "Fillets",
+        "Shizuoka Prefecture",
+        "Boneless",
+        "bento",
+        "Fish"
+      ],
+      "ai_summary": "Boneless swordfish fillets from Shizuoka Prefecture that are easy for kids to eat. Great for Japanese and Western dishes such as teriyaki, meunière, and tatsuta-age, and handy for bento. 3 fillets (approx. 240g).",
+      "fill_rate_before": 0.0,
+      "fill_rate_after": 0.556,
+      "updated_at": "2026-11-11T00:17:02.714927+00:00"
+    },
+    {
+      "sku": "4929728033878",
+      "title": "Cymbal Frozen Thick-Cut Seasoned Beef Tongue, Salt Flavor, 400g",
+      "group": "prepared",
+      "attributes": {
+        "cooking_method": {
+          "value": "Frying pan",
+          "unit": "",
+          "score": 0.96,
+          "status": "auto_approved"
+        },
+        "dishes": {
+          "value": "Enjoy grilled beef tongue. Also recommended served over rice as a beef tongue bowl",
+          "unit": "",
+          "score": 0.96,
+          "status": "auto_approved"
+        },
+        "flavor": {
+          "value": "Salt flavor",
+          "unit": "",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "net_weight_g": {
+          "value": 400,
+          "unit": "g",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "USA",
+          "unit": "",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "storage_method": {
+          "value": "Frozen",
+          "unit": "",
+          "score": 0.98,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Time-saver",
+        "Pan cooking",
+        "Freezer storage"
+      ],
+      "search_keywords": [
+        "Beef tongue",
+        "Seasoned beef tongue",
+        "Thick-cut",
+        "Frozen beef tongue",
+        "Salt flavor",
+        "Beef tongue bowl",
+        "USA"
+      ],
+      "ai_summary": "Thick-cut beef tongue from the USA, pre-seasoned with salt. Just thaw and grill in a frying pan to enjoy chewy grilled beef tongue; also recommended as a beef tongue bowl.",
+      "fill_rate_before": 0.0,
+      "fill_rate_after": 0.5,
+      "updated_at": "2026-11-11T00:17:02.714996+00:00"
+    },
+    {
+      "sku": "4946311911337",
+      "title": "Cymbal Select Deep Frying Pan with Glass Lid, Navy, 28 cm",
+      "group": "kitchen",
+      "attributes": {
+        "color": {
+          "value": "Navy",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "diameter_cm": {
+          "value": 28,
+          "unit": "cm",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "dishwasher_safe": {
+          "value": true,
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "ih_compatible": {
+          "value": true,
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "material": {
+          "value": "Aluminum (5-layer fluorine coating)",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Made in Japan",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Induction compatible",
+        "Made in Japan",
+        "Dishwasher safe"
+      ],
+      "search_keywords": [
+        "deep frying pan",
+        "frying pan 28cm",
+        "with glass lid",
+        "induction frying pan",
+        "dishwasher-safe frying pan",
+        "Japan-made frying pan",
+        "fluorine-coated frying pan"
+      ],
+      "ai_summary": "A 28cm deep frying pan, 7cm deep, for stir-frying, simmering and shallow-frying. Made in Japan with a durable 5-layer fluorine coating and a glass lid. Dishwasher safe and induction compatible.",
+      "fill_rate_before": 0.25,
+      "fill_rate_after": 0.5,
+      "updated_at": "2026-11-11T00:17:02.715108+00:00"
+    },
+    {
+      "sku": "4913667472959",
+      "title": "Ibaraki Napa Cabbage, 1/2 Cut",
+      "group": "fresh",
+      "attributes": {
+        "dishes": {
+          "value": "Yosenabe hot pot, Napa cabbage and pork mille-feuille hot pot, Quick pickles, Cream stew, Happosai",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Ibaraki Prefecture",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "season": {
+          "value": "Oct-Feb",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "storage_method": {
+          "value": "Chilled",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Pre-cut / prepped",
+        "Good for hot pot",
+        "Domestic",
+        "In season"
+      ],
+      "search_keywords": [
+        "Napa cabbage",
+        "Ibaraki Prefecture",
+        "Cut napa cabbage",
+        "Hot pot vegetables",
+        "Leafy greens",
+        "Hot pot dishes"
+      ],
+      "ai_summary": "Seasonal napa cabbage from Ibaraki Prefecture, 1/2 cut. It grows sweeter in the cold, with crisp cores and melt-in-your-mouth leaves. Perfect for hot pot, cream stew, and quick pickles.",
+      "fill_rate_before": 0.556,
+      "fill_rate_after": 0.556,
+      "updated_at": "2026-11-11T00:17:02.715275+00:00"
+    },
+    {
+      "sku": "4922773303767",
+      "title": "Aomori Kogyoku Apples, 4 ct Bag",
+      "group": "fresh",
+      "attributes": {
+        "season": {
+          "value": "Sep-Nov",
+          "unit": "",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "dishes": {
+          "value": "Apple pie, Baked apples, Jam, Compote, Snack",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Aomori Prefecture",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "pack_count": {
+          "value": 4,
+          "unit": "pcs",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "storage_method": {
+          "value": "Ambient",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Domestic",
+        "In season"
+      ],
+      "search_keywords": [
+        "apple",
+        "Kogyoku",
+        "Aomori Prefecture",
+        "Apple pie",
+        "Baked apples",
+        "Jam"
+      ],
+      "ai_summary": "4 Kogyoku apples from Aomori Prefecture with a distinct sweet-tart flavor. They hold their shape when cooked, making them ideal for baking apple pie, baked apples, and homemade jam.",
+      "fill_rate_before": 0.556,
+      "fill_rate_after": 0.667,
+      "updated_at": "2026-11-11T00:17:02.715382+00:00"
+    },
+    {
+      "sku": "4925319234365",
+      "title": "Hokkaido Fresh Sanma (Pacific Saury), 2 pcs",
+      "group": "fresh",
+      "attributes": {
+        "cooking_method": {
+          "value": "Salt-grilled",
+          "unit": "",
+          "score": 0.94,
+          "status": "auto_approved"
+        },
+        "dishes": {
+          "value": "Salt-grilled saury, Kabayaki-glazed saury, Simmered saury, Saury rice",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Hokkaido",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "pack_count": {
+          "value": 2,
+          "unit": "pcs",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "season": {
+          "value": "Sep-Nov",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "storage_method": {
+          "value": "Chilled",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Domestic",
+        "In season"
+      ],
+      "search_keywords": [
+        "Fresh Pacific saury",
+        "Pacific saury",
+        "Hokkaido",
+        "Pacific saury",
+        "Salt-grilled",
+        "Taste of autumn"
+      ],
+      "ai_summary": "2 whole fresh Pacific saury landed off Hokkaido, a taste of autumn. The rich, fatty flesh turns fragrant when salt-grilled; enjoy the seasonal flavor with grated daikon and sudachi citrus.",
+      "fill_rate_before": 0.556,
+      "fill_rate_after": 0.778,
+      "updated_at": "2026-11-11T00:17:02.715466+00:00"
+    },
+    {
+      "sku": "4978886449342",
+      "title": "Domestic Bunashimeji Mushrooms, 3 packs (approx. 300 g)",
+      "group": "fresh",
+      "attributes": {
+        "pack_count": {
+          "value": 3,
+          "unit": "pcs",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "dishes": {
+          "value": "Seasoned mixed rice, Miso soup, Butter-soy sautéed mushrooms, Yosenabe hot pot, Japanese-style pasta",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "net_weight_g": {
+          "value": 300,
+          "unit": "g",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Domestic",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "season": {
+          "value": "Sep-Nov",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "storage_method": {
+          "value": "Chilled",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Time-saver",
+        "Good for hot pot",
+        "Value size / bulk",
+        "Domestic",
+        "In season"
+      ],
+      "search_keywords": [
+        "Buna-shimeji",
+        "Shimeji",
+        "Domestic",
+        "Mushrooms",
+        "Bulk buy",
+        "Yosenabe hot pot",
+        "Seasoned mixed rice"
+      ],
+      "ai_summary": "A set of 3 packs of domestic buna-shimeji in tightly packed clusters with a pleasant bite. Just trim the base and separate to use in stir-fries, miso soup, or seasoned rice; cooking releases their umami.",
+      "fill_rate_before": 0.556,
+      "fill_rate_after": 0.778,
+      "updated_at": "2026-11-11T00:17:02.715552+00:00"
+    },
+    {
+      "sku": "4966160611684",
+      "title": "Miyazaki Young Chicken Thighs for Karaage, 400 g",
+      "group": "fresh",
+      "attributes": {
+        "cooking_method": {
+          "value": "Deep-fry",
+          "unit": "",
+          "score": 0.96,
+          "status": "auto_approved"
+        },
+        "dishes": {
+          "value": "Karaage, Tatsuta-age, Chicken nanban, Bento side dish",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "net_weight_g": {
+          "value": 400,
+          "unit": "g",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Miyazaki Prefecture",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "storage_method": {
+          "value": "Chilled",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Good for bento",
+        "Time-saver",
+        "Pre-cut / prepped",
+        "Domestic"
+      ],
+      "search_keywords": [
+        "Young chicken thigh",
+        "For karaage",
+        "Miyazaki Prefecture",
+        "chicken",
+        "Thigh meat",
+        "Pre-cut",
+        "Tatsuta-age"
+      ],
+      "ai_summary": "Young chicken thigh from Miyazaki Prefecture, cut into large pieces for karaage. Just season and fry for quick cooking; handy for karaage, tatsuta-age, and bento side dishes.",
+      "fill_rate_before": 0.444,
+      "fill_rate_after": 0.667,
+      "updated_at": "2026-11-11T00:17:02.715616+00:00"
+    },
+    {
+      "sku": "4946948029931",
+      "title": "Cymbal Basic Sweet Corn Whole Kernel, 190 g",
+      "group": "grocery",
+      "attributes": {
+        "dishes": {
+          "value": "Corn soup, Butter corn, Potato salad, Fried rice, Gratin, Bento side dish",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "net_weight_g": {
+          "value": 190,
+          "unit": "g",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Thailand",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "storage_method": {
+          "value": "Ambient",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Shelf-stable"
+      ],
+      "search_keywords": [
+        "Sweet corn",
+        "Canned corn",
+        "Whole kernel",
+        "Canned goods",
+        "Butter corn",
+        "Salad"
+      ],
+      "ai_summary": "Canned sweet corn with natural sweetness. Perfect for salads, fried rice, and butter corn, and can be stored at room temperature. Net contents: 190g.",
+      "fill_rate_before": 0.333,
+      "fill_rate_after": 0.417,
+      "updated_at": "2026-11-11T00:17:02.715680+00:00"
+    },
+    {
+      "sku": "4958688424846",
+      "title": "Shucked Raw Oysters from Miyagi, 150 g",
+      "group": "fresh",
+      "attributes": {
+        "season": {
+          "value": "Nov-Mar",
+          "unit": "",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "dishes": {
+          "value": "Fried oysters, Hot pot, Dote-nabe hot pot, Oyster rice, Gratin",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "net_weight_g": {
+          "value": 150,
+          "unit": "g",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Miyagi Prefecture",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "storage_method": {
+          "value": "Chilled",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Good for hot pot",
+        "Domestic",
+        "In season"
+      ],
+      "search_keywords": [
+        "Oysters",
+        "Oysters",
+        "For raw consumption",
+        "Miyagi Prefecture",
+        "Shucked",
+        "Fried oysters",
+        "Dote-nabe hot pot"
+      ],
+      "ai_summary": "150g of plump shucked oysters from Miyagi Prefecture, safe for raw consumption. Versatile for winter feasts such as fried oysters, dote-nabe hot pot, oyster rice, and gratin.",
+      "fill_rate_before": 0.556,
+      "fill_rate_after": 0.667,
+      "updated_at": "2026-11-11T00:17:02.715767+00:00"
+    },
+    {
+      "sku": "4966417877245",
+      "title": "Cymbal Brown Sugar Ginger Throat Lozenges, 100 g",
+      "group": "grocery",
+      "attributes": {
+        "dishes": {
+          "value": "Pantry snack, Outings, Work breaks, Road trips",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "net_weight_g": {
+          "value": 100,
+          "unit": "g",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Made in Japan",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "storage_method": {
+          "value": "Ambient",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Shelf-stable",
+        "Individually wrapped"
+      ],
+      "search_keywords": [
+        "Throat drops",
+        "Brown sugar ginger",
+        "Candy",
+        "Individually wrapped",
+        "Shelf-stable",
+        "Made in Japan"
+      ],
+      "ai_summary": "Throat drops with a refreshing taste. Individually wrapped for easy carrying and great to keep on hand at home. Shelf-stable, 100g, made in Japan.",
+      "fill_rate_before": 0.333,
+      "fill_rate_after": 0.417,
+      "updated_at": "2026-11-11T00:17:02.715883+00:00"
+    },
+    {
+      "sku": "4958140347720",
+      "title": "Japanese Narazuke Assorted Pickles (Gourd, Cucumber, Watermelon), 200 g",
+      "group": "grocery",
+      "attributes": {
+        "dishes": {
+          "value": "Evening drinks, Breakfast, Ochazuke, Unadon, Entertaining",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "net_weight_g": {
+          "value": 200,
+          "unit": "g",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Domestic",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "storage_method": {
+          "value": "Chilled",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Good for breakfast",
+        "Snack with drinks",
+        "Domestic ingredients"
+      ],
+      "search_keywords": [
+        "Narazuke",
+        "Sake-lees pickles",
+        "Pickles",
+        "White melon",
+        "Cucumber",
+        "Watermelon",
+        "Domestic",
+        "Snack with drinks"
+      ],
+      "ai_summary": "An assortment of narazuke made from domestic white melon, watermelon, and cucumber, slowly cured in sake lees. Known for its rich aroma; slice thinly to enjoy with rice, as a snack with evening drinks, or as a palate cleanser with unadon.",
+      "fill_rate_before": 0.333,
+      "fill_rate_after": 0.417,
+      "updated_at": "2026-11-11T00:17:02.715959+00:00"
+    },
+    {
+      "sku": "4982888192861",
+      "title": "Cymbal Chilled Zenzai (Sweet Red Bean Soup) with Shiratama Mochi, 300 g",
+      "group": "grocery",
+      "attributes": {
+        "dishes": {
+          "value": "Snack, Teatime treat, After-meal dessert",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "net_weight_g": {
+          "value": 300,
+          "unit": "g",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Made in Japan",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "storage_method": {
+          "value": "Chilled",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Value size / bulk"
+      ],
+      "search_keywords": [
+        "Chilled zenzai",
+        "Zenzai",
+        "Shiratama",
+        "Japanese sweets",
+        "Oshiruko",
+        "Azuki beans",
+        "Value size"
+      ],
+      "ai_summary": "A value-size 300g shiratama zenzai combining soft rice-flour dumplings with plump simmered azuki beans. Delicious chilled or warmed, as a snack, with tea, or as an after-meal dessert.",
+      "fill_rate_before": 0.333,
+      "fill_rate_after": 0.417,
+      "updated_at": "2026-11-11T00:17:02.716015+00:00"
+    },
+    {
+      "sku": "4939722637538",
+      "title": "Cymbal Cooked Rice, 100% Japanese Rice, 200 g x 3 pcs",
+      "group": "prepared",
+      "attributes": {
+        "cooking_method": {
+          "value": "Microwave",
+          "unit": "",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "dishes": {
+          "value": "Plain rice, Ochazuke, Rice porridge, Fried rice, Rice bowls",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "net_weight_g": {
+          "value": 600,
+          "unit": "g",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Domestic",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "pack_count": {
+          "value": 3,
+          "unit": "pcs",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "storage_method": {
+          "value": "Ambient",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Good for bento",
+        "Domestic ingredients",
+        "Just heat",
+        "Microwave cooking"
+      ],
+      "search_keywords": [
+        "Microwavable rice",
+        "Domestic rice",
+        "Microwave",
+        "Plain rice",
+        "Shelf-stable",
+        "bento"
+      ],
+      "ai_summary": "Microwavable rice made with 100% domestic rice that tastes fluffy and freshly cooked; just heat in the microwave. Shelf-stable and convenient for busy weeknight dinners, bento, or stocking up.",
+      "fill_rate_before": 0.333,
+      "fill_rate_after": 0.583,
+      "updated_at": "2026-11-11T00:17:02.716085+00:00"
+    },
+    {
+      "sku": "4998110953391",
+      "title": "Cymbal Freeze-Dried Tofu Miso Soup, 5 ct",
+      "group": "prepared",
+      "attributes": {
+        "cooking_method": {
+          "value": "Just add hot water",
+          "unit": "",
+          "score": 0.96,
+          "status": "auto_approved"
+        },
+        "pack_count": {
+          "value": 5,
+          "unit": "pcs",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "dishes": {
+          "value": "Breakfast, Bento companion, Late-night snack, Set-meal soup",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Made in Japan",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "storage_method": {
+          "value": "Ambient",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Good for bento",
+        "Time-saver"
+      ],
+      "search_keywords": [
+        "Freeze-dried",
+        "Miso soup",
+        "Instant miso soup",
+        "Tofu",
+        "Instant miso soup",
+        "Block type"
+      ],
+      "ai_summary": "Freeze-dried instant miso soup that preserves the shape and texture of its ingredients. Just place in a bowl and add hot water for ingredients to plump right up. 5 servings in easy-to-store, shelf-stable blocks.",
+      "fill_rate_before": 0.333,
+      "fill_rate_after": 0.5,
+      "updated_at": "2026-11-11T00:17:02.716145+00:00"
+    },
+    {
+      "sku": "4973176388264",
+      "title": "Cymbal New Year's Eve Tempura Soba with Shrimp and Soup, 2 ct",
+      "group": "prepared",
+      "attributes": {
+        "allergens": {
+          "value": "shrimp, wheat, buckwheat",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "dishes": {
+          "value": "New Year's Eve soba, Tempura soba, Herring soba, Duck nanban soba",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Made in Japan",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "pack_count": {
+          "value": 2,
+          "unit": "pcs",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "storage_method": {
+          "value": "Chilled",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [],
+      "search_keywords": [
+        "New Year's Eve soba",
+        "Tempura soba",
+        "Shrimp tempura",
+        "With broth",
+        "New Year's Eve",
+        "Soba 2 servings"
+      ],
+      "ai_summary": "2 servings of New Year's Eve soba with broth to enjoy with family on December 31. Top with shrimp tempura or kakiage to close out the year. Chilled, made in Japan.",
+      "fill_rate_before": 0.333,
+      "fill_rate_after": 0.417,
+      "updated_at": "2026-11-11T00:17:02.716256+00:00"
+    },
+    {
+      "sku": "4911478160614",
+      "title": "Cymbal Basic Frozen Carbonara, 260 g",
+      "group": "prepared",
+      "attributes": {
+        "cooking_method": {
+          "value": "Microwave",
+          "unit": "",
+          "score": 0.96,
+          "status": "auto_approved"
+        },
+        "allergens": {
+          "value": "wheat, egg, milk",
+          "unit": "",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "dishes": {
+          "value": "Carbonara",
+          "unit": "",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "net_weight_g": {
+          "value": 260,
+          "unit": "g",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Made in Japan",
+          "unit": "",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "storage_method": {
+          "value": "Frozen",
+          "unit": "",
+          "score": 0.98,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Kid favorite",
+        "Freezer storage",
+        "Just heat",
+        "Microwave cooking"
+      ],
+      "search_keywords": [
+        "Frozen carbonara",
+        "Frozen pasta",
+        "Microwave cooking",
+        "Chewy noodles",
+        "Bacon",
+        "Lunch"
+      ],
+      "ai_summary": "Carbonara with chewy noodles, bacon, and a rich cheese-and-egg sauce. Just heat in the microwave; convenient on busy days or for kids' lunches.",
+      "fill_rate_before": 0.0,
+      "fill_rate_after": 0.5,
+      "updated_at": "2026-11-11T00:17:02.716291+00:00"
+    },
+    {
+      "sku": "4985233468086",
+      "title": "Shrimp with Chili Sauce, approx. 200 g",
+      "group": "prepared",
+      "attributes": {
+        "cooking_method": {
+          "value": "Just heat",
+          "unit": "",
+          "score": 0.94,
+          "status": "auto_approved"
+        },
+        "flavor": {
+          "value": "Sweet and spicy",
+          "unit": "",
+          "score": 0.96,
+          "status": "auto_approved"
+        },
+        "allergens": {
+          "value": "shrimp, wheat, egg",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "dishes": {
+          "value": "Shrimp in chili sauce, Chinese, Dinner, Entertaining",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "net_weight_g": {
+          "value": 200,
+          "unit": "g",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Made in Japan",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "storage_method": {
+          "value": "Chilled",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Entertaining",
+        "Just heat"
+      ],
+      "search_keywords": [
+        "Shrimp in chili sauce",
+        "Shrimp in chili sauce",
+        "Chinese deli dish",
+        "Chinese",
+        "Prepared in-store",
+        "Entertaining",
+        "Dinner"
+      ],
+      "ai_summary": "A Chinese deli dish of plump shrimp coated in sweet and spicy chili sauce. Just heat for an authentic dish; prepared in-store and great for dinner or entertaining.",
+      "fill_rate_before": 0.333,
+      "fill_rate_after": 0.583,
+      "updated_at": "2026-11-11T00:17:02.716389+00:00"
+    },
+    {
+      "sku": "4937233051003",
+      "title": "Cymbal Retail Sushi and Hors d'Oeuvre Party Set, 4 servings",
+      "group": "prepared",
+      "attributes": {
+        "allergens": {
+          "value": "shrimp, wheat, egg, milk",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "dishes": {
+          "value": "Christmas, Year-end & New Year, Home party, Birthday",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Made in Japan",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "servings": {
+          "value": 4,
+          "unit": "servings",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "storage_method": {
+          "value": "Chilled",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Entertaining",
+        "Party"
+      ],
+      "search_keywords": [
+        "Sushi",
+        "Hors d'oeuvres",
+        "Party set",
+        "karaage",
+        "fried shrimp",
+        "roast beef",
+        "4 servings"
+      ],
+      "ai_summary": "A party platter for 4 with popular dishes like karaage, fried shrimp, and roast beef. Easy to share, it's perfect for New Year's gatherings with family and relatives.",
+      "fill_rate_before": 0.333,
+      "fill_rate_after": 0.417,
+      "updated_at": "2026-11-11T00:17:02.716486+00:00"
+    },
+    {
+      "sku": "4927545010232",
+      "title": "Cymbal Somen Noodles, 400 g (50 g x 8 bundles)",
+      "group": "prepared",
+      "attributes": {
+        "net_weight_g": {
+          "value": 400,
+          "unit": "g",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "pack_count": {
+          "value": 8,
+          "unit": "pcs",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "storage_method": {
+          "value": "Ambient",
+          "unit": "",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "allergens": {
+          "value": "wheat",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "dishes": {
+          "value": "somen, nyumen (hot somen), chilled somen, somen champuru, somen salad",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Made in Japan",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Individually wrapped"
+      ],
+      "search_keywords": [
+        "somen",
+        "somen noodles",
+        "nyumen (hot somen)",
+        "Cymbal",
+        "chilled somen",
+        "dried noodles",
+        "Made in Japan"
+      ],
+      "ai_summary": "Somen noodles known for their thin, silky texture. Enjoy them year-round: chilled in summer, or as warm nyumen in colder months. Comes in convenient 50g x 8 bundles so you can cook just what you need.",
+      "fill_rate_before": 0.333,
+      "fill_rate_after": 0.5,
+      "updated_at": "2026-11-11T00:17:02.716562+00:00"
+    },
+    {
+      "sku": "4919120298227",
+      "title": "Cymbal Ebisenn (Shrimp Crackers) Small Bags, 15 g x 10 packs",
+      "group": "grocery",
+      "attributes": {
+        "flavor": {
+          "value": "Salt flavor",
+          "unit": "",
+          "score": 0.96,
+          "status": "auto_approved"
+        },
+        "net_weight_g": {
+          "value": 150,
+          "unit": "g",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "pack_count": {
+          "value": 10,
+          "unit": "pcs",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "storage_method": {
+          "value": "Ambient",
+          "unit": "",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "allergens": {
+          "value": "shrimp, wheat",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "dishes": {
+          "value": "snacks, with evening drinks, kids' snacks, with tea",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Made in Japan",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Kid favorite",
+        "Snack with drinks",
+        "Individually wrapped",
+        "Shelf-stable"
+      ],
+      "search_keywords": [
+        "shrimp crackers",
+        "chips & snacks",
+        "shrimp rice crackers",
+        "Snack with drinks",
+        "kids' snacks",
+        "small bags",
+        "Individually wrapped"
+      ],
+      "ai_summary": "Shrimp crackers with a toasty shrimp flavor and a light salty taste. Great as a kids' snack or with evening drinks, delivered in portable 15g x 10 small bags.",
+      "fill_rate_before": 0.333,
+      "fill_rate_after": 0.583,
+      "updated_at": "2026-11-11T00:17:02.716641+00:00"
+    },
+    {
+      "sku": "4943708745162",
+      "title": "Greenland Sweet Shrimp Sashimi, Peeled, 20 pcs",
+      "group": "fresh",
+      "attributes": {
+        "cooking_method": {
+          "value": "as is",
+          "unit": "",
+          "score": 0.96,
+          "status": "auto_approved"
+        },
+        "allergens": {
+          "value": "shrimp",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "dishes": {
+          "value": "sashimi, seafood rice bowl, hand-rolled sushi, sweet shrimp miso soup",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Greenland",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "pack_count": {
+          "value": 20,
+          "unit": "pcs",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "storage_method": {
+          "value": "Chilled",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Time-saver",
+        "Pre-cut / prepped"
+      ],
+      "search_keywords": [
+        "sweet shrimp",
+        "sashimi grade",
+        "Shucked",
+        "seafood rice bowl",
+        "hand-rolled sushi",
+        "Greenland",
+        "shrimp"
+      ],
+      "ai_summary": "Sweet shrimp from Greenland with a melt-in-your-mouth sweetness. Peeled and sashimi-ready, enjoy as is with wasabi soy sauce, on a seafood rice bowl, or in hand-rolled sushi. Delivered chilled.",
+      "fill_rate_before": 0.444,
+      "fill_rate_after": 0.667,
+      "updated_at": "2026-11-11T00:17:02.716704+00:00"
+    },
+    {
+      "sku": "4936988418895",
+      "title": "Special Medium Spicy Spice Curry Roux, 10 servings",
+      "group": "grocery",
+      "attributes": {
+        "cooking_method": {
+          "value": "pot",
+          "unit": "",
+          "score": 0.96,
+          "status": "auto_approved"
+        },
+        "allergens": {
+          "value": "wheat, milk, beef, soybean, pork, apple",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "dishes": {
+          "value": "curry, curry udon, curry croquettes, dry curry",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "flavor": {
+          "value": "medium hot",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "net_weight_g": {
+          "value": 180,
+          "unit": "g",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Made in Japan",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "servings": {
+          "value": 10,
+          "unit": "servings",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "storage_method": {
+          "value": "Ambient",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Time-saver",
+        "Shelf-stable"
+      ],
+      "search_keywords": [
+        "curry roux",
+        "spice curry",
+        "medium hot",
+        "curry",
+        "Shelf-stable",
+        "curry udon"
+      ],
+      "ai_summary": "A classic medium-hot curry roux blending the sweetness of onion and apple with spices. Just break in the roux and simmer for 10 servings of rich, thick curry. Shelf-stable.",
+      "fill_rate_before": 0.333,
+      "fill_rate_after": 0.667,
+      "updated_at": "2026-11-11T00:17:02.716919+00:00"
+    },
+    {
+      "sku": "4931878728948",
+      "title": "Hokkorina 2-Way Fleece Dome House, M, Grey",
+      "group": "pet",
+      "attributes": {
+        "color": {
+          "value": "Gray",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "material": {
+          "value": "Polyester (fleece)",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Made in China",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "For dogs",
+        "For cats",
+        "Gift",
+        "Warming",
+        "Washable"
+      ],
+      "search_keywords": [
+        "pet bed",
+        "dome house",
+        "fleece",
+        "Warming",
+        "cat house",
+        "dog bed",
+        "Hokkorina"
+      ],
+      "ai_summary": "A dome-shaped pet house made of warm fleece. The removable cushion doubles as an open bed, keeping in body heat for cozy comfort in cold seasons.",
+      "fill_rate_before": 0.273,
+      "fill_rate_after": 0.273,
+      "updated_at": "2026-11-11T00:17:02.716976+00:00"
+    },
+    {
+      "sku": "4922835139112",
+      "title": "Hokkaido Boiled Horsehair Crab Set, 2 pcs (approx. 800 g)",
+      "group": "fresh",
+      "attributes": {
+        "cooking_method": {
+          "value": "as is",
+          "unit": "",
+          "score": 0.96,
+          "status": "auto_approved"
+        },
+        "pack_count": {
+          "value": 2,
+          "unit": "pcs",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "season": {
+          "value": "December - April",
+          "unit": "",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "allergens": {
+          "value": "crab",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "dishes": {
+          "value": "crab hot pot, crab rice porridge, with evening drinks, New Year's holidays, celebrations",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "net_weight_g": {
+          "value": 800,
+          "unit": "g",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Hokkaido",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "storage_method": {
+          "value": "Frozen",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Entertaining",
+        "Good for hot pot",
+        "Domestic"
+      ],
+      "search_keywords": [
+        "hairy crab",
+        "Hokkaido",
+        "boiled hairy crab",
+        "crab hot pot",
+        "crab",
+        "New Year's holidays",
+        "frozen crab"
+      ],
+      "ai_summary": "A set of 2 whole boiled hairy crabs from Hokkaido (approx. 800g). Enjoy the rich crab tomalley; thaw and eat as is, or use in crab hot pot or rice porridge for a New Year's feast.",
+      "fill_rate_before": 0.556,
+      "fill_rate_after": 0.889,
+      "updated_at": "2026-11-11T00:17:02.717097+00:00"
+    },
+    {
+      "sku": "4954950777214",
+      "title": "Cymbal Basic Non-Stick Frying Pan, 20 cm",
+      "group": "kitchen",
+      "attributes": {
+        "diameter_cm": {
+          "value": 20,
+          "unit": "cm",
+          "score": 0.96,
+          "status": "auto_approved"
+        },
+        "color": {
+          "value": "Black",
+          "unit": "",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "ih_compatible": {
+          "value": true,
+          "unit": "",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "material": {
+          "value": "Aluminum (fluororesin coated)",
+          "unit": "",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Made in China",
+          "unit": "",
+          "score": 0.98,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Gas stove compatible",
+        "Induction compatible",
+        "Non-stick"
+      ],
+      "search_keywords": [
+        "Frying pan",
+        "fluororesin coated",
+        "Induction compatible",
+        "all heat sources",
+        "20cm",
+        "thick base",
+        "kitchenware"
+      ],
+      "ai_summary": "A 20cm frying pan with a non-stick fluororesin coating. Compatible with all heat sources including induction, and its heat-retaining thick base sears meat and vegetables to a fragrant finish.",
+      "fill_rate_before": 0.0,
+      "fill_rate_after": 0.417,
+      "updated_at": "2026-11-11T00:17:02.717125+00:00"
+    },
+    {
+      "sku": "4971175764355",
+      "title": "Cymbal Basic Vegetable-Based Whipped Cream, 200 ml",
+      "group": "grocery",
+      "attributes": {
+        "dishes": {
+          "value": "Decorating pancakes, fruit sandwiches, and homemade cakes",
+          "unit": "",
+          "score": 0.96,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Made in Japan",
+          "unit": "",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "allergens": {
+          "value": "milk",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "net_volume_ml": {
+          "value": 200,
+          "unit": "ml",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "storage_method": {
+          "value": "Chilled",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [],
+      "search_keywords": [
+        "whipped cream",
+        "vegetable-based whipped topping",
+        "whipping cream",
+        "cake decoration",
+        "fruit sandwich",
+        "pancakes"
+      ],
+      "ai_summary": "An easy-to-whip topping made with vegetable fat. Great for decorating homemade cakes, as well as pancakes, fruit sandwiches, and more.",
+      "fill_rate_before": 0.0,
+      "fill_rate_after": 0.417,
+      "updated_at": "2026-11-11T00:17:02.717147+00:00"
+    },
+    {
+      "sku": "4913067859176",
+      "title": "Cymbal Shrimp Pilaf, 450 g",
+      "group": "prepared",
+      "attributes": {
+        "flavor": {
+          "value": "Butter flavor",
+          "unit": "",
+          "score": 0.96,
+          "status": "auto_approved"
+        },
+        "cooking_method": {
+          "value": "Microwave, Frying pan",
+          "unit": "",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "allergens": {
+          "value": "shrimp, wheat, milk",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "dishes": {
+          "value": "Pilaf, Doria, Omurice, Bento, Gratin",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "net_weight_g": {
+          "value": 450,
+          "unit": "g",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Made in Japan",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "storage_method": {
+          "value": "Frozen",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Good for bento",
+        "Pan cooking",
+        "Freezer storage",
+        "Microwave cooking"
+      ],
+      "search_keywords": [
+        "shrimp pilaf",
+        "frozen pilaf",
+        "shrimp fried rice",
+        "Frozen",
+        "Microwave cooking",
+        "doria",
+        "Cymbal"
+      ],
+      "ai_summary": "Frozen shrimp pilaf with plump shrimp and vegetables sautéed in butter. Easy to make in a frying pan or microwave, and you can top it with white sauce and bake it into doria.",
+      "fill_rate_before": 0.333,
+      "fill_rate_after": 0.583,
+      "updated_at": "2026-11-11T00:17:02.717387+00:00"
+    },
+    {
+      "sku": "4972515284762",
+      "title": "Cymbal Basic Macaroni Gratin, 3 pcs, 450 g",
+      "group": "prepared",
+      "attributes": {
+        "cooking_method": {
+          "value": "microwave, toaster, oven",
+          "unit": "",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "allergens": {
+          "value": "wheat, milk",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "dishes": {
+          "value": "macaroni gratin, lunch, dinner side dish",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "net_weight_g": {
+          "value": 450,
+          "unit": "g",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "pack_count": {
+          "value": 3,
+          "unit": "pcs",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "storage_method": {
+          "value": "Frozen",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Freezer storage",
+        "Just heat",
+        "Microwave cooking"
+      ],
+      "search_keywords": [
+        "macaroni gratin",
+        "Frozen",
+        "frozen gratin",
+        "white sauce",
+        "cheese",
+        "Microwave"
+      ],
+      "ai_summary": "Macaroni gratin with smooth white sauce topped with melty cheese. Just heat in its container in the microwave or toaster oven for a freshly baked aroma.",
+      "fill_rate_before": 0.25,
+      "fill_rate_after": 0.5,
+      "updated_at": "2026-11-11T00:17:02.717514+00:00"
+    },
+    {
+      "sku": "4938749288693",
+      "title": "Cymbal Select Copper Tamagoyaki Omelet Pan, Kanto Style, 15 x 18 cm",
+      "group": "kitchen",
+      "attributes": {
+        "depth_cm": {
+          "value": 18,
+          "unit": "cm",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "width_cm": {
+          "value": 15,
+          "unit": "cm",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "color": {
+          "value": "Copper",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "ih_compatible": {
+          "value": true,
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "material": {
+          "value": "Copper (tin-lined interior)",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Made in Japan",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Induction compatible",
+        "Made in Japan"
+      ],
+      "search_keywords": [
+        "tamagoyaki pan",
+        "copper",
+        "Kanto style",
+        "Induction compatible",
+        "dashimaki tamago (rolled omelet)",
+        "Made in Japan",
+        "Frying pan"
+      ],
+      "ai_summary": "A Made in Japan copper square tamagoyaki pan that heats evenly to every corner for easy rolling and fluffy, beautiful omelets. Recommended for bento and breakfast dashimaki tamago.",
+      "fill_rate_before": 0.25,
+      "fill_rate_after": 0.5,
+      "updated_at": "2026-11-11T00:17:02.717562+00:00"
+    },
+    {
+      "sku": "4988663915656",
+      "title": "Cymbal Pet Senior Dog Food 7+ Years, Chicken & White Fish, 1 kg",
+      "group": "pet",
+      "attributes": {
+        "material": {
+          "value": "chicken, white fish, rice, barley",
+          "unit": "",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "net_weight_g": {
+          "value": 1000,
+          "unit": "g",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Made in Japan",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "target_age": {
+          "value": "7 years and older",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "target_pet": {
+          "value": "Dog",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "For seniors",
+        "Domestic",
+        "For dogs"
+      ],
+      "search_keywords": [
+        "senior dog",
+        "dog food",
+        "dry food",
+        "chicken",
+        "white fish",
+        "Made in Japan",
+        "low calorie"
+      ],
+      "ai_summary": "Made in Japan dry food for senior dogs aged 7 and up, made primarily with chicken and white fish. Contains glucosamine and chondroitin, with a low-fat, low-calorie formula.",
+      "fill_rate_before": 0.0,
+      "fill_rate_after": 0.455,
+      "updated_at": "2026-11-11T00:17:02.717640+00:00"
+    },
+    {
+      "sku": "4971250517401",
+      "title": "Cymbal Home Frozen Rice Storage Containers, 180 ml, 4 ct, Gray",
+      "group": "kitchen",
+      "attributes": {
+        "microwave_safe": {
+          "value": true,
+          "unit": "",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "net_volume_ml": {
+          "value": 180,
+          "unit": "ml",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "pack_count": {
+          "value": 4,
+          "unit": "pcs",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "color": {
+          "value": "Gray",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "material": {
+          "value": "Polypropylene",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Made in Japan",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Freezer safe",
+        "Made in Japan",
+        "Microwave safe"
+      ],
+      "search_keywords": [
+        "frozen rice container",
+        "freezing rice",
+        "storage container",
+        "single portion",
+        "Microwave safe",
+        "Made in Japan"
+      ],
+      "ai_summary": "A set of 4 containers for freezing freshly cooked rice in single portions. The ridged base circulates steam for even, fluffy results when microwaved. Made in Japan.",
+      "fill_rate_before": 0.25,
+      "fill_rate_after": 0.5,
+      "updated_at": "2026-11-11T00:17:02.717688+00:00"
+    },
+    {
+      "sku": "4908903962202",
+      "title": "Cymbal Basic Moisturizing Cream for Sensitive Skin Large Size, 120 g",
+      "group": "beauty",
+      "attributes": {
+        "scent": {
+          "value": "Fragrance-free",
+          "unit": "",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "skin_type": {
+          "value": "for sensitive skin",
+          "unit": "",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Made in Japan",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Moisturizing",
+        "For sensitive skin",
+        "Made in Japan",
+        "Fragrance-free"
+      ],
+      "search_keywords": [
+        "moisturizing cream",
+        "for sensitive skin",
+        "Fragrance-free",
+        "alcohol-free",
+        "colorant-free",
+        "Made in Japan",
+        "skincare"
+      ],
+      "ai_summary": "A Made in Japan moisturizing cream for sensitive skin, formulated fragrance-free, colorant-free, and alcohol-free for skin prone to irritation. Lightweight feel with lasting hydration and minimal stickiness.",
+      "fill_rate_before": 0.143,
+      "fill_rate_after": 0.429,
+      "updated_at": "2026-11-11T00:17:02.717719+00:00"
+    },
+    {
+      "sku": "4933889256526",
+      "title": "Skyfold All-Weather Automatic Folding Umbrella, Navy, 55 cm",
+      "group": "living",
+      "attributes": {
+        "color": {
+          "value": "Navy",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "material": {
+          "value": "Polyester, fiberglass",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Made in China",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "UV protection",
+        "Lightweight",
+        "Rain or shine"
+      ],
+      "search_keywords": [
+        "folding umbrella",
+        "Rain or shine",
+        "automatic open/close",
+        "Lightweight",
+        "UV protection",
+        "parasol",
+        "Navy"
+      ],
+      "ai_summary": "A lightweight, portable folding umbrella for rain or shine. Its light-blocking coating cuts sunlight, and one-touch automatic open/close makes one-handed use easy, handy for sudden rain.",
+      "fill_rate_before": 0.333,
+      "fill_rate_after": 0.333,
+      "updated_at": "2026-11-11T00:17:02.717755+00:00"
+    },
+    {
+      "sku": "4986334217597",
+      "title": "Hinata Craft Ultrasonic Aroma Diffuser, Matte White, 120 ml",
+      "group": "living",
+      "attributes": {
+        "color": {
+          "value": "Matte White",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "material": {
+          "value": "PP, ABS resin",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "net_volume_ml": {
+          "value": 120,
+          "unit": "ml",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Made in China",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Gift"
+      ],
+      "search_keywords": [
+        "aroma diffuser",
+        "ultrasonic",
+        "LED light",
+        "Hinata Craft",
+        "Matte White",
+        "Gift"
+      ],
+      "ai_summary": "An ultrasonic diffuser with a soft LED light; add a few drops of aroma oil to enjoy the scent. Its elegant matte white design also makes it a great gift.",
+      "fill_rate_before": 0.333,
+      "fill_rate_after": 0.444,
+      "updated_at": "2026-11-11T00:17:02.717788+00:00"
+    },
+    {
+      "sku": "4929021288920",
+      "title": "Cymbal Basic Freezer & Microwave Safe Food Containers, 700 ml, 3 ct",
+      "group": "kitchen",
+      "attributes": {
+        "color": {
+          "value": "White",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "dishwasher_safe": {
+          "value": true,
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "material": {
+          "value": "Polypropylene",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "microwave_safe": {
+          "value": true,
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "net_volume_ml": {
+          "value": 700,
+          "unit": "ml",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Made in Japan",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "pack_count": {
+          "value": 3,
+          "unit": "pcs",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Stackable",
+        "Lightweight",
+        "Freezer safe",
+        "Made in Japan",
+        "Microwave safe",
+        "Dishwasher safe"
+      ],
+      "search_keywords": [
+        "storage container",
+        "plastic storage container",
+        "Freezer storage",
+        "microwave safe",
+        "Dishwasher safe",
+        "meal prep",
+        "Made in Japan"
+      ],
+      "ai_summary": "Made in Japan plastic storage containers that go from freezer storage to microwave thawing without transferring. They stack neatly to organize your freezer, are light and hard to break, and are dishwasher safe.",
+      "fill_rate_before": 0.25,
+      "fill_rate_after": 0.583,
+      "updated_at": "2026-11-11T00:17:02.717830+00:00"
+    },
+    {
+      "sku": "4903577695999",
+      "title": "Cymbal Basic White Eggs, Size M, 10 ct",
+      "group": "grocery",
+      "attributes": {
+        "allergens": {
+          "value": "egg",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "dishes": {
+          "value": "tamagoyaki, oyakodon, chawanmushi, omurice, raw egg over rice, boiled eggs",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Domestic",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "pack_count": {
+          "value": 10,
+          "unit": "pcs",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "storage_method": {
+          "value": "Chilled",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Domestic ingredients"
+      ],
+      "search_keywords": [
+        "white eggs",
+        "eggs 10 pcs",
+        "chicken eggs",
+        "domestic eggs",
+        "size M eggs",
+        "tamagoyaki",
+        "fried eggs"
+      ],
+      "ai_summary": "10 fresh size M white eggs laid at contracted domestic farms. With pleasantly rich yolks, these versatile eggs suit any Japanese or Western dish, from tamagoyaki and fried eggs to oyakodon.",
+      "fill_rate_before": 0.333,
+      "fill_rate_after": 0.417,
+      "updated_at": "2026-11-11T00:17:02.717922+00:00"
+    },
+    {
+      "sku": "4925863331336",
+      "title": "Cymbal Kitchen Sponges, 3 pcs",
+      "group": "living",
+      "attributes": {
+        "origin": {
+          "value": "Made in Japan",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "pack_count": {
+          "value": 3,
+          "unit": "pcs",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Value size / bulk",
+        "Made in Japan"
+      ],
+      "search_keywords": [
+        "kitchen sponge",
+        "dish sponge",
+        "dishwashing",
+        "pan washing",
+        "sponge Made in Japan",
+        "Bulk buy"
+      ],
+      "ai_summary": "A Made in Japan kitchen sponge that lathers well and drains quickly. Ideal for daily dishwashing and pan washing, and the 3-pack is convenient for stocking up.",
+      "fill_rate_before": 0.111,
+      "fill_rate_after": 0.222,
+      "updated_at": "2026-11-11T00:17:02.717949+00:00"
+    },
+    {
+      "sku": "4932381884138",
+      "title": "Cymbal Pet Cat System Toilet with Full Cover, Gray",
+      "group": "pet",
+      "attributes": {
+        "target_pet": {
+          "value": "Cat",
+          "unit": "",
+          "score": 0.98,
+          "status": "auto_approved"
+        },
+        "color": {
+          "value": "Gray",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "depth_cm": {
+          "value": 54,
+          "unit": "cm",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "height_cm": {
+          "value": 42,
+          "unit": "cm",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "material": {
+          "value": "Polypropylene",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Made in Japan",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "width_cm": {
+          "value": 42,
+          "unit": "cm",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Domestic",
+        "For cats"
+      ],
+      "search_keywords": [
+        "system litter box",
+        "cat litter box",
+        "full cover",
+        "litter scatter prevention",
+        "odor control",
+        "pet toilet Made in Japan"
+      ],
+      "ai_summary": "A Made in Japan two-layer system litter box for cats that separates waste with pellets on top and a pad below. The full cover reduces litter scatter and odor, and pads need changing only about once a week for easy care.",
+      "fill_rate_before": 0.273,
+      "fill_rate_after": 0.636,
+      "updated_at": "2026-11-11T00:17:02.717990+00:00"
+    },
+    {
+      "sku": "4969115557594",
+      "title": "Cymbal Beauty Bath Bomb Gift Set, 8 ct",
+      "group": "beauty",
+      "attributes": {
+        "origin": {
+          "value": "Made in Japan",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "pack_count": {
+          "value": 8,
+          "unit": "pcs",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Gift",
+        "Made in Japan"
+      ],
+      "search_keywords": [
+        "bath gift set",
+        "bath bomb",
+        "bath salt",
+        "bath product assortment",
+        "gift wrapping available",
+        "birthday gift",
+        "Made in Japan bath products"
+      ],
+      "ai_summary": "A Made in Japan bath gift set with an assortment of bath salts and bath bombs in different scents. Bright and festive the moment it's opened, with message cards and gift wrapping available. (82 chars)",
+      "fill_rate_before": 0.143,
+      "fill_rate_after": 0.286,
+      "updated_at": "2026-11-11T00:17:02.718014+00:00"
+    },
+    {
+      "sku": "4903510088987",
+      "title": "Cymbal Beauty Amino Acid Shampoo Moist Refill, Large Size, 1200 ml",
+      "group": "beauty",
+      "attributes": {
+        "net_volume_ml": {
+          "value": 1200,
+          "unit": "ml",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Made in Japan",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "Made in Japan",
+        "Refill"
+      ],
+      "search_keywords": [
+        "amino acid shampoo",
+        "Refill",
+        "Value size",
+        "1200ml",
+        "Cymbal Beauty",
+        "Moist",
+        "shampoo refill"
+      ],
+      "ai_summary": "A Made in Japan refill pouch of the popular amino acid shampoo. The large 1200ml size is more affordable than bottles, and the spout makes refilling easy without spills.",
+      "fill_rate_before": 0.143,
+      "fill_rate_after": 0.286,
+      "updated_at": "2026-11-11T00:17:02.718039+00:00"
+    },
+    {
+      "sku": "4906230477659",
+      "title": "Mofurie Cat Pouch Tuna with Whitebait, 40 g x 12 pack",
+      "group": "pet",
+      "attributes": {
+        "material": {
+          "value": "tuna, whitebait",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "net_weight_g": {
+          "value": 480,
+          "unit": "g",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "origin": {
+          "value": "Made in Thailand",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "pack_count": {
+          "value": 12,
+          "unit": "pcs",
+          "score": 1.0,
+          "status": "auto_approved"
+        },
+        "target_pet": {
+          "value": "Cat",
+          "unit": "",
+          "score": 1.0,
+          "status": "auto_approved"
+        }
+      },
+      "feature_tags": [
+        "For cats"
+      ],
+      "search_keywords": [
+        "Mofurie",
+        "cat food",
+        "wet food",
+        "cat pouch",
+        "tuna",
+        "whitebait",
+        "hydration"
+      ],
+      "ai_summary": "Mofurie cat pouches packed with ingredients in a thick broth. Made mainly from tuna and bonito, this wet food also helps with hydration. Set of 12 single-serve 40g pouches.",
+      "fill_rate_before": 0.182,
+      "fill_rate_after": 0.455,
+      "updated_at": "2026-11-11T00:17:02.718071+00:00"
+    }
+  ]
+}

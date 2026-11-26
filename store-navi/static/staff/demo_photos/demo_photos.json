@@ -1,0 +1,366 @@
+{
+ "version": 2,
+ "generated_at": "2026-11-12T05:06:48+0000",
+ "photos": [
+  {
+   "id": "ph01",
+   "file": "ph01_S01_B03-206.jpg",
+   "store_id": "S01",
+   "fixture_id": "B03",
+   "slot_ids": [
+    "B03-206"
+   ],
+   "tier": 2,
+   "side": "W",
+   "position": 6,
+   "facings": 1,
+   "product_id": "4985174822213",
+   "hint": "facial toner",
+   "seed_slot_ids": [
+    "B03-406"
+   ],
+   "title": "Cymbal Beauty Deep Moisture Facial Toner Refill 180 ml",
+   "method": "generated",
+   "model": "gemini-3.1-flash-image",
+   "qa": {
+    "slot_label_text": "B03-206",
+    "slot_ok": true,
+    "plate_text": "B03",
+    "plate_ok": true,
+    "product_ok": true,
+    "product_tier": 2,
+    "tier_ok": true,
+    "clean": true,
+    "score": 10,
+    "issues": ""
+   },
+   "gondola_id": "B03"
+  },
+  {
+   "id": "ph02",
+   "file": "ph02_S01_B01-406.jpg",
+   "store_id": "S01",
+   "fixture_id": "B01",
+   "slot_ids": [
+    "B01-406",
+    "B01-407"
+   ],
+   "tier": 4,
+   "side": "W",
+   "position": 6,
+   "facings": 2,
+   "product_id": "4964209610049",
+   "hint": "toothpaste",
+   "seed_slot_ids": [
+    "B01-304"
+   ],
+   "title": "Cymbal Basic Toothpaste 3-Pack 140 g x 3",
+   "method": "generated",
+   "model": "gemini-3.1-flash-image",
+   "qa": {
+    "slot_label_text": "B01-406",
+    "slot_ok": true,
+    "plate_text": "B01",
+    "plate_ok": true,
+    "product_ok": true,
+    "product_tier": 4,
+    "tier_ok": true,
+    "clean": true,
+    "score": 10,
+    "issues": ""
+   },
+   "gondola_id": "B01"
+  },
+  {
+   "id": "ph03",
+   "file": "ph03_S01_D12-306.jpg",
+   "store_id": "S01",
+   "fixture_id": "D12",
+   "slot_ids": [
+    "D12-306"
+   ],
+   "tier": 3,
+   "side": "W",
+   "position": 6,
+   "facings": 1,
+   "product_id": "4928035434224",
+   "hint": "powder laundry detergent",
+   "seed_slot_ids": [
+    "D12-108"
+   ],
+   "title": "Cymbal Basic Powder Laundry Detergent 1.0 kg",
+   "method": "generated",
+   "model": "gemini-3.1-flash-image",
+   "qa": {
+    "slot_label_text": "D12-306",
+    "slot_ok": true,
+    "plate_text": "D12",
+    "plate_ok": true,
+    "product_ok": true,
+    "product_tier": 3,
+    "tier_ok": true,
+    "clean": true,
+    "score": 10,
+    "issues": "none",
+    "no_japanese": true,
+    "edit": "english_text"
+   },
+   "gondola_id": "D12"
+  },
+  {
+   "id": "ph04",
+   "file": "ph04_S01_A03-303.jpg",
+   "store_id": "S01",
+   "fixture_id": "A03",
+   "slot_ids": [
+    "A03-303"
+   ],
+   "tier": 3,
+   "side": "E",
+   "position": 3,
+   "facings": 1,
+   "product_id": "4955767937563",
+   "hint": "stomach pain relief",
+   "seed_slot_ids": [
+    "A03-403"
+   ],
+   "title": "Cymbal Healthcare Stomach Pain Relief 18 Tablets",
+   "method": "generated",
+   "model": "gemini-3.1-flash-image",
+   "qa": {
+    "slot_label_text": "A03-303",
+    "slot_ok": true,
+    "plate_text": "A03",
+    "plate_ok": true,
+    "product_ok": true,
+    "product_tier": 3,
+    "tier_ok": true,
+    "clean": true,
+    "score": 10,
+    "issues": "none",
+    "no_japanese": true,
+    "edit": "english_text"
+   },
+   "gondola_id": "A03"
+  },
+  {
+   "id": "ph05",
+   "file": "ph05_S01_H44-303.jpg",
+   "store_id": "S01",
+   "fixture_id": "H44",
+   "slot_ids": [
+    "H44-303",
+    "H44-304"
+   ],
+   "tier": 3,
+   "side": "W",
+   "position": 3,
+   "facings": 2,
+   "product_id": "4922071158755",
+   "hint": "sesame ponzu",
+   "seed_slot_ids": [
+    "H44-401"
+   ],
+   "title": "Cymbal Sesame Ponzu Sauce 500 ml",
+   "method": "generated",
+   "model": "gemini-3.1-flash-image",
+   "qa": {
+    "slot_label_text": "H44-303",
+    "slot_ok": true,
+    "plate_text": "H44",
+    "plate_ok": true,
+    "product_ok": true,
+    "product_tier": 3,
+    "tier_ok": true,
+    "clean": true,
+    "score": 10,
+    "issues": "",
+    "no_japanese": true,
+    "edit": "english_text"
+   },
+   "gondola_id": "H44"
+  },
+  {
+   "id": "ph06",
+   "file": "ph06_S01_A02-406.jpg",
+   "store_id": "S01",
+   "fixture_id": "A02",
+   "slot_ids": [
+    "A02-406"
+   ],
+   "tier": 4,
+   "side": "E",
+   "position": 6,
+   "facings": 1,
+   "product_id": "4939504329545",
+   "hint": "eye drops for tired eyes",
+   "seed_slot_ids": [
+    "A02-307"
+   ],
+   "title": "Cymbal Healthcare Eye Drops for Tired Eyes with Vitamins 12 ml",
+   "method": "generated",
+   "model": "gemini-3.1-flash-image",
+   "qa": {
+    "slot_label_text": "A02-406",
+    "slot_ok": true,
+    "plate_text": "A02",
+    "plate_ok": true,
+    "product_ok": true,
+    "product_tier": 4,
+    "tier_ok": true,
+    "clean": true,
+    "score": 10,
+    "issues": "none",
+    "no_japanese": true,
+    "edit": "english_text"
+   },
+   "gondola_id": "A02"
+  },
+  {
+   "id": "ph07",
+   "file": "ph07_S01_A01-206.jpg",
+   "store_id": "S01",
+   "fixture_id": "A01",
+   "slot_ids": [
+    "A01-206"
+   ],
+   "tier": 2,
+   "side": "E",
+   "position": 6,
+   "facings": 1,
+   "product_id": "4905727212964",
+   "hint": "cooling pain relief patch",
+   "seed_slot_ids": [
+    "A01-312"
+   ],
+   "title": "Cymbal Healthcare Cooling Pain Relief Patches Large 7 Sheets",
+   "method": "generated",
+   "model": "gemini-3.1-flash-image",
+   "qa": {
+    "slot_label_text": "A01-206",
+    "slot_ok": true,
+    "plate_text": "A01",
+    "plate_ok": true,
+    "product_ok": true,
+    "product_tier": 2,
+    "tier_ok": true,
+    "clean": true,
+    "score": 10,
+    "issues": "none",
+    "no_japanese": true,
+    "edit": "english_text"
+   },
+   "gondola_id": "A01"
+  },
+  {
+   "id": "ph08",
+   "file": "ph08_S01_H10-206.jpg",
+   "store_id": "S01",
+   "fixture_id": "H10",
+   "slot_ids": [
+    "H10-206",
+    "H10-207"
+   ],
+   "tier": 2,
+   "side": "W",
+   "position": 6,
+   "facings": 2,
+   "product_id": "4930570250191",
+   "hint": "cup yakisoba",
+   "seed_slot_ids": [
+    "H10-301"
+   ],
+   "title": "Cymbal Basic Cup Yakisoba Noodles Sauce Flavor 100 g",
+   "method": "generated",
+   "model": "gemini-3.1-flash-image",
+   "qa": {
+    "slot_label_text": "H10-206",
+    "slot_ok": true,
+    "plate_text": "H10",
+    "plate_ok": true,
+    "product_ok": true,
+    "product_tier": 2,
+    "tier_ok": true,
+    "clean": true,
+    "score": 10,
+    "issues": "",
+    "no_japanese": true,
+    "edit": "english_text"
+   },
+   "gondola_id": "H10"
+  },
+  {
+   "id": "ph09",
+   "file": "ph09_S01_F06-306.jpg",
+   "store_id": "S01",
+   "fixture_id": "F06",
+   "slot_ids": [
+    "F06-306",
+    "F06-307"
+   ],
+   "tier": 3,
+   "side": "E",
+   "position": 6,
+   "facings": 2,
+   "product_id": "4988024799147",
+   "hint": "chocolate family pack",
+   "seed_slot_ids": [
+    "F06-403"
+   ],
+   "title": "Cymbal Crunchy Chocolate Family Pack Individually Wrapped 180 g",
+   "method": "generated",
+   "model": "gemini-3.1-flash-image",
+   "qa": {
+    "slot_label_text": "F06-306",
+    "slot_ok": true,
+    "plate_text": "F06",
+    "plate_ok": true,
+    "product_ok": true,
+    "product_tier": 3,
+    "tier_ok": true,
+    "clean": true,
+    "score": 10,
+    "issues": "none",
+    "no_japanese": true,
+    "edit": "english_text"
+   },
+   "gondola_id": "F06"
+  },
+  {
+   "id": "ph10",
+   "file": "ph10_S01_G03-206.jpg",
+   "store_id": "S01",
+   "fixture_id": "G03",
+   "slot_ids": [
+    "G03-206"
+   ],
+   "tier": 2,
+   "side": "W",
+   "position": 6,
+   "facings": 1,
+   "product_id": "4956401337961",
+   "hint": "green tea",
+   "seed_slot_ids": [
+    "G03-408"
+   ],
+   "title": "Cymbal Green Tea from Japanese Leaves 525 ml",
+   "method": "generated",
+   "model": "gemini-3.1-flash-image",
+   "qa": {
+    "slot_label_text": "G03-206",
+    "slot_ok": true,
+    "plate_text": "G03",
+    "plate_ok": true,
+    "product_ok": true,
+    "product_tier": 2,
+    "tier_ok": true,
+    "clean": true,
+    "score": 10,
+    "issues": "none",
+    "no_japanese": true,
+    "edit": "english_text"
+   },
+   "gondola_id": "G03"
+  }
+ ]
+}

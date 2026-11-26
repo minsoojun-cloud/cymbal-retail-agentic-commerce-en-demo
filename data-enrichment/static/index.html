@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Data Enrichment Studio | Cymbal Retail × Google Cloud</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@400;500;700;900&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/enrich.css?v=20261111q">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='17' fill='%231a73e8'/%3E%3Ccircle cx='20' cy='20' r='11.5' fill='none' stroke='white' stroke-opacity='.55' stroke-width='1.6'/%3E%3Ccircle cx='20' cy='20' r='6' fill='none' stroke='white' stroke-opacity='.85' stroke-width='1.6'/%3E%3Ccircle cx='20' cy='20' r='2.2' fill='%23fbbc04'/%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="app-header">
+    <a class="brand" href="#/dashboard" aria-label="Go to dashboard">
+      <svg class="cr-logo" viewBox="0 0 196 40" width="150" height="31" aria-hidden="true">
+        <defs><linearGradient id="crg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4285f4"/><stop offset="1" stop-color="#1a5fd0"/></linearGradient></defs>
+        <g transform="translate(20 20)">
+          <circle r="17" fill="url(#crg)"/>
+          <circle r="11.5" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1.6"/>
+          <circle r="6" fill="none" stroke="#fff" stroke-opacity=".85" stroke-width="1.6"/>
+          <circle r="2.2" fill="#fbbc04"/>
+        </g>
+        <text x="45" y="27.5"><tspan class="cr-logo__a">Cymbal</tspan><tspan class="cr-logo__b" dx="5">Retail</tspan></text>
+      </svg>
+      <span class="brand-sep"></span>
+      <span class="app-title">Product Data Enrichment Studio</span>
+    </a>
+    <div class="header-right">
+      <span class="mock-pill" id="mock-pill" hidden>MOCK DATA</span>
+      <span class="powered"><span class="g-dots"><i></i><i></i><i></i><i></i></span>Powered by <b>Gemini on Vertex AI</b></span>
+      <div class="mp" id="model-picker">
+        <button type="button" class="mp-btn" id="model-btn" aria-haspopup="listbox" aria-expanded="false" title="Gemini model used for live runs, CSV, GMC, document extraction and batch (saved in this browser)">
+          <span class="mp-ic" aria-hidden="true">✦</span>
+          <span class="mp-txt"><span class="mp-cap">LLM model</span><span class="mp-name" id="model-name">—</span></span>
+          <span class="mp-dot" id="model-dot"></span><span class="mp-caret" aria-hidden="true">▾</span>
+        </button>
+        <div class="mp-pop" id="model-pop" role="listbox" aria-label="Model" hidden></div>
+      </div>
+      <a class="xlink" id="store-link" href="{{STORE_URL}}" data-tooltip="Online Store" title="Online Store" aria-label="Open the Cymbal Retail online store" {{STORE_HIDDEN}}>
+        <span class="xlink__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4v2h16V4zm1 10v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6h1zm-9 4H6v-4h6v4z"/></svg></span>
+      </a>
+    </div>
+  </header>
+
+  <div class="app-body">
+    <nav class="sidebar" id="sidebar" aria-label="Main menu">
+      <a href="#/dashboard" data-route="dashboard" class="nav-item"><span class="nav-ic" data-icon="dash"></span><span>Dashboard</span></a>
+      <a href="#/products" data-route="products" class="nav-item"><span class="nav-ic" data-icon="list"></span><span>Products</span></a>
+      <a href="#/studio" data-route="studio" class="nav-item"><span class="nav-ic" data-icon="studio"></span><span>Enrichment Studio</span></a>
+      <a href="#/csv" data-route="csv" class="nav-item"><span class="nav-ic" data-icon="csv"></span><span>CSV Live Test</span></a>
+      <a href="#/images" data-route="images" class="nav-item"><span class="nav-ic" data-icon="images"></span><span>Seasonal Image Studio</span></a>
+      <a href="#/docs" data-route="docs" class="nav-item"><span class="nav-ic" data-icon="docs"></span><span>Extract from Documents</span></a>
+      <a href="#/gmc" data-route="gmc" class="nav-item" title="Google Merchant Center conversational attributes"><span class="nav-ic" data-icon="gmc"></span><span>GMC Attributes</span></a>
+      <a href="#/reviews" data-route="reviews" class="nav-item"><span class="nav-ic" data-icon="review"></span><span>HITL Review</span><span class="nav-badge" id="review-badge" hidden></span></a>
+      <a href="#/batch" data-route="batch" class="nav-item"><span class="nav-ic" data-icon="batch"></span><span>Batch &amp; Cost</span></a>
+      <div class="sidebar-foot">
+        <div class="sf-title">Cymbal Retail Demo</div>
+        <div class="sf-sub">Grocery + General Merchandise × Gemini on Vertex AI</div>
+      </div>
+    </nav>
+
+    <main class="main">
+      <section class="stepper-wrap" aria-label="Processing pipeline">
+        <div class="stepper" id="stepper"></div>
+      </section>
+      <div id="view" class="view"></div>
+    </main>
+  </div>
+
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+  <script type="module" src="/static/js/app.js?v=20261111q"></script>
+</body>
+</html>
