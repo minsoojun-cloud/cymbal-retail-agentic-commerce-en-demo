@@ -1,0 +1,18 @@
+# local configuration & installer state
+install/config.env
+install/.state/
+shared/adk_agent/DEPLOYMENT.env
+shared/adk_agent/data/products_retail.jsonl
+# python / tooling
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+.env
+.DS_Store
+# media render intermediates
+*.mp4
+*.webm
+*.wav
